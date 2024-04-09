@@ -1,0 +1,2036 @@
+[
+ {
+  "Name": "Vegetable Samosa",
+  "Description": "Deep fried pastries filled with mildly spiced potatoes and peas.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/554265-vegetable_samosa.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Samosa Chaat",
+  "Description": "Vegetable samosa mildly spiced, served with mint & tamarind sauce, yogurt and garbanzo beans.",
+  "Price": "12.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/324204-SamosaChaat.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Keema Samosa",
+  "Description": "Deep fried pastries stuffed with ground\n  lamb and peas and Indian spices.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/917636-keema_samosa.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Chicken Samosa",
+  "Description": "Deep fried pastries filled with spiced chicken.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/227483-chicken samosa.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Paneer Pakora",
+  "Description": "Homemade cheese deep-fried in gram flour batter.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/827973-paneer_pakora.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Chicken Pakora",
+  "Description": "Diced chicken deep-fried in gram flour batter.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/635012-Chicken-Pakora-Recipe-735x735.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Veg Pakora",
+  "Description": "Mixed vegetables deep-fried in gram flour batter.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/953416-VEG PAKORA.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Fish Pakora",
+  "Description": "Pieces of fresh cod marinated overnight, delicately spiced and deep-fried in gram flour batter.",
+  "Price": "11.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/877138-fish_pakora.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Chilli Fish",
+  "Description": "Tilapia fish in sweet and sour sauce mixed with ginger, garlic, onion and bell peppers.",
+  "Price": "13.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/381592-Chilli-Fish.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Fish & Chips",
+  "Description": "Deep fried Indian style fish, served with french fries.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/701874-img22882.whqc_768x512q80fpt454fpl451.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Fried Chicken",
+  "Description": "Deep fried boneless chicken marinated with lemon, cumin and then topped with chaat masala.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/524348-maxresdefault.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Spicy Chicken Wings",
+  "Description": "Marinated chicken wings cooked in hot zesty sauce.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/752004-Spicy chicken wings.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Chicken & Chips",
+  "Description": "Deep fried Indian style chicken, served with french fries.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/508288-Chicken & Chips.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Gobi Manchurian",
+  "Description": "Cauliflower seasoned with garlic, curry leaves and an exotic blend of Indian spices.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/137430-gobi-manchurian-1.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Vegetable Manchurian",
+  "Description": "Vegetable balls seasoned with garlic and cooked with sweet chili sauce.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/971260-maxresdefault.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Basmati Rice",
+  "Description": "Steamed Indian white rice.",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/829655-Bsamati rice.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Mango Lassi",
+  "Price": "5.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/106163-mango_lassi.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Mango Juice",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/337233-Mango juice.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Mango Shake",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/632799-Mango Shake.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Mango Lemonade",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/892470-Mango lemonade.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Coke",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/394001-coke.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Butter Lamb",
+  "Description": "Boneless lamb seared in the Tandoori oven, then braised in a creamy tomato sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/154748-Butter Lamb.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Methi",
+  "Description": "Lamb sautéed with a blend of spices including Indian fenugreek.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/581817-Lamb Methi.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Karahi",
+  "Description": "Lamb sautéed and cooked with tomatoes, onions, ginger and garlic.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/511461-Lamb Karahi.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Vindaloo",
+  "Description": "Lamb cooked with potatoes in a tangy onion vinegar sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/964305-Lamb Vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Madras",
+  "Description": "Lamb cooked with chunks of tomatoes, roasted dry chillies, browned garlic, cumin and other authentic Indian Spices.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/740005-Lamb Madras.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Curry",
+  "Description": "Tender lamb cooked with fresh onions, garlic and ginger in a special sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/691976-Lamb Curry.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Rack Of Lamb Chop Masala",
+  "Description": "Pieces of rack of lamb marinated in ginger, garlic and Indian spices, barbecued in the Tandoori oven, then cooked in a special masala sauce.",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/411847-lam.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Boti Masala",
+  "Description": "Lamb sautéed in masala sauce and Indian spices.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/727380-Lamb Boti Masala.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Jalfrazi",
+  "Description": "Lamb seared in the Tandoori oven, then braised with onions tomatoes, mushroom, bell peppers and spices in a special sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/647006-lamb-jalfrezi-1024x682.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Saag lamb",
+  "Description": "Lamb cooked with Indian spices and choped spinach.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/215676-Lamb Saag.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Goat Rogan Josh",
+  "Description": "Kashmiri dish cooked with tomatoes and onions then roasted with spices in a rich brown curry sauce and goat spice in a rich curry sauce and goat meat.",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/266285-Goat Rogan Josh.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Rogan Josh",
+  "Description": "Kashmiri dish cooked with tomatoes and onions then roasted with spices in a rich brown curry sauce and goat spice in a rich curry sauce and lamb meat.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/202376-Lamb Rogan Josh.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Papaya Shake",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/255253-Papaya Shake.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Orange Juice",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/654008-Untitled.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Iced Tea",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/288218-Iced-Tea.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Fish Madras",
+  "Description": "Fish cooked with chunks of tomatoes, roasted dry chillies, browned garlic, cumin and other authentic Indian spices.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/551163-Madras-fish-Masala-500x375.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Fish Goa Curry",
+  "Description": "A specialty from Goa. Pieces of fish simmered with coconuts in a spicy gravy.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/854418-Fish Goa Curry.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Butter Fish",
+  "Description": "Cod fish cooked in tomato based ginger, garlic creamy sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/610898-Butter Fish.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Fish Masala",
+  "Description": "Fresh fish gently cooked in a tomato based ginger, garlic and aromatic sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/717637-Fish Masala.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Fish Jalfarazi",
+  "Description": "Fish seared in the Tandoori, oven then braised with onions, bell peppers, mushroom, tomatoes and spices in a special sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/814561-Fish Jalfarazi.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Fish Vindaloo",
+  "Description": "Fish cooked with potatoes in a tangy onion vinegar sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/559333-Fish Vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Fish Saag",
+  "Description": "Cod fish cooked with Indian spices and chopped spinach",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/246514-Fish Saag.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Shrimp Masala",
+  "Description": "Shrimp gently cooked in a tomato based ginger, garlic and aromatic sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/637093-sheimp masala.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Shrimp Madras",
+  "Description": "Shrimp cooked with chunks of tomatoes, roasted dry chillies, browned garlic, cumin and other authentic, Indian spices.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/676011-Shrimp Madras.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Butter Shrimp",
+  "Description": "Shrimp seared in the Tandoori oven, then braised in the creamy tomato sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/556753-garlic-butter-shrimp-1-10.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Shrimp Kashmiri",
+  "Description": "Shrimp sautéed in light curry with fruits cashews.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/189687-Shrimp Kashmiri.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Shrimp Vindaloo",
+  "Description": "Pieces of shrimp cooked with potatoes in a tangy onion vinegar sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/183895-Shrimp Vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Saag shrimp",
+  "Description": "Shrimp cooked with Indian spices and finely chopped spinach.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/242616-Shrimp Saag.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Herbal Tea ( Green tea)",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/860090-Herbal Tea.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Indian Chai",
+  "Price": "3.25",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/778587-Indian Chai.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Tandoori Salmon",
+  "Description": "Salmon cooked in our special Tandoori marinade. Served with sliced onions and lemons.",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/330353-Tandoori Salmon.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Tandoori Chicken",
+  "Description": "Chicken marinated in yogurt, onions and garlic then roasted in our special Tandoori clay oven.",
+  "Price": "20.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/341570-tandoori_chicken.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Chicken Tikka Kabab",
+  "Description": "Boneless chicken pieces, marinated in yogurt and spices then roasted in the Tandoori clay oven.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/523883-chicken_tikka_kabab.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Chicken Chapli Kabab",
+  "Description": "Minced chicken shaped in small patties with a nice blend of Indian spices and served hot with mint and tamarind chutney.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/942241-Chicken Chapli Kabab.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Malai Chicken",
+  "Description": "Boneless chicken breast marinated in ginger, garlic, onions, yogurt, butter, cream and Indian spices, then baked in the Tandoori clay oven.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/945911-malai_chicken.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Chicken Seekh Kabab",
+  "Description": "Tender minced chicken mixed with ginger, green chilies, fresh cilantro and onions. Slowly broiled in the Tandoori clay oven.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/650751-chicken seekh kabab.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Lamb Seekh Kabab (Non-Dairy)",
+  "Description": "Tender minced Iamb mixed with ginger, green chilies, fresh cilantro and onions. Slowly broiled in the Tandoori clay oven.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/311746-Lamb singh kebab.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Lamb Boti Kabab",
+  "Description": "Tender pieces of Iamb marinated with our special blend of Indian spices, served with sliced onions and lemons.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/237735-Lamboti kabab.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Tandoori Cod Fish",
+  "Description": "Fillet of cod marinated and baked in the Tandoor. Served with sliced onions and lemons.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/632221-Tandoori Cod Fish.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Tandoori Shrimp",
+  "Description": "Prawns marinated in yogurt and Indian spices, then grilled in a special Tandoori clay oven.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/313243-tandoori_shrimp.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Rack Of Lamb",
+  "Description": "Marinated in ginger, garlic and Indian spices, then baked in a special tandoori clay oven.",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/845974-rack_of_lamb.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Paneer Saag",
+  "Description": "Paneer Finely chopped fresh spinach with homemade cheese or Tofu in a mildly spiced gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/451729-Paneer Saag.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Mixed Grilled",
+  "Description": "Pieces of Tandoori chicken, shrimp, fish, chicken tikka and Iamb kabab baked in a special Tandoori clay oven. Served with grilled onions and bell peppers.",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/927644-Tandoori-Mix-Platter-1.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Apple Juice",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/540514-APPLE JUICE.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Onion Bhajia",
+  "Description": "Chopped onions with gram flour & Indian spices-deep fried.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/830348-Untitled design (8).webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Non Veg Mixed Appetizer",
+  "Description": "Vegetable samosas, vegetables pakoras, chicken and cod fish pakoras.",
+  "Price": "12.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/989590-Screenshot 2024-01-17 at 16-28-15 famous-south-indian-non-veg-260nw-2040928481.jpg (WEBP Image 390 × 280 pixels).webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "House Salad",
+  "Description": "Cucumber, bell peppers, red onions, lettuce, lemon juice, black pepper and garbanzo beans.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/695446-SALAD.webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Mediterranean Salad",
+  "Description": "Fresh field greens tossed with tomatoes, red onions, Kalamata olives, cucumbers, Feta cheese and Mediterranean vinaigrette.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/517339-mediterranean_salad.webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Fresh Green Salad",
+  "Description": "Crisp romaine lettuce with onions, tomatoes, garbanzo beans, green peppers, feta cheese, olives and Indian spices, served with dressing",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/766772-4120_mixed-green-salad_3608-l.webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Chicken Salad",
+  "Description": "Thinly sliced Tandoori chicken and cucumbers, served over romaine lettuce and drizzled with Caesar dressing.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/521337-chicken_salad.webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Caesar Salad",
+  "Description": "Fresh Romaine lettuce tossed with Parmesan cheese, garlic croutons and traditional Caesar dressing.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/418991-Screenshot 2024-01-17 at 11-52-49 1c200ff4-3ddd-43e9-b8f7-3f5f1dcc9465.jpg (WEBP Image 2400 × 1600 pixels) — Scaled (43).webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Hummus Bi-Tahini",
+  "Description": "The original Middle Eastern dip of Garbanzo beans, Tahini sauce, Garlic and Lemon juice, served with plain Naan.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/875161-taste-and-flavors-recipe-hummus-fb.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Tabbouleh",
+  "Description": "A salad made of chopped parsley leaves, tomatoes, green onions, fresh mint, bulgar wheat and our own dressing made with virgin olive oil. Served with plain Naan.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/299519-tabbouleh.webp",
+  "Status": 1,
+  "CategoryID": 9
+ },
+ {
+  "Name": "Chicken Soup",
+  "Description": "Mildly spiced delicious lentil soup made with chicken and herbs.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/954491-Classic-Chicken-Soup-872c4ac38a304c1b9fd0f27a9de35470.webp",
+  "Status": 1,
+  "CategoryID": 10
+ },
+ {
+  "Name": "New England Clam Chowder",
+  "Description": "Rich and creamy clam broth loaded with chopped clams & potatoes.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/278020-17893-new-england-clam-chowder-II-Allrecipes-Magazine-4x3-1-eedf77d1d1794f3daa2863658b5b289e.webp",
+  "Status": 1,
+  "CategoryID": 10
+ },
+ {
+  "Name": "Mango Chutney",
+  "Description": "Made with fresh Mangoes.",
+  "Price": "2.95",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/827381-BACXcJLeqgu8ykLRnnZ1Rq.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Basmati Rice",
+  "Description": "Steamed Indian rice.",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/297390-Bsamati rice.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Lassi ( Sweet Or Salty )",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/809938-sweet-lassi-recipe.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Apple Cider",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/587297-slowcookerapplecider-2.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Soya Keema samosa",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/507256-soya-granules-samosa-1.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Raita",
+  "Description": "A wonderful accompaniment for spicy hot dishes, cool refreshing homemade yogurt, freshly seasoned and blended with diced cucumbers and carrots.",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/344764-Raita.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Dahi Bhalla",
+  "Description": "Lentil flavored dumpling with ginger and coriander in yogurt spiced with cumin and tamarind.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/165199-dahi bhalla.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Chopped Chilli & Onions",
+  "Price": "1.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/912077-_89e62dc5-83fd-4982-8842-d38b608eb8a9.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "French Fries",
+  "Price": "5.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/361440-masala fries (4).webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Sautéed Vegetables",
+  "Description": "Mixed vegetable sautéed with salt & lemon pepper.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/832545-sauteed_vegetables.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Mint Or Taramind Sauce",
+  "Price": "1.5",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/263622-Mint or tamnarind sauce.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Madras",
+  "Description": "A rich fragrant & hot curry with spices, onion, ginger & garlic.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/584228-Chicken.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Butter",
+  "Description": "The ultimate comfort food! Tomatoes, fresh cream, cashew nuts, onions and lots of Indian spices",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/755221-butter chicken (4).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Tikka Masala",
+  "Description": "A creamy tomato sauce blended with exotic herbs & spices",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/779744-Chicken 0.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Karahi",
+  "Description": "A stir fry of onions & bell peppers, blended with a light curry sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/143143-chicken 002.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Mango",
+  "Description": "A combination of masala sauce & mango chutney makes for sweeter & succulent flavour.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/943575-mango chicken (4).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Korma",
+  "Description": "A mildly spiced, rich, creamy, curry sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/346366-chicken korma.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Kashmiri",
+  "Description": "Cooked with onions & spices in coconut cream of yogurt & dried fruits.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/445627-masala kashmiri chicken (2).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Goa Curry",
+  "Description": "A coconut curry blended with spices & coconut milk.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/550144-100_7932.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Salmon",
+  "Description": "(Your choice of curry. Ask your server)",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/350170-gdg.webp",
+  "Status": 1,
+  "CategoryID": 13
+ },
+ {
+  "Name": "Peas Pulao",
+  "Description": "Basmati rice cooked with fresh peas.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/172048-pea_pulao.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Mushroom Rice",
+  "Description": "Basmati rice cooked with mushrooms.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/693747-Mushroom rice.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Methi",
+  "Description": "One of the most authentic tasting aromatic fenugreek medium curry with onions, masala & tomatoes",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/843276-Methi chicken.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Jalfrezi",
+  "Description": "One of the hotter sauce, bold flavours made from tomatoes & onions",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/614698-chicken11.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Saag",
+  "Description": "A thick, sauteed, creamed spinach dish.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/292938-chicken saag dish.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Vindaloo",
+  "Description": "A curry blended in a tangy vinagrette sauce mixed with potatoes.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/695057-chicken vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Curry",
+  "Description": "Traditional onion based gravy blended with an array of spices.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/209682-chicken curry (2).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Chili",
+  "Description": "Chicken sautéed with freshly cut bell peppers, onions and tomatoes with chilli sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/409618-chilli chicken.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Rogan Josh",
+  "Description": "A slow cooked dish made with spices, herbs & yogurt.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/645425-chicken ragosh.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Goat Madras",
+  "Description": "Goat cooked with chunks of tomatoes, roasted dry chillies, browned garlic, cumin and other authentic Indian spices.",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/227013-madras goat.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Goat Curry",
+  "Description": "Goat cooked with fresh onions, tomatoes, garlic and ginger in a special sauce.",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/737450-goat curry (4).webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Goa Curry",
+  "Description": "A specialty from Goa, Tender pieces of lamb simmenered with coconuts in a spicy curry sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/492824-lamb goa curry.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Mango Lamb",
+  "Description": "Boneless lamb sautéed with onions a blend of Indian spices, then simmered in a tangy Mango sauce made with fresh mangoes and then garnished with cilantro.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/600566-Manoglamb.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Korma",
+  "Description": "Tender pieces of marinated lamb, mildly spiced and cooked in a traditional creamy sauce with onions and cashews.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/996599-lamb korma.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Lamb Kashmiri",
+  "Description": "Boneless lamb sautéed in a light creamy curry sauce with fresh fruits and cashew-nuts and raisins and then garnished with cilantro.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/403543-lamb kashmiri curry.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Tandoori Veggie Tikka",
+  "Description": "Assortment of freshly marinated vegetables & homemade cottage cheese nicely spiced and then delicately baked in the Tandoori clay oven.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/811060-tandoori_veggie_tikka.webp",
+  "Status": 1,
+  "CategoryID": 14
+ },
+ {
+  "Name": "Shahi Paneer",
+  "Description": "Paneer Dish cooked in a creamy tomato and onion sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/366281-shahi.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Matar Paneer",
+  "Description": "Matar Peas cooked with homemade cheese or tofu with spices in a tomato sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/386004-Matar Paneer.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Malai Kofta (Contains Cashews)",
+  "Description": "Freshly made deep fried vegetables balls served in a creamy tomato sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/867271-malai_kofta_(contains_cashews).webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Karahi Paneer",
+  "Description": "Paneer Dish sautéed and cooked in tomatoes, onions, ginger, garlic and then garnished with fresh cilantro.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/995512-karahi_paneer_landscape.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Mushroom Matar",
+  "Description": "Peas and mushrooms cooked in a creamy tomato sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/572240-Mushroom Matar.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Paneer Masala",
+  "Description": "Paneer Cooked in tomatoes, Indian spices and onion gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/559550-Paneer Masala.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Mixed Vegetables",
+  "Description": "Fresh seasonal vegetables cooked in Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/211643-Mixed Vegetables.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Vegetable Paneer Korma",
+  "Description": "Paneer sautéed vegetables cooked in a creamy sauce with cashews.",
+  "Price": "19.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/317696-Vegetable Paneer Korma.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Vegetables Goa Curry",
+  "Description": "A specialty from Goa. Vegetables simmered with coconuts in a spicy gravy.",
+  "Price": "19.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/774874-Vegetables Goa Curry.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Vegetable Madras",
+  "Description": "Vegetable cooked with chunks of tomatoes, roasted dry chillies browned garlic cumin and other authentic Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/422922-Vegetable Madras.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Saag Aloo",
+  "Description": "Finely chopped Spinach with potatoes in a mildly spiced gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/110722-Saag aloo.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Aloo Matar",
+  "Description": "Peas and chunks of potatoes cooked delicately in a ginger garlic tomato & onion sauce and Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/244109-Aloo Matar.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Bengan Aloo",
+  "Description": "Fresh eggplant cooked with potatoes, garlic, ginger and Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/763656-Bengan Aloo.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Papadam",
+  "Description": "Thin crispy Indian gram flour wafers baked, served with mint and tamarind chutneys.",
+  "Price": 3,
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/303158-papadam.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Aloo Tikki",
+  "Description": "Mashed potato patty with garlic, ginger and Indian spices, cooked on the grill and served with mint, yogurt and tamarind chutney.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/806979-Aloo tikki dish.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Veg Mixed Appetizer",
+  "Description": "Vegetable Samosa, Paneer Pakoras, Vegetable Pakoras, Aloo Tikki.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/642813-Vegetarian Mixed Appetizer dish.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Eggplant Bhartha",
+  "Description": "A whole eggplant baked, mashed and seasoned with spices, then sautéed with tomatoes and onions.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/255299-Eggplant Bhartha.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Okra Masala",
+  "Description": "Fresh okra cooked with sautéed onions, tomatoes, special herbs and spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/513164-Okra Masala.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Channa Masala",
+  "Description": "Garbanzo beans delicately cooked with onions and spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/932262-channa_masala.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Dal Maharani",
+  "Description": "Pureed black lentils cooked over low heat and mildly spiced. Served with white basmati rice.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/149857-dal maharaani.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Aloo Gobi",
+  "Description": "Fresh cauliflower and potatoes sautéed with garlic, onions, tomatoes and spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/977007-aloo_gobi.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Daal Tardka",
+  "Description": "Yellow lentils seasoned with fresh garlic, tomatoes, cumin, and onion seeds.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/449788-daal tardak.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Vegetable Jalfrazie",
+  "Description": "A thick brown curry with stir fried bell peppers, garlic, tomatoes, mushrooms, and onions",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/683798-Vegetable Jalfrazie.webp",
+  "Status": 1,
+  "CategoryID": 21
+ },
+ {
+  "Name": "Goat Biryani",
+  "Description": "Highly aromatic Basmati rice cooked with pieces of goat and a special blend of herbs and spices.",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/282641-goat biryani (2).webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Shrimp Biryani",
+  "Description": "Aromatic Basmati rice slow cooked with shrimp, onions and tomatoes in a special masala sauce.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/695750-shrimp_biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Chicken Biryani",
+  "Description": "Highly aromatic Basmati rice cooked with pieces of chicken and a special blend of herbs and spices.",
+  "Price": "21.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/217255-chicken_biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Salmon Biryani",
+  "Description": "Aromatic Basmati rice slow cooked with salmon, onions and tomatoes in a special masala sauce.",
+  "Price": "25.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/634522-salmon_biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Lamb Biryani",
+  "Description": "Highly aromatic Basmati rice cooked with pieces of lamb and a special blend of herbs and spices, topped with nuts.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/209311-lamb_biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Vegetable Biryani",
+  "Description": "Basmati rice cooked with a selection of seasonal vegetables.",
+  "Price": "16.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/278824-vegetable biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Kashmiri Pulao",
+  "Description": "Basmati rice cooked with fruit, nuts and fresh Kashmiri pineapple.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/274508-kashmiri puloa.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Veg Goa curry",
+  "Price": "19.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/911184-Goan_vegetable_curry_recipe.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Madras",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/921541-madras.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Fish Biryani",
+  "Description": "Highly aromatic Basmati rice cooked with pieces of cod fish in a special blend of herbs and spices and topped with nuts and garnished with fresh cilantro.",
+  "Price": "22.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/360128-fish_biryani.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Plain Biryani Rice",
+  "Description": "Aromatic Basmati rice cooked with specially prepared masala sauce.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/231841-Untitled.webp",
+  "Status": 1,
+  "CategoryID": 22
+ },
+ {
+  "Name": "Plain Naan",
+  "Description": "Indian style leavened white bread, garnished with fresh cilantro.",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/106858-plain_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Mint Naan",
+  "Description": "Naan garnished with fresh mint and olive oil.",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/250389-Mint Naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Garlic Naan",
+  "Description": "Naan garnished with fresh garlic and olive oil.",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/314190-garlic_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Garlic Basil Naan",
+  "Description": "Naan garnished with garlic and basil.",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/552253-garlic_basil_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Paneer Naan",
+  "Description": "Leavened bread stuffed with minced homemade cheese and nuts.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/735140-Paneer Naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Paneer Garlic Naan",
+  "Description": "Naan stuffed with homemade cheese and garlic.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/129600-Paneer Garlic Naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Spinach Naan",
+  "Description": "Naan stuffed with seasoned fresh spinach.",
+  "Price": "7.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/819514-spinach_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Spinach Garlic Naan",
+  "Description": "Naan stuffed with seasoned spinach and garlic.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/562372-spinach_garlic_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Aloo Naan",
+  "Description": "Leavened bread stuffed with seasoned potatoes.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/379025-aloo_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Chicken Naan",
+  "Description": "Naan stuffed with seasoned chicken.",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/505388-Chicken Naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Lamb Naan",
+  "Description": "Naan stuffed with seasoned lamb.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/224360-Lamb Naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Onion Kulcha",
+  "Description": "Leavened wheat bread stuffed with onions, seasoned with fresh cilantro.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/786156-Onion kulcha.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Pesto Naan",
+  "Description": "Naan stuffed with pesto.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/882968-5982722146_bd4e85d9cf_o.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Puri (Two Pieces, Non Dairy)",
+  "Description": "Deep fried whole wheat bread",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/486459-Puri (Two Pieces, Non Dairy).webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Gajar Halwa",
+  "Description": "Carrot-based sweet dessert.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/571920-gajar_hawla.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Bottled Water",
+  "Price": "3.25",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/432186-bottled-water.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Sparkling Water",
+  "Price": "4.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/598869-unknown.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Diet coke",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/334497-diet coke.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Mango",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/954655-Mango Vegetarian Entrée.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Mango Coconut Shrimp",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/589964-Mango Coconut Shrimp.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Kashmiri Naan",
+  "Description": "Naan stuffed with coconut, raisin, cherry and almonds.",
+  "Price": "10.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/871633-kashmiri_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Roti",
+  "Description": "Basic Indian style (non-dairy) whole wheat bread.",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/600632-roti.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Parantha",
+  "Description": "Whole wheat layered bread cooked with olive oil in a Tandoori clay oven.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/481160-parantha (2).webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Rice Pudding",
+  "Description": "Homemade rice pudding cooked with sweet milk and garnished with pistachios.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/209597-Rice-Pudding4E.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Mango Pistachio Cheesecake (1 Slice)",
+  "Description": "Vanilla flavored cheesecake topped with mango and Pistachio.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/583792-mango_pistachio_cheesecake.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Rasmalai",
+  "Description": "Our homemade soft cheese patties drenched in thick sweet milk and laced with grated pistachios-served chilled.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/668170-rasmalai.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Mango Ice Cream",
+  "Description": "Indian style ice cream made with fresh Mangoes and nuts.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/245509-mango ice cream (2).webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Gulab Jamun",
+  "Description": "Freshly made cheese balls deep fried in butter to a golden brown, then gently cooked in a lightly flavored syrup garnished with pistachios.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/665344-gulab_jamun.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Baklava",
+  "Description": "A middle eastern pastry made of nuts, baked between thin dough and steeped in syrup, flavored with exotic juices.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/537049-Turkish-Baklava-12.webp",
+  "Status": 1,
+  "CategoryID": 16
+ },
+ {
+  "Name": "Tofu Masala",
+  "Description": "Tofu Cooked in tomatoes, Indian spices and onion gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/793708-Tofu Masala.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Sahi Tofu",
+  "Description": "Tofu Dish cooked in a creamy tomato and onion sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/220826-Shahi Tofu dish.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Karahi",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/371831-karahi.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Vegetable Korma",
+  "Price": "19.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/910176-veg korma.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Dr. Pepper",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/453334-Dr. Pepper.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Karahi Tofu",
+  "Description": "Tofu Dish sautéed and cooked in tomatoes, onions, ginger, garlic and then garnished with fresh cilantro.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/981068-Kadhai_Tofu_Sabji.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Tofu Saag",
+  "Description": "Tofu Finely chopped fresh spinach with homemade cheese or Tofu in a mildly spiced gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/855480-Tofu Saag.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Peshawari Naan",
+  "Description": "Masala's signature naan with pistachio, almonds, dates, raisins, honey.",
+  "Price": "12.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/817882-peshawari_naan.webp",
+  "Status": 1,
+  "CategoryID": 15
+ },
+ {
+  "Name": "Mango Lamb Curry",
+  "Description": "Boneless lamb sauteed with onions and blend of indian spices, then simmered in a tangy mango sauce made with fresh mangoes and then garnished with cilantro.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/913592-Manoglamb.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Masala",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/746174-Masala.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Veg Lunch Box (To Go Only)",
+  "Description": "Available between 10:00 AM and 3:00 PM,\n combo with \n 2 Vegetables,\n Rice,\n Naan Bread and\n Dessert",
+  "Price": "16.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/629846-taste-india-spice-it-up_1302-48403.webp",
+  "Status": 1,
+  "CategoryID": 7
+ },
+ {
+  "Name": "Matar",
+  "Description": "(Your choice of Paneer or Tofu) Peas cooked with homemade cheese or tofu with spices in a tomato sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/506687-Matar.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Vegetable Korma W\/Paneer",
+  "Description": "(Your choice of Paneer or Tofu) Sautéed vegetables cooked in a creamy sauce with cashews.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/261207-vegetable korma (4).webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Saag",
+  "Description": "(Your choice Paneer or Tofu) Finely chopped fresh spinach with homemade cheese or Tofu in a mildly spiced gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/205677-saag.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Madras",
+  "Description": "A rich fragrant & hot curry with spices, onion, ginger & garlic.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/584228-Chicken.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Vegetable Korma W\/Tofu (Contains Cashews)",
+  "Description": "(Your choice of Paneer or Tofu) Sautéed vegetables cooked in a creamy sauce with cashews.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/917333-Untitled.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "curry",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/819166-curry.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Karahi",
+  "Description": "Dish sautéed and cooked in tomatoes, onion, ginger and garlic.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/982889-karahi.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Mango curry",
+  "Description": "dish sautéed with onions and a blend of Indian spices, then simmered in a tangy mango sauce made with fresh mangoes and garnished with cilantro.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/702892-mango_curry.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Goa Curry(coconut curry)",
+  "Description": "A Specialty from Goa. your choice of protein simmered with coconuts in a spicy curry sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/953170-goa_curry(coconut_curry).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Chilli Chicken",
+  "Description": "Chicken cooked , sautéed with freshly cut bell peppers, onions, and tomatoes with chili sauce.",
+  "Price": "20.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/195349-chili_chicken.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Butter",
+  "Description": "The ultimate comfort food! Tomatoes, fresh cream, cashew nuts, onions and lots of Indian spices",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/755221-butter chicken (4).webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Tikka Masala",
+  "Description": "A creamy tomato sauce blended with exotic herbs & spices",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/779744-Chicken 0.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Masala",
+  "Description": "Curry cooked in a sauce of tomato and onion gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/613235-masala (2).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Methi",
+  "Description": "Protein sautéed with a blend of spices including Indian fenugreek.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/768944-methi.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Non Veg Lunch Box (To Go Only)",
+  "Description": "Available between 10:00 AM and 3:00 PM,\n 1 Vegetable,\n 1 Non vegetable,\n Rice,\n Naan Bread and Dessert",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/819423-indian-gavkari-chicken-thali-food-platter-consists-variety-veggieschicken-meat-lentilsrice-sweet-dish-snacks-etc-selective-focus_726363-583.webp",
+  "Status": 1,
+  "CategoryID": 7
+ },
+ {
+  "Name": "Karahi",
+  "Description": "A stir fry of onions & bell peppers, blended with a light curry sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/143143-chicken 002.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Mango",
+  "Description": "A combination of masala sauce & mango chutney makes for sweeter & succulent flavour.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/943575-mango chicken (4).webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Korma",
+  "Description": "A mildly spiced, rich, creamy, curry sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/346366-chicken korma.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Kashmiri",
+  "Description": "Cooked with onions & spices in coconut cream of yogurt & dried fruits.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/445627-masala kashmiri chicken (2).webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Goa Curry",
+  "Description": "A coconut curry blended with spices & coconut milk.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/550144-100_7932.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Methi",
+  "Description": "One of the most authentic tasting aromatic fenugreek medium curry with onions, masala & tomatoes",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/843276-Methi chicken.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Jalfrezi",
+  "Description": "One of the hotter sauce, bold flavours made from tomatoes & onions",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/614698-chicken11.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Butter",
+  "Description": "prepared and braised in a tomato cream sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/855453-butter non veg.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Madras",
+  "Description": "Protein cooked with chunks of tomatoes, roasted dry chillies, browned garlic, Indian spices, cumin and other authentic Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/977572-madras.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Saag",
+  "Description": "A thick, sauteed, creamed spinach dish.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/292938-chicken saag dish.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Vindaloo",
+  "Description": "A curry blended in a tangy vinagrette sauce mixed with potatoes.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/695057-chicken vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Curry",
+  "Description": "Traditional onion based gravy blended with an array of spices.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/209682-chicken curry (2).webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Chili",
+  "Description": "Chicken sautéed with freshly cut bell peppers, onions and tomatoes with chilli sauce.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/409618-chilli chicken.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Rogan Josh",
+  "Description": "A slow cooked dish made with spices, herbs & yogurt.",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/645425-chicken ragosh.webp",
+  "Status": 1,
+  "CategoryID": 6
+ },
+ {
+  "Name": "Vindaloo",
+  "Description": "Dish cooked with potatoes in a tangy onion vinegar sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/338304-vindaloo.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Rogan josh",
+  "Description": "A famous kashmiri dish cooked with tomatoes and onions then roasted with spices in a rich brown curry sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/961216-josh.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Saag",
+  "Description": "(Your choice Paneer or Tofu) Finely chopped fresh spinach with homemade cheese or Tofu in a mildly spiced gravy.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/520392-saag.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Korma (Contains cashews)",
+  "Description": "Curry is prepared in a traditional creamy sauce with cashews and Indian spices.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/860577-Korma_(contains_cashews).webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Lamb Kofta",
+  "Description": "Lamb meatballs, cooked in a creamy tomato sauce.",
+  "Price": "23.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/753411-53191809.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Jalfrazie",
+  "Description": "Your protein seared in the Tandoori oven then braised with onions, mushrooms, tomatoes, bell peppers and spices in a special sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/373440-jalfrazie.webp",
+  "Status": 1,
+  "CategoryID": 12
+ },
+ {
+  "Name": "Matar Tofu",
+  "Description": "Tofu Peas cooked with homemade cheese or tofu with spices in a tomato sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/341516-Matar Tofu.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Vegetable Tofu Korma",
+  "Description": "Tofu sautéed vegetables cooked in a creamy sauce with cashews.",
+  "Price": "19.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/566203-Vegetable Tofu Korma.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Shahi Tofu",
+  "Description": "Tofu dish cooked in a creamy tomato and onion sauce.",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/710718-shahi tofu.webp",
+  "Status": 1,
+  "CategoryID": 20
+ },
+ {
+  "Name": "Masala Sauce 16oz",
+  "Price": "9.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/255960-Masala sauce.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Methi",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/297412-Methi curry.webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "kashmiri",
+  "Price": "18.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/122866-Kashmiri_(contains_cashews).webp",
+  "Status": 1,
+  "CategoryID": 18
+ },
+ {
+  "Name": "Sprite",
+  "Price": "3.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/697240-Sprite_1666754054.webp",
+  "Status": 1,
+  "CategoryID": 17
+ },
+ {
+  "Name": "Goat Madras",
+  "Description": "Goat cooked with chunks of tomatoes roasted dry chilies, browned garlic, cumin and other authentic Indian spices.",
+  "Price": "24.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/460780-goat madras curry.webp",
+  "Status": 1,
+  "CategoryID": 19
+ },
+ {
+  "Name": "Calamari",
+  "Description": "Deep-fried squid in seasoned, crispy batter.",
+  "Price": "12.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/990485-calamari.webp",
+  "Status": 1,
+  "CategoryID": 8
+ },
+ {
+  "Name": "Daal Soup (Vegan)",
+  "Description": "Lentils lightly cooked-in vegetable stock.",
+  "Price": "6.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/265257-lentil-soup-3sq.webp",
+  "Status": 1,
+  "CategoryID": 10
+ },
+ {
+  "Name": "Mixed Pickles (Vegan)",
+  "Description": "Fresh pickles from India.",
+  "Price": "2.95",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/531647-mixed_pickles.webp",
+  "Status": 1,
+  "CategoryID": 11
+ },
+ {
+  "Name": "Papri Chaat",
+  "Description": "Crispy fried wafers with diced potatoes and onions in a tangy sauce. Served cold.",
+  "Price": "8.99",
+  "Amount": 1,
+  "Image": "https:\/\/grubdigest.com\/images\/masala_of_india\/item\/210914-V0812Raffles0024-square.webp",
+  "Status": 1,
+  "CategoryID": 8
+ }
+]
