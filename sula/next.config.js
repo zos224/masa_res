@@ -7,5 +7,5 @@ module.exports = {
         },
       ],
     },
-    staticPageGenerationTimeout: 10000,
+    staticPageGenerationTimeout: 100000,
 }
