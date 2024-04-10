@@ -1,3 +1,4 @@
+/*
 import nodemailer from 'nodemailer'
 export const POST = async (request) => {
     const {email, otp} = await request.json()
@@ -23,3 +24,4 @@ export const POST = async (request) => {
         return new Response("Error!", {status: 500})
     }
 }
+*/
