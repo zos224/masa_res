@@ -47,7 +47,7 @@ const MenuPage =  async () => {
             </div>
           </div>
           <div>
-            {data && data.types.map((type, index) => (
+            {data.types.map((type, index) => (
               <div key={index} className="lg:w-4/5 m-auto w-full px-10 py-10">
                 <h1 className="text-5xl text-center font-cambria font-bold text-primary-color uppercase">{type.name}</h1>
                 <div className="">
