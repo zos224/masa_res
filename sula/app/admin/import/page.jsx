@@ -1,8 +1,6 @@
-import { promises as fs } from 'fs';
-
 export default async function Page() {
-    const file = await fs.readFile('data.json', 'utf8');
-    const data = JSON.parse(file);
+    const file = await fetch('https://mocki.io/v1/359b3394-8b8c-4e72-9dfc-85c14f1b313a')
+    const data = await file.json()
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
     fetch(process.env.APP_URL + '/api/product/import', {
