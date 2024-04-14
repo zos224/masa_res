@@ -27,7 +27,7 @@ const NavbarHorizon = () => {
                 <div className="my-auto w-24">
                     <Image className="w-18 h-18" src="/images/logo/logo.png" alt="logo" width={200} height={100} />
                 </div>
-                <ul className="hidden lg:flex flex-row flex-wrap justify-end gap-x-8 w-full list-none uppercase font-semibold font-cambria text-lg text-primary-color ">
+                <ul className="hidden lg:flex flex-row flex-wrap justify-end gap-x-8 w-full list-none uppercase font-semibold font-gambarino text-lg text-primary-color ">
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/">Location</Link>
                     </li>
