@@ -37,7 +37,7 @@ const HomePage = () => {
     return areaCode + '-' + middle + '-' + last;
   }
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="bg-image-1 bg-black">
         <Image className="h-203 opacity-75 object-cover" src={"/images/bg/bg1.png"} width={1920} height={1080}></Image>
         <div className="bg-dark-custom text-2xl absolute top-50 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 px-4 md:px-10 lg:px-20 py-3 text-white text-center">

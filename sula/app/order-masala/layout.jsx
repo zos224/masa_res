@@ -1,4 +1,6 @@
+import { CardProvider } from "@/components/client/CardProvider";
 import NavOrder from "@/components/client/NavOrder";
+import { OrderProvider } from "@/components/client/OrderProvider";
 import Provider from "@/components/client/Provider";
 export const metadata = {
     title: "Order Online | Masala Of India - Indian Cuisine in Seattle, WA",
@@ -8,10 +10,15 @@ export const metadata = {
 const OrderMaSalaLayout = ({children}) => {
     return (
         <Provider>
-            <NavOrder></NavOrder>
-            <div>
-                {children}
-            </div>
+           
+            <CardProvider>
+                <OrderProvider>
+                    <NavOrder></NavOrder>
+                    <div>
+                        {children}
+                    </div>
+                </OrderProvider>
+            </CardProvider>
         </Provider>
     );
     }

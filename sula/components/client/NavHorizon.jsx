@@ -41,7 +41,7 @@ const NavbarHorizon = () => {
                         <Link href="/takeout-delivery">Takeout & Delivery</Link>
                     </li>
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
-                        <Link href="/order">Order Online</Link>
+                        <Link href="/order-online">Order Online</Link>
                     </li>
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/catering">Catering</Link>

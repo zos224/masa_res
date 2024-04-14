@@ -46,7 +46,7 @@ const NavbarVertical = ({openNav, onClose}) => {
                             <Link className="border-b" href="/takeout-delivery">Takeout & Delivery</Link>
                         </li>
                         <li>
-                            <Link className="border-b" href="/order">Order Online</Link>
+                            <Link className="border-b" href="/order-online">Order Online</Link>
                         </li>
                         <li>
                             <Link className="border-b" href="/catering">Catering</Link>

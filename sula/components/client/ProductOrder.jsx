@@ -1,9 +1,9 @@
 import Image from 'next/image';
 const ProductOrder = ({ product }) => {
     return (
-        <div className='rounded-md cursor-pointer bg-white'>
+        <div className='rounded-md bg-white cursor-pointer h-full'>
             <div className='overflow-hidden relative aspect-4/3 rounded-md'>
-                <Image className='hover:scale-110 hover:duration-500' src={product.image} alt={product.name} layout='fill'/>
+                <Image className='hover:scale-110 hover:duration-500 object-cover' src={product.image} alt={product.name} layout='fill'/>
             </div>
             <div className='p-3'>
                 <div className='flex justify-between'>

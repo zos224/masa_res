@@ -308,6 +308,20 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               </li>
               {/* <!-- Menu Item Event --> */}
 
+              {/* <!-- Menu Item Order --> */}
+              <li>
+                <Link
+                  href="/admin/order"
+                  className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes("order") && "bg-graydark dark:bg-meta-4"
+                  }`}
+                >
+                  <Image className="w-5 h-5" src={"/images/icon/event.svg"} width={50} height={50}></Image>
+                  Order
+                </Link>
+              </li>
+              {/* <!-- Menu Item Event --> */}
+
               {/* <!-- Menu Item Settings --> */}
               <li>
                 <Link

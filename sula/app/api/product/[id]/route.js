@@ -14,7 +14,7 @@ export const GET = async(request, {params}) => {
             products = await prisma.Product.findMany({})
         }
         else {
-            products = await prisma.Product.findUnique({where: {id: parseInt(params.id)}, include: {product_productOptions: true, product_productCustomizations: true}})
+            products = await prisma.Product.findUnique({where: {id: parseInt(params.id)}, include: {product_productOptions: {include: {productOption: {include: {productOptionChoices: true}}}}, product_productCustomizations: {include: {productCustomization: {include: {productCustomizationChoices: true}}}}}})
         }
         if (products) {
             return new Response(JSON.stringify(products), {status: 200})

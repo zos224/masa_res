@@ -8,8 +8,8 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
   });
 export const GET = async (req) => {
-    const file = await fetch("https://mocki.io/v1/359b3394-8b8c-4e72-9dfc-85c14f1b313a")
-    const data = await file.json()
+    const file = await fs.readFile('/data.json', 'utf8');
+    const data = JSON.parse(file);
     for (let i = 0; i < data.length; i++) {
         try {
             const upload = await cloudinary.uploader.upload(data[i].Image);

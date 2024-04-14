@@ -9,13 +9,11 @@ async function getMenu() {
   const res = await fetch(process.env.APP_URL + '/api/restaurant/all')
   if (res.ok) {
       const data = await res.json()
-      if (data.length > 0) {
-          const id = data[0].id
-          const resMenu = await fetch(process.env.APP_URL + `/api/menu/${id}`)
-          if (resMenu.ok) {
-              const dataMenu = await resMenu.json()
-              return dataMenu
-          }
+      const id = data[0].id
+      const resMenu = await fetch(process.env.APP_URL + `/api/menu/${id}`)
+      if (resMenu.ok) {
+          const dataMenu = await resMenu.json()
+          return dataMenu
       }
   }
 }
