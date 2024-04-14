@@ -10,10 +10,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { 
-        raleway: ['Raleway', 'sans-serif'],
-        abrilfatface: ['Abril Fatface', 'serif'],
-        cambria: ['Cambria', 'sans-serif'],
-        sacramento: ['Sacramento', 'cursive'],
+        jost: ['Jost', 'sans-serif'],
+        gambarino: ['Gambarino', 'cursive'],
+        italianno: ['Italianno', 'cursive'],
       },
       screens: {
         "2xsm": "375px",

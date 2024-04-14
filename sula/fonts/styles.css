@@ -1,4 +1,17 @@
+
 @font-face {
-    font-family: 'Cambria';
-    src: url(Cambria-Android.ttf) format('ttf'), url(Cambria-Linux.ttf) format('ttf'), url(Cambria-MAC.ttf) format('ttf'), url(Cambria-Windows.ttf) format('ttf');
+    font-family: 'Jost';
+    src: url(Jost-Black.ttf) format('ttf'), url(Jost-BlackItalic.ttf) format('ttf'), url(Jost-Bold.ttf) format('ttf'), url(Jost-BoldItalic.ttf) format('ttf'), 
+    url(Jost-ExtraBold.ttf) format('ttf'), url(Jost-ExtraBoldItalic.ttf) format('ttf'), url(Jost-ExtraLight.ttf) format('ttf'), url(Jost-ExtraLightItalic.ttf) format('ttf'),
+    url(Jost-Italic.ttf) format('ttf'), url(Jost-Light.ttf) format('ttf'), url(Jost-LightItalic.ttf) format('ttf'), url(Jost-Medium.ttf) format('ttf'), url(Jost-MediumItalic.ttf) format('ttf'),
+    url(Jost-Regular.ttf) format('ttf'), url(Jost-SemiBold.ttf) format('ttf'), url(Jost-SemiBoldItalic.ttf) format('ttf'), url(Jost-Thin.ttf) format('ttf'), url(Jost-ThinItalic.ttf) format('ttf'),
+    url(Jost-VariableFont_wght.ttf) format('ttf'), url(Jost-Italic-VariableFont_wght.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Italianno';
+    src: url(Italianno-Regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Gambarino';
+    src: url(Gambarino-Regular.eot) format('eot'), url(Gambarino-Regular.woff) format('woff'), url(Gambarino-Regular.ttf) format('ttf'), url(Gambarino-Regular.woff2) format('woff2');
 }

@@ -23,7 +23,7 @@ const MenuPage =  async () => {
     <div>
         <div className="relative">
             <Image className="max-h-100 object-cover" src={"/images/bg/bg_menu.webp"} width={1920} height={1280}></Image>
-            <span className="absolute text-4xl text-center font-cambria bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 sm:left-1/2 sm:-translate-x-1/2">
+            <span className="absolute text-4xl text-center font-italianno bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 sm:left-1/2 sm:-translate-x-1/2">
               MENU'S MASALA OF INDIA
             </span>
         </div>
@@ -47,7 +47,7 @@ const MenuPage =  async () => {
           <div>
             {data.types.map((type, index) => (
               <div key={index} className="lg:w-4/5 m-auto w-full px-10 py-10">
-                <h1 className="text-5xl text-center font-cambria font-bold text-primary-color uppercase">{type.name}</h1>
+                <h1 className="text-5xl text-center font-gambarino font-bold text-primary-color uppercase">{type.name}</h1>
                 <div className="">
                   {type.subTypes.map((subType, index) => (
                     <div  key={index} className="mt-10">
