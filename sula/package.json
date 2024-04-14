@@ -28,7 +28,7 @@
     "slugify": "^1.6.6"
   },
   "devDependencies": {
-    "prisma": "^5.11.0"
+    "prisma": "^5.11.0",
     "@types/node": "20.12.2",
     "@types/react": "18.2.73",
     "autoprefixer": "^10.0.1",
