@@ -22,7 +22,7 @@ model Restaurant {
   operationTimeIndoor String
   operationTimeTakeAway String
   diningArea String
-  capacity Int
+  capacity String
   seatingOption Boolean
   image String
   status Boolean
@@ -66,7 +66,6 @@ model Product {
   product_productOptions Product_ProductOption[]
   product_productCustomizations Product_ProductCustomization[]
   orderItems OrderItem[]
-  offers Offer[]
   additionalMenuItemOptions AdditionalMenuItemOption[]
   cateringOptionIncludeProducts CateringOptionIncludeProduct[]
   subTypeProducts SubTypeProduct[]
@@ -188,42 +187,9 @@ model CustomerAccount {
   password String 
   phone String @unique
   address String
-  loyalCard LoyalCard?
+  role String @default("user")
   status Boolean
   orders Order[]
-  accountOffers AccountOffer[]
-}
-
-model LoyalCard {
-  id Int @id @default(autoincrement())
-  cardNumber String @unique
-  points Float @default(0)
-  idCustomerAccount Int @unique
-  customerAccount CustomerAccount @relation(fields: [idCustomerAccount], references: [id], onDelete: Cascade)
-}
-
-model Offer {
-  id Int @id @default(autoincrement())
-  name String
-  pointToRedeem Int
-  amount Int
-  image String
-  value Float?
-  idProduct Int?
-  product Product? @relation(fields: [idProduct], references: [id], onDelete: Cascade)
-  startDate DateTime
-  endDate DateTime
-  accountOffers AccountOffer[]
-}
-
-model AccountOffer {
-  id Int @id @default(autoincrement())
-  idAccount Int
-  account CustomerAccount @relation(fields: [idAccount], references: [id], onDelete: Cascade)
-  idOffer Int
-  offer Offer @relation(fields: [idOffer], references: [id], onDelete: Cascade)  
-  promoCode String
-  used Boolean
 }
 
 model Reservation {
@@ -245,6 +211,7 @@ model BuyOut {
   idReservation Int @unique
   reservation Reservation @relation(fields: [idReservation], references: [id], onDelete: Cascade)
   eventDetails String?
+  time String
 }
 
 model GroupReversation {
@@ -435,24 +402,6 @@ model Contact {
   email String
   message String
   status Boolean
-}
-
-model BlogTopic {
-  id Int @id @default(autoincrement())
-  name String
-  blogs Blog[]
-}
-
-model Blog {
-  id Int @id @default(autoincrement())
-  idBlogTopic Int
-  blogTopic BlogTopic @relation(fields: [idBlogTopic], references: [id], onDelete: Cascade)
-  title String
-  slug String
-  thumbnail String
-  content String
-  month String
-  year Int
 }
 
 
