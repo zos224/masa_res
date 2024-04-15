@@ -1,9 +1,9 @@
 import Footer from "@/components/client/Footer";
 import NavbarHorizon from "@/components/client/NavHorizon";
 export const metadata = {
-    title: "Next.js Calender | TailAdmin - Next.js Dashboard Template",
+    title: "Masala Of India - Indian Cuisine in Seattle, WA",
     description:
-      "This is Next.js Calender page for TailAdmin  Tailwind CSS Admin Dashboard Template",
+      "Masala Of India offers a wide variety of Indian cuisine in Seattle, WA. Visit our website to view our menu and order online today!",
   };
 
   const ClientLayout = ({children}) => {

@@ -34,11 +34,11 @@ const ReservationPage = async () => {
                     <div className="text-black text-2xl mt-3">1 - 10 Guests</div>
                 </div>
                 <div className="text-center mt-10 border-b md:w-1/3 mx-auto pb-7">
-                    <button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">GROUP RESERVATION REQUEST</button>
+                    <Link href={"/reservation/group"}><button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">GROUP RESERVATION REQUEST</button></Link>
                     <div className="text-black text-2xl mt-3">11 - 20 Guests</div>
                 </div>
                 <div className="text-center mt-10 md:w-1/3 mx-auto">
-                    <button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">BUY OUT ENQUIRY</button>
+                    <Link href={"/reservation/buyout"}><button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">BUY OUT ENQUIRY</button></Link>
                 </div>
                 <div className="text-center mt-10">
                     <span className="text-black text-3xl tracking-wider font-semibold">Reservation Policy</span>

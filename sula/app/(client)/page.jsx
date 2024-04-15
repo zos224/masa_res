@@ -87,20 +87,20 @@ const HomePage = () => {
         or gluten.
       </div>
       <div data-aos="fade-right" className="mt-10 ">
-        <Card title={"Our Space"} subtitle={"Cozy, warm & memorable"} buttonText={"View gallary"} description={"We have a gorgeous candle lit dining room with several water features, plants and colorful fish to ensure a memorable dining experience for our guests."}
-            image={"/images/gallary/our_space.webp"} imagebg={"/images/gallary/pic5.jpg"} reverse={false}></Card>
+        <Card title={"Our Space"} subtitle={"Cozy, warm & memorable"} buttonText={"View gallery"} description={"We have a gorgeous candle lit dining room with several water features, plants and colorful fish to ensure a memorable dining experience for our guests."}
+            image={"/images/gallary/our_space.webp"} imagebg={"/images/gallary/pic5.jpg"} link={"/gallery"} reverse={false}></Card>
       </div>
       <div data-aos="fade-up" className="">
         <Card title={"Our Food"} subtitle={"Traditional Indian menu"} buttonText={"View menu"} description={"We serve fresh, tasty and spicy Indian food prepared using fresh herbs, garam masalas which are roasted and made in-house combined with rich flavors from ginger and garlic. We are about staple Indian curries from different regions of India, mughal inspired rice preparations and tadoori breads, baked fresh in our Jaipuri tandoori oven."}
-            image={"/images/gallary/our_food.webp"} imagebg={"/images/gallary/pic6.webp"} reverse={true}></Card>
+            image={"/images/gallary/our_food.webp"} imagebg={"/images/gallary/pic6.webp"} link={"/menu"} reverse={true}></Card>
       </div>
       <div data-aos="fade-left" className="">
-        <Card title={"Our Baverages"} subtitle={"Premium Cocktails"} buttonText={"View drink"} description={"We serve refreshing cocktails, draft, local, international & Indian beers, local and international wines, spirits and home made non-alcoholic drinks."}
-            image={"/images/gallary/our_baverage.webp"} imagebg={"/images/gallary/pic8.webp"} reverse={false}></Card>
+        <Card title={"Our Beverages"} subtitle={"Premium Cocktails"} buttonText={"View drink"} description={"We serve refreshing cocktails, draft, local, international & Indian beers, local and international wines, spirits and home made non-alcoholic drinks."}
+            image={"/images/gallary/our_baverage.webp"} imagebg={"/images/gallary/pic8.webp"} link={"/menu"} reverse={false}></Card>
       </div>
       <div data-aos="fade-down" className="">
         <Card title={"Our Services"} subtitle={"Home delivery, takeout & catering"} buttonText={"View services"} description={"Experience the rich flavors of India with Masala of India's exquisite catering services, available throughout Washington. Delight your guests with authentic cuisine that will transport them to the vibrant streets of India."}
-            image={"/images/gallary/our_service.webp"} imagebg={"/images/gallary/pic11.webp"} reverse={true}></Card>
+            image={"/images/gallary/our_service.webp"} imagebg={"/images/gallary/pic11.webp"} link={"/catering"} reverse={true}></Card>
       </div>
       <div className="bg-image4 pt-20">
         <div className="">

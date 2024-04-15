@@ -23,7 +23,7 @@ export const POST = async (req) => {
     restaurant.operationTimeTakeAway = formData.get('operationTimeTakeAway');
     restaurant.status = parseInt(formData.get('status')) === 1 ? true : false;
     restaurant.diningArea = formData.get('diningArea');
-    restaurant.capacity = parseInt(formData.get('capacity'));
+    restaurant.capacity = formData.get('capacity');
     restaurant.seatingOption = parseInt(formData.get('seatingOption')) === 1 ? true : false;
     restaurant.image = formData.get('image');
     try {

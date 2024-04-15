@@ -16,7 +16,7 @@ const OrderPage =  async () => {
         </div>
         <div className="pt-10 bg-image4"> 
             <div className="text-center">
-                <button className="px-8 py-4 font-medium text-primary-color hover:text-white border-2 border-primary-color hover:bg-primary-color duration-300">OPENING HOURS</button>
+                <Link href={"/contact"} className="px-8 py-4 font-medium text-primary-color hover:text-white border-2 border-primary-color hover:bg-primary-color duration-300">OPENING HOURS</Link>
             </div>
             <div className="text-center mt-10">
                 <Image className="mx-auto" src={"/images/icon/handbag.svg"} width={70} height={70}></Image>
@@ -31,7 +31,7 @@ const OrderPage =  async () => {
             </div>
             <div className="flex justify-between md:w-3/5 mx-auto mt-30">
                 <Link className="px-8 py-4 font-medium text-primary-color hover:text-white border-2 border-primary-color hover:bg-primary-color duration-300" href={"/order-masala"}>ORDER ONLINE</Link>
-                <Link className="px-8 py-4 font-medium text-primary-color hover:text-white border-2 border-primary-color hover:bg-primary-color duration-300" href={"/order-online/orders"}>ORDER BY PHONE</Link>
+                <Link className="px-8 py-4 font-medium text-primary-color hover:text-white border-2 border-primary-color hover:bg-primary-color duration-300" href={"/contact"}>ORDER BY PHONE</Link>
             </div>
             <div className="mx-auto text-center mt-20 pb-10">
                 <p className="text-2xl font-gambarino text-black tracking-widest">DISTANCE CALCULATOR & DIRECTIONS FOR PICK UP</p>

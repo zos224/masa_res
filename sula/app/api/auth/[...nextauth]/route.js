@@ -73,7 +73,8 @@ const handler = NextAuth({
                         firstName: userDB.firstName,
                         lastName: userDB.lastName,
                         phone: userDB.phone,
-                        address: userDB.address
+                        address: userDB.address,
+                        role: userDB.role
                     }
                 }
                 return token
@@ -88,7 +89,8 @@ const handler = NextAuth({
                     firstName: token.firstName,
                     lastName: token.lastName,
                     phone: token.phone,
-                    address: token.address
+                    address: token.address,
+                    role: token.role
                 }
             }
         }

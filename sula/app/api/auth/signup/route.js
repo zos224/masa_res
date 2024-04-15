@@ -22,7 +22,8 @@ export const POST = async (request) => {
                 password: hashPassword,
                 phone: phone,
                 address: address,
-                status: true
+                status: true,
+                role: "user"
             }})
             return new Response("Create new account succesfully!", {status: 200})
         }

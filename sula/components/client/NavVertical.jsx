@@ -34,7 +34,7 @@ const NavbarVertical = ({openNav, onClose}) => {
                 <div className="pt-10">
                     <ul className="flex flex-col text-center justify-end gap-y-5 w-full list-none uppercase font-semibold font-gambarino text-xl text-primary-color ">
                         <li>
-                            <Link className="border-b" href="/">Locations</Link>
+                            <Link className="border-b" href="/location">Locations</Link>
                         </li>
                         <li>
                             <Link className="border-b" href="/menu">Menu</Link>
@@ -52,19 +52,13 @@ const NavbarVertical = ({openNav, onClose}) => {
                             <Link className="border-b" href="/catering">Catering</Link>
                         </li>
                         <li>
-                            <Link className="border-b" href="/gallary">Gallary</Link>
+                            <Link className="border-b" href="/gallery">Gallery</Link>
                         </li>
                         <li>
                             <Link className="border-b" href="/contact">Contact & Hours</Link>
                         </li>
                         <li>
-                            <Link className="border-b" href="/gift">Gift Cards & Loyalty</Link>
-                        </li>
-                        <li>
-                            <Link className="border-b" href="/product">Products</Link>
-                        </li>
-                        <li>
-                            <Link className="border-b" href="/award">Awards & Accolades</Link>
+                            <Link className="border-b" href="/gift">Gift Cards</Link>
                         </li>
                         {events.map((event) => (
                             <li>

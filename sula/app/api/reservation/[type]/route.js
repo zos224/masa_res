@@ -1,0 +1,41 @@
+import prisma from "@/app/db/prismaClient";
+
+export const GET = async(request, {params}) => {
+    try {
+        let reservations
+        if (params.type === 'table') {
+            reservations = await prisma.TableReversation.findMany({include: {reservation: true}})
+        }
+        else if (params.type === 'group') {
+            reservations = await prisma.GroupReversation.findMany({include: {reservation: true}})
+        }
+        else {
+            reservations = await prisma.BuyOut.findMany({include: {reservation: true}})
+        }
+        if (reservations) {
+            return new Response(JSON.stringify(reservations), {status: 200})
+        }
+        else {
+            return new Response("Error", {status: 500})
+        }
+    }
+    catch (error) {
+        return new Response(error, {status: 500})
+    }
+}
+
+export const DELETE = async(request, {params}) => {
+    try {
+        const response = await prisma.Reservation.delete({where: {id: parseInt(params.type)}})
+        if (response) {
+            return new Response("Deleted", {status: 200})
+        }
+        else {
+            return new Response("Error", {status: 500})
+        }
+
+    }
+    catch (error) {
+        return new Response(error, {status: 500})
+    }
+}

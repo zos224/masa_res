@@ -33,7 +33,7 @@ const ReservationPage = () => {
   
     const dates = []
     for (let i = 0; i < 30; i++) {
-        const date = new Date()
+        let date = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
         date.setDate(date.getDate() + i)
         dates.push(date)
     }
@@ -162,7 +162,7 @@ const ReservationPage = () => {
                     success ? (
                         <div className="h-screen">
                             <div className="text-center">
-                                <Image className="mx-auto" src={"/images/icon/success.gif"} width={50} height={50}></Image>
+                                <Image className="mx-auto cursor-pointer" src={"/images/icon/success.gif"} width={50} height={50}></Image>
                                 <p className="text-black text-lg font-semibold mt-5">Reservation Successful</p>
                             </div>
                             <div className="text-center mt-5">
