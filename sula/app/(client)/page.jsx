@@ -38,8 +38,19 @@ const HomePage = () => {
   }
   return (
     <div className="overflow-hidden">
-      <div className="bg-image-1 bg-black">
+      <div className="bg-image-1 relative">
         <Image className="h-203 object-cover" src={"/images/bg/bg1.webp"} width={1920} height={1080}></Image>
+        <div className="absolute left-1/2 -translate-x-1/2 top-60 text-center">
+          <div className=" font-italianno font-thin italic text-4xl lg:text-7xl text-white">
+            Taste Tradition
+          </div>
+          <div className="font-gambarino tracking-widest lg:text-7xl text-4xl font-medium text-white mt-4">
+            SERVING EXOTIC <br></br> INDIAN DELICACIES
+          </div>
+          <div className="font-italianno font-extralight italic text-4xl lg:text-7xl text-white mt-4">
+            Savor the Splendor
+          </div>
+        </div>
       </div>
       <div className="lg:w-4/5 w-full mx-auto font-jost lg:text-xl text-base text-black text-center mt-10 px-2">
         Using freshly chosen secret ingredients passed down through generations,
@@ -88,7 +99,7 @@ const HomePage = () => {
             image={"/images/gallary/our_baverage.webp"} imagebg={"/images/gallary/pic8.webp"} reverse={false}></Card>
       </div>
       <div data-aos="fade-down" className="">
-        <Card title={"Our Services"} subtitle={"Home delivery, takeout & catering"} buttonText={"View services"} description={"We also offer Indian food take out and food delivery service upto 5Kms around Commercial Drive in Vancouver, BC, and offer catering services for offces, birthdays, private parties and weddings."}
+        <Card title={"Our Services"} subtitle={"Home delivery, takeout & catering"} buttonText={"View services"} description={"Experience the rich flavors of India with Masala of India's exquisite catering services, available throughout Washington. Delight your guests with authentic cuisine that will transport them to the vibrant streets of India."}
             image={"/images/gallary/our_service.webp"} imagebg={"/images/gallary/pic11.webp"} reverse={true}></Card>
       </div>
       <div className="bg-image4 pt-20">

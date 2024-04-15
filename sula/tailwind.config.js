@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: { 
         jost: ['Jost', 'sans-serif'],
         gambarino: ['Gambarino', 'cursive'],
-        italianno: ['Italianno', 'cursive'],
+        italianno: ['Italianno-ROB', 'cursive'],
       },
       screens: {
         "2xsm": "375px",
