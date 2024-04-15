@@ -90,21 +90,21 @@ const NavOrder = () => {
     const [openOrderDetails, setOpenOrderDetails] = useState(false)
     const [showAcc, setShowAcc] = useState(false)
     return (
-        <div className='bg-primary-color px-15 py-3 fixed top-0 left-0 w-full flex justify-between z-99'>
-            <div className='flex gap-10 items-center'>
+        <div className='bg-primary-color md:px-15 px-2 py-3 fixed top-0 left-0 w-full flex justify-between z-99'>
+            <div className='flex md:gap-10 gap-3 items-center'>
                 <Link href='/order-masala'><Image src={"/images/logo/logo.png"} width={50} height={50} alt='logo'></Image></Link>
                 {orderDetails.type != "" && orderDetails.date != "" && orderDetails.time != "" && (
                     <div className='flex gap-4 cursor-pointer px-4 py-2 hover:bg-primary-hover rounded-full' onClick={() => setOpenOrderDetails(true)}>
-                        <div className='text-white text-lg font-medium'>{orderDetails.type}</div>
-                        <div  className='text-white text-lg font-medium'>{orderDetails.date} - {orderDetails.time}</div>
+                        <div className='text-white text-sm md:text-lg font-medium'>{orderDetails.type}</div>
+                        <div  className='text-white text-sm md:text-lg font-medium'>{orderDetails.date} - {orderDetails.time}</div>
                     </div>
                 )}
                 <OrderDetails open={openOrderDetails} onClose={() => setOpenOrderDetails(false)}></OrderDetails>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex md:gap-5 gap-2'>
                 {session?.user ? (
                     <div className='relative flex items-center'>
-                        <p onClick={() => setShowAcc(prev => !prev)} className='text-white cursor-pointer my-auto font-medium'>Welcome, {session.user.firstName}</p>
+                        <p onClick={() => setShowAcc(prev => !prev)} className='text-white cursor-pointer md:text-lg text-sm my-auto font-medium'>Welcome, {session.user.firstName}</p>
                         {showAcc && (
                              <div className='absolute top-12 right-0 bg-primary-color'>
                              <button onClick={() => signOut()} className='mt-1 px-3 text-white py-2 rounded-full'>Sign Out</button>

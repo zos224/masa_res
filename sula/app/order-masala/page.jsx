@@ -197,7 +197,7 @@ const OrderMaSalaPage = () => {
                             <Pin scale={1.4} background="green" borderColor="green" glyphColor="white"></Pin>
                         </AdvancedMarker>
                     </Map>
-                    <div className="bg-white absolute z-10 top-0 left-0 xsm:max-w-125 w-full px-5 h-screen">
+                    <div className="bg-white absolute z-10 top-0 left-0 xsm:max-w-125 w-full px-5 min-h-screen">
                         <div className="flex mt-30 text-center">
                             <span onClick={() => {setPickup(true); setDelivery(false)}} className={`rounded-full py-2 w-1/2 cursor-pointer text-black font-bold ${pickup ? "bg-primary-color text-white" : ""}`}>Pickup</span>
                             <span onClick={() => {setDelivery(true); setPickup(false)}} className={`rounded-full py-2 cursor-pointer w-1/2 text-black font-bold ${delivery ? "bg-primary-color text-white" : ""}`}>Delivery</span>
@@ -210,7 +210,7 @@ const OrderMaSalaPage = () => {
                             </div>
                         )}
                         {listRestaurant.map((restaurant, index) => (
-                            <div key={index} className={`mt-10 p-5 rounded-lg bg-slate-100 hover:shadow-lg ${showOrderDetails ? "border-4 border-primary-color" : ""}`}>
+                            <div key={index} className={`mt-10 mb-10 p-5 rounded-lg bg-slate-100 hover:shadow-lg ${showOrderDetails ? "border-4 border-primary-color" : ""}`}>
                                 <h2 className="text-black text-lg font-semibold">{restaurant.name}</h2>
                                 <p className="text-black text-sm">{restaurant.address}</p>
                                 {!showOrderDetails ? (
