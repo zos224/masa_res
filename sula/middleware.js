@@ -19,7 +19,7 @@ export default withAuth(
       return NextResponse.next();
     }
     if (req.nextUrl.pathname.startsWith("/admin")) {
-      if (req.nextauth.token.role != "admin") {
+      if (!req.nextauth.token || req.nextauth.token.role != "admin") {
         return NextResponse.redirect(new URL('/admin/signin', req.url))
       }
     }
@@ -35,9 +35,10 @@ export default withAuth(
     callbacks: {
       authorized({ req, token }) {
         // dưới này là check có token không, có token thì chạy trong code,ko là bắt đăng nhập
-        if (req.nextUrl.pathname.startsWith("/admin/signin")) {
+        if (req.nextUrl.pathname.startsWith("/admin")) {
           return true
         }
+
         // else if (req.nextUrl.pathname.startsWith("/profile")) {
         //   return true
         // }
