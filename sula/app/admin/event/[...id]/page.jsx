@@ -8,7 +8,7 @@ const CreateUpdateEvent = () => {
     const [event, setEvent] = useState({
         id: 0,
         name: '',
-        price: 0,
+        description: '',
         startDate: '',
         endDate: '',
         image: ''
@@ -29,7 +29,7 @@ const CreateUpdateEvent = () => {
                 setEvent({
                     id: existEvent.id,
                     name: existEvent.name,
-                    price: existEvent.price,
+                    descriptiom: existEvent.description,
                     startDate: existEvent.startDate,
                     endDate: existEvent.endDate,
                     image: existEvent.image
@@ -55,7 +55,7 @@ const CreateUpdateEvent = () => {
         const formData = new FormData();
         formData.append('id', event.id)
         formData.append('name', event.name)
-        formData.append('price', event.price)
+        formData.append('description', event.description)
         formData.append('startDate', event.startDate)
         formData.append('endDate', event.endDate)
         formData.append('image', event.image)
@@ -126,9 +126,9 @@ const CreateUpdateEvent = () => {
                             <div class="w-full lg:w-6/12 px-4 mx-auto">
                                 <div class="relative w-full mb-3">
                                 <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
-                                    Price (Per Person)
+                                    Description
                                 </label>
-                                <input value={event.price} type="number" placeholder="Input price of event" onChange={(e) => setEvent({...event, price: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
+                                <textarea value={event.description} placeholder="Input description of event" onChange={(e) => setEvent({...event, description: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
                                 </div>
                             </div>
                             <div class="w-full lg:w-6/12 px-4 mx-auto">

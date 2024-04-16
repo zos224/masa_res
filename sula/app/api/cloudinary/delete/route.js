@@ -13,7 +13,8 @@ export async function POST(request) {
         const result = await cloudinary.uploader.destroy(publicId);
         return new Response("OK", { status: 200 })
     }
-    catch {
+    catch (error) {
+        console.log(error);
         return new Response("Error", { status: 500})
     }
 }

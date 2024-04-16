@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Create - Update Restaurant",
+    title: "Create - Update Event | Admin Masala",
 }
 const CURestaurantLayout = ({children}) => {
     return (

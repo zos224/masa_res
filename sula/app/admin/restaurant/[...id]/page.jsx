@@ -14,7 +14,6 @@ const CreateUpdateRestaurant = () => {
         status: '',
         diningArea: 0,
         capacity: '',
-        seatingOption: '',
         image: ''
     })
     const route = useRouter();
@@ -66,7 +65,6 @@ const CreateUpdateRestaurant = () => {
         formData.append("status", restaurant.status)
         formData.append("diningArea", restaurant.diningArea)
         formData.append("capacity", restaurant.capacity)
-        formData.append("seatingOption", restaurant.seatingOption)
         formData.append("image", restaurant.image)
         const response = await fetch('/api/restaurant/createOrUpdate', {
             method: "POST",
@@ -179,17 +177,6 @@ const CreateUpdateRestaurant = () => {
                                     Capacity (X Seated Y Standing)
                                 </label>
                                 <input value={restaurant.capacity} type="text" placeholder="Input capaticy (Ex: 20 Seated 40 Standing)" onChange={(e) => setRestaurant({...restaurant, capacity: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-6/12 px-4 mx-auto">
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
-                                        Seating Option
-                                    </label>
-                                    <select required onChange={(e) => setRestaurant({...restaurant, seatingOption: e.target.value})} className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
-                                        <option className="dark:text-black" selected={restaurant.seatingOption == 1} value={1}>Yes</option>
-                                        <option className="dark:text-black" selected={restaurant.seatingOption == 0} value={0}>No</option>
-                                    </select>
                                 </div>
                             </div>
                             <div className="text-center">

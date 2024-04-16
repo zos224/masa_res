@@ -1,24 +1,9 @@
 "use client"
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image"
 import NavbarVertical from "./NavVertical";
 const NavbarHorizon = () => {
-    const [events, setEvents] = useState([])
-    useEffect(() => {
-        const fetchEvent = async () => {
-            const res = await fetch('/api/event/all')
-            if (res.ok) {
-                const data = await res.json()
-                setEvents(data)
-            }
-            else {
-                alert("Something went wrong while fetching data!")
-            }
-        }
-
-        fetchEvent()
-    }, [])
     const [openNav, setOpenNav] = useState(false)
     const [openNavHorizon, setOpenNavHorizon] = useState(true)
     return (
@@ -39,9 +24,6 @@ const NavbarHorizon = () => {
                         <Link href="/reservation">Reservation</Link>
                     </li>
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
-                        <Link href="/takeout-delivery">Takeout & Delivery</Link>
-                    </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/order-online">Order Online</Link>
                     </li>
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
@@ -54,13 +36,11 @@ const NavbarHorizon = () => {
                         <Link href="/contact">Contact & Hours</Link>
                     </li>
                     <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
-                        <Link href="/gift">Gift Cards</Link>
+                        <Link target="_blank" href="https://www.toasttab.com/masala-of-india-northgate/giftcards">Gift Cards</Link>
                     </li>
-                    {events.map((event) => (
-                        <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
-                            <Link href={`/event/${event.name}`} >{event.name}</Link>
-                        </li>
-                    ))}
+                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                        <Link href="/special-offers">Special Offers</Link>
+                    </li>
                 </ul>
                 <div className="lg:hidden block my-auto">
                     <Image className="w-12 h-12 cursor-pointer" src="/images/icon/menu_option.svg" alt="menu" onClick={() => {setOpenNavHorizon(false); setOpenNav(true)}} width={200} height={100} />

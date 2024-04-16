@@ -1,10 +1,9 @@
 import prisma from "@/app/db/prismaClient";
 import moment from "moment-timezone";
-import slugify from 'slugify';
 export const POST = async (req) => {
     let event = {
         name: '',
-        price: 0,
+        description: "",
         startDate: '',
         endDate: '',
         image: '',
@@ -13,9 +12,9 @@ export const POST = async (req) => {
     const idValue = formData.get('id');
     const id = idValue ? parseInt(idValue, 10) : null;
     event.name = formData.get('name');
-    event.price = parseFloat(formData.get('price'));
     event.startDate = formData.get('startDate');
     event.endDate = formData.get('endDate');
+    event.description = formData.get('description');
     event.image = formData.get('image');
     event.startDate = moment.tz(event.startDate, 'America/Seattle').format();
     event.endDate = moment.tz(event.endDate, 'America/Seattle').format();
@@ -25,7 +24,6 @@ export const POST = async (req) => {
             newEvent  = await prisma.Event.update({ where: { id: id }, data: event});
         }
         else {
-            event.slug = slugify(event.name, {lower: true});
             newEvent = await prisma.Event.create({ data: event });
         }
         return new Response(JSON.stringify(newEvent), { status: 200 })

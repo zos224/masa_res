@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Update Order",
+    title: "Update Order | Admin Masala",
 }
 const UpdateOrder = ({children}) => {
     return (

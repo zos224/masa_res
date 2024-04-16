@@ -1,9 +1,9 @@
 import DefaultLayout from "@/components/admin/Layouts/DefaultLayout";
 export const metadata = {
-    title: "Restaurant | Admin Masala",
+    title: "Gallery | Admin Masala", 
   };
 
-  const RestaurantLayout = ({children}) => {
+  const GalleryLayout = ({children}) => {
     return (
       <DefaultLayout>
         {children}
@@ -11,4 +11,4 @@ export const metadata = {
     );
   };
 
-  export default RestaurantLayout;
+  export default GalleryLayout;

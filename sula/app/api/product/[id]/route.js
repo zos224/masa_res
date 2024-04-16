@@ -24,6 +24,7 @@ export const GET = async(request, {params}) => {
         }
     }
     catch (error) {
+        console.log(error)
         return new Response(error, {status: 500})
     }
 }

@@ -6,16 +6,16 @@ import ViewReservation from "@/components/admin/Modal/ViewReservation";
 const EventPage = () => {
     const [openModal, setOpenModal] = useState(false)
     const [deleteLink, setDeleteLink] = useState('')
-    const [buyouts, setBuyouts] = useState([])
+    const [reservations, setReservations] = useState([])
     const [loading, setLoading] = useState(false)
     const [viewModal, setViewModal] = useState(false)
-    const [currentBuyout, setCurrentBuyout] = useState(-1)
+    const [currentReservation, setCurrentReservation] = useState(-1)
     useEffect(() => {
         const fetchEvent = async () => {
-            const res = await fetch('/api/reservation/buyout')
+            const res = await fetch('/api/reservation/get')
             if (res.ok) {
                 const data = await res.json()
-                setBuyouts(data)
+                setReservations(data)
                 setLoading(false)
             }
             else {
@@ -30,21 +30,21 @@ const EventPage = () => {
         if (deleted) {
             const lastSlash = deleteLink.lastIndexOf('/')
             const id = deleteLink.substring(lastSlash+1)
-            const newBuyouts = buyouts.filter((e) => e.id != id)
-            setBuyouts(newBuyouts)
+            const newReservations = reservations.filter((e) => e.id != id)
+            setReservations(newReservations)
         }
     }
 
     useEffect(() => {
-        if (currentBuyout != -1) {
+        if (currentReservation != -1) {
             setViewModal(true)
         }
-    }, [currentBuyout])
+    }, [currentReservation])
 
     return (
         <div className="w-full">
             <div className="flex justify-between">
-                <h2 className="font-bold text-xl">Buy Out Reservation Management</h2>
+                <h2 className="font-bold text-xl">Reservation Management</h2>
             </div>
             {!loading ? (
                 <div className="mt-10 w-full relative overflow-x-auto shadow-md sm:rounded-lg ">
@@ -61,37 +61,32 @@ const EventPage = () => {
                             <th scope="col" className="px-6 py-3 font-medium">
                                 Date
                             </th>
-                            <th scope="col" className="px-6 py-3 font-medium">
-                                Time
-                            </th>
                             <th scope="col" colSpan={2} className="px-6 py-3 font-medium">
                                 Actions
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        {buyouts.map((buyout, index) => (
-                            <tr key={buyout.id} className={`bg-white ${index == buyouts.length - 1 ? "" : "border-b"} dark:bg-bodydark text-black border-body`}>
+                        {reservations.map((reservation, index) => (
+                            <tr key={reservation.id} className={`bg-white ${index == reservations.length - 1 ? "" : "border-b"} dark:bg-bodydark text-black border-body`}>
                                 <td className="px-6 py-4">
                                     {index + 1}
                                 </td>
                                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    {buyout.reservation.name}
-                                </th>      
+                                    {reservation.name}
+                                </th>
+                                
                                 <td className="px-6 py-4 overflow-hidden">
-                                    {buyout.reservation.numberOfGuests}
+                                    {reservation.numberOfGuests}
                                 </td>
                                 <td className="px-6 py-4">
-                                    {moment(buyout.reservation.dateTime).format('YYYY-MM-DD')}
-                                </td>
-                                <td className="px-6 py-4 overflow-hidden">
-                                    {buyout.time}
+                                    {moment(reservation.dateTime).format('YYYY-MM-DD hh:mm A')}
                                 </td>
                                 <td className="px-6 py-4">
-                                    <button onClick={() => setCurrentBuyout(index)} className="hover:text-boxdark-2 hover:font-bold">View</button>
+                                    <button onClick={() => setCurrentReservation(index)} className="hover:text-boxdark-2 hover:font-bold">View</button>
                                 </td>
                                 <td className="px-6 py-4">
-                                    <button onClick={() => {setOpenModal(!openModal); setDeleteLink("/api/reservation/" + group.reservation.id)}} className="hover:text-boxdark-2 hover:font-bold">Delete</button>
+                                    <button onClick={() => {setOpenModal(!openModal); setDeleteLink("/api/reservation/" + reservation.id)}} className="hover:text-boxdark-2 hover:font-bold">Delete</button>
                                 </td>
                             </tr>
                                                     
@@ -99,7 +94,7 @@ const EventPage = () => {
                     </tbody>
                 </table>
                 <Modal onDeleted={onDeleted} deleteLink={deleteLink} isOpen={openModal} onClose={() => setOpenModal(false)}></Modal>
-                <ViewReservation type={"buy out"} data={buyouts[currentBuyout]} isOpen={viewModal} onClose={() => {setViewModal(false); setCurrentGroup(-1)}}></ViewReservation>
+                <ViewReservation data={reservations[currentReservation]} isOpen={viewModal} onClose={() => {setViewModal(false); setCurrentTable(-1)}}></ViewReservation>
             </div>
             ) : (
                 <div className="flex-center mt-2" role="status">

@@ -11,7 +11,6 @@ const CreateUpdateproduct = () => {
         description: '',
         price: '',
         image: '',
-        amount: '',
         status: 1,
         product_productOptions: [],
         product_productCustomizations: []
@@ -84,7 +83,7 @@ const CreateUpdateproduct = () => {
     }, [params.id[1], params.id[0]])
 
     useEffect(() => {
-        if (productCustomization && productOptions) { 
+        if (productCustomization != null && productOptions != null) { 
             setLoading(false)
         }
     }, [productCustomization, productOptions])
@@ -116,7 +115,6 @@ const CreateUpdateproduct = () => {
         formData.append('description', product.description)
         formData.append('price', product.price)
         formData.append('image', product.image)
-        formData.append('amount', product.amount)
         formData.append('status', product.status)
         formData.append('productOptions', JSON.stringify(newProductOptions))
         formData.append('productCustomizations', JSON.stringify(newProductCustomizations))
@@ -202,14 +200,6 @@ const CreateUpdateproduct = () => {
                                 <input value={product.price} type="number" placeholder="Input price of product" onChange={(e) => setProduct({...product, price: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
                                 </div>
                             </div>
-                            <div class="w-full lg:w-6/12 px-4 mx-auto">
-                                <div class="relative w-full mb-3">
-                                <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
-                                    Amount of Product (Set or Single)
-                                </label>
-                                <input value={product.amount} type="number" placeholder="Input amount (1 or set of many)" min={1} onChange={(e) => setProduct({...product, amount: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
-                                </div>
-                            </div>
                             <div className="text-center">
                                 <CldUploadWidget signatureEndpoint="/api/cloudinary" onSuccess={handleSuccess}>
                                     {({ open }) => {
@@ -240,7 +230,7 @@ const CreateUpdateproduct = () => {
                                             <div className="flex" ref={productOptionRef}>
                                                 <select required className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                     <option value={0}>None</option> 
-                                                    {productOptions.map(po => (
+                                                    {productOptions && productOptions.map(po => (
                                                         <option key={po.id} value={po.id}>{po.name}</option>
                                                     ))}
                                                 </select>
@@ -252,7 +242,7 @@ const CreateUpdateproduct = () => {
                                                     <div key={index} className="flex" ref={productOptionRef}>
                                                         <select defaultValue={ppo.idProductOption} required className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                             <option value={0}>None</option> 
-                                                            {productOptions.map(po => (
+                                                            {productOptions && productOptions.map(po => (
                                                                 <option key={po.id} value={po.id}>{po.name}</option>
                                                             ))}
                                                         </select>
@@ -262,7 +252,7 @@ const CreateUpdateproduct = () => {
                                                     <div key={index} className="flex mt-3" ref={productOptionRef}>
                                                         <select required defaultValue={ppo.idProductOption} className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                             <option value={0}>None</option> 
-                                                            {productOptions.map(po => (
+                                                            {productOptions && productOptions.map(po => (
                                                                 <option key={po.id} value={po.id}>{po.name}</option>
                                                             ))}
                                                         </select>
@@ -286,7 +276,7 @@ const CreateUpdateproduct = () => {
                                             <div ref={productCustomizationRef}  className="flex">
                                                 <select required onChange={(e) => setProduct({...product, status: e.target.value})} className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                     <option value={0}>None</option>
-                                                    {productCustomization.map(pc => (
+                                                    {productCustomization && productCustomization.map(pc => (
                                                         <option key={pc.id} value={pc.id}>{pc.name}</option>
                                                     ))}
                                                 </select>
@@ -297,7 +287,7 @@ const CreateUpdateproduct = () => {
                                                     <div key={index} ref={productCustomizationRef} className="flex">
                                                         <select required defaultValue={ppc.idProductCustomization} onChange={(e) => e.currentTarget.value = e.target.value} className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                             <option value={0}>None</option>
-                                                            {productCustomization.map(pc => (
+                                                            {productCustomization && productCustomization.map(pc => (
                                                                 <option key={pc.id} value={pc.id}>{pc.name}</option>
                                                             ))}
                                                         </select>
@@ -307,7 +297,7 @@ const CreateUpdateproduct = () => {
                                                     <div key={index} ref={productCustomizationRef} className="flex mt-4">
                                                         <select required defaultValue={ppc.idProductCustomization} onChange={(e) => e.currentTarget.value = e.target.value} className="text-black border-0 px-3 py-3 dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear"> 
                                                             <option value={0}>None</option>
-                                                            {productCustomization.map(pc => (
+                                                            {productCustomization && productCustomization.map(pc => (
                                                                 <option key={pc.id} value={pc.id}>{pc.name}</option>
                                                             ))}
                                                         </select>

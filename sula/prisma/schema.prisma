@@ -23,7 +23,6 @@ model Restaurant {
   operationTimeTakeAway String
   diningArea String
   capacity String
-  seatingOption Boolean
   image String
   status Boolean
   menu Menu?
@@ -61,7 +60,6 @@ model Product {
   description String
   price Float
   image String
-  amount Int
   status Boolean
   product_productOptions Product_ProductOption[]
   product_productCustomizations Product_ProductCustomization[]
@@ -197,34 +195,10 @@ model Reservation {
   name String
   email String
   phone String
-  numberOfGuests Int
+  numberOfGuests String
   dateTime DateTime
   idRestaurant Int
   restaurant Restaurant @relation(fields: [idRestaurant], references: [id], onDelete: Cascade)
-  buyOut BuyOut?
-  groupReversation GroupReversation?
-  tableReversation TableReversation?
-}
-
-model BuyOut {
-  id Int @id @default(autoincrement())
-  idReservation Int @unique
-  reservation Reservation @relation(fields: [idReservation], references: [id], onDelete: Cascade)
-  eventDetails String?
-  time String
-}
-
-model GroupReversation {
-  id Int @id @default(autoincrement())
-  idReservation Int @unique
-  reservation Reservation @relation(fields: [idReservation], references: [id], onDelete: Cascade)
-}
-
-model TableReversation {
-  id Int @id @default(autoincrement())
-  idReservation Int @unique
-  reservation Reservation @relation(fields: [idReservation], references: [id], onDelete: Cascade)
-  seatingOption String?
   specialRequest String?
 }
 
@@ -373,8 +347,7 @@ model FingerfoodOrderProduct {
 model Event {
   id Int @id @default(autoincrement())
   name String
-  slug String
-  price Float
+  description String
   startDate DateTime
   endDate DateTime
   image String

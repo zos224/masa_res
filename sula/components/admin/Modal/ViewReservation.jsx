@@ -17,48 +17,28 @@ const ViewReservation = ({isOpen, onClose, data, type}) => {
                         <div className="mt-5">
                             <div>
                                 <span>Name: </span>
-                                <span className="font-semibold">{data.reservation.name}</span>
+                                <span className="font-semibold">{data.name}</span>
                             </div>
                             <div className="mt-2">
                                 <span>Phone: </span>
-                                <span className="font-semibold">{data.reservation.phone}</span>
+                                <span className="font-semibold">{data.phone}</span>
                             </div>
                             <div className="mt-2">
                                 <span>Email: </span>
-                                <span className="font-semibold">{data.reservation.email}</span>
+                                <span className="font-semibold">{data.email}</span>
                             </div>
                             <div className="mt-2">
                                 <span>Number of guests: </span>
-                                <span className="font-semibold">{data.reservation.numberOfGuests}</span>
+                                <span className="font-semibold">{data.numberOfGuests}</span>
                             </div>
                             <div className="mt-2">
                                 <span>Date: </span>
-                                <span className="font-semibold">{moment(data.reservation.dateTime).format('YYYY-MM-DD hh:mm A')}</span>
+                                <span className="font-semibold">{moment(data.dateTime).format('YYYY-MM-DD hh:mm A')}</span>
                             </div>
-                            {type == "table" && (
-                                <div>
-                                    <div className="mt-2">
-                                        <span>Seating Option: </span>
-                                        <span className="font-semibold">{data.seatingOption ? data.seatingOption : "No"}</span>
-                                    </div>
-                                    <div className="mt-2">
-                                        <span>Special Request: </span>
-                                        <p className="">{data.specialRequest}</p>
-                                    </div>
-                                </div>
-                            )}
-                            {type == "buy out" && (
-                                <div>
-                                    <div className="mt-2">
-                                        <span>Time: </span>
-                                        <span className="font-semibold">{data.time}</span>
-                                    </div>
-                                    <div className="mt-2">
-                                        <span>Event Details: </span>
-                                        <span>{data.eventDetails}</span>
-                                    </div>
-                                </div>
-                            )}
+                            <div className="mt-2">
+                                <span>Special Request: </span>
+                                <p className="">{data.specialRequest}</p>
+                            </div>
                         </div>
 
                     </div>

@@ -1,5 +1,4 @@
 import prisma from "@/app/db/prismaClient";
-import moment from "moment-timezone";
 function convertToISO8601(dateTimeString) {
     const parts = dateTimeString.match(/(\d{1,2})\/(\d{1,2})\/(\d{4}) (\d{1,2}):(\d{2}) (AM|PM)/);
   
@@ -35,42 +34,17 @@ export const POST = async (req) => {
         name: "",
         email: "",
         phone: "",
+        specialRequest: ""
     }
     reservation.idRestaurant = parseInt(formData.get('idRestaurant'));
-    if (formData.get('type') != 'buyout') {
-        reservation.dateTime = convertToISO8601(formData.get('dateTime'));
-    }
-    else {
-        reservation.dateTime = moment.tz(formData.get('dateTime'), 'America/Los_Angeles').format();
-    }
-    reservation.numberOfGuests = parseInt(formData.get('numberOfGuests'));
+    reservation.dateTime = convertToISO8601(formData.get('dateTime'));
+    reservation.numberOfGuests = formData.get('numberOfGuests');
     reservation.name = formData.get('firstName') + ' ' + formData.get('lastName');
     reservation.email = formData.get('email');
     reservation.phone = formData.get('phone');
+    reservation.specialRequest = formData.get('specialRequest');
     try {
         const newReservation = await prisma.Reservation.create({ data: reservation });
-        if (formData.get('type') == 'table') {
-            const table = {
-                idReservation: newReservation.id,
-                seatingOption: formData.get('seatingOption'),
-                specialRequest: formData.get('specialRequest'),
-            }
-            await prisma.TableReversation.create({ data: table });
-        }
-        if (formData.get('type') == 'group') {
-            const group = {
-                idReservation: newReservation.id,
-            }
-            await prisma.GroupReversation.create({ data: group });
-        }
-        if (formData.get('type') == 'buyout') {
-            const buyout = {
-                idReservation: newReservation.id,
-                time: formData.get('time'),
-                eventDetails: formData.get('specialRequest'),
-            }
-            await prisma.BuyOut.create({ data: buyout });
-        }
         return new Response("Done", { status: 200 })
     }
     catch (error) {

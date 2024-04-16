@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Create - Update Restaurant",
+    title: "Create - Update Product | Admin Masala",
 }
 const CUProductLayout = ({children}) => {
     return (

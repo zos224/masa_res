@@ -2,16 +2,7 @@ import prisma from "@/app/db/prismaClient";
 
 export const GET = async(request, {params}) => {
     try {
-        let reservations
-        if (params.type === 'table') {
-            reservations = await prisma.TableReversation.findMany({include: {reservation: true}})
-        }
-        else if (params.type === 'group') {
-            reservations = await prisma.GroupReversation.findMany({include: {reservation: true}})
-        }
-        else {
-            reservations = await prisma.BuyOut.findMany({include: {reservation: true}})
-        }
+        let reservations = await prisma.Reservation.findMany({orderBy: {dateTime: 'desc'}})
         if (reservations) {
             return new Response(JSON.stringify(reservations), {status: 200})
         }

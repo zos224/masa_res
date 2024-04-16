@@ -3,6 +3,7 @@ import Modal from "@/components/admin/Modal/Modal";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import moment from "moment-timezone";
+import Image from "next/image";
 const EventPage = () => {
     const [openModal, setOpenModal] = useState(false)
     const [deleteLink, setDeleteLink] = useState('')
@@ -56,7 +57,7 @@ const EventPage = () => {
                                 End Date
                             </th>
                             <th scope="col" className="px-6 py-3 font-medium">
-                                Price
+                                Image
                             </th>
                             <th scope="col" colSpan={2} className="px-6 py-3 font-medium">
                                 Actions
@@ -79,7 +80,7 @@ const EventPage = () => {
                                     {moment(event.endDate).format('YYYY-MM-DD hh:mm A')}
                                 </td>
                                 <td className="px-6 py-4">
-                                    {event.price}
+                                    <Image className="w-20 h-20 mx-auto" src={event.image} width={100} height={100}></Image>
                                 </td>
                                 <td className="px-6 py-4">
                                     <Link className="hover:text-boxdark-2 hover:font-bold" href={"/admin/event/update/" + event.id}>Update</Link>

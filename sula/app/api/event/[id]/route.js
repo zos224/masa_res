@@ -6,6 +6,9 @@ export const GET = async(request, {params}) => {
         if (params.id == "all") {
             events = await prisma.Event.findMany({})
         }
+        else if (params.id == "active") {
+            events = await prisma.Event.findMany({where: {endDate: {gte: new Date()}}})
+        }
         else {
             events = await prisma.Event.findUnique({where: {id: parseInt(params.id)}})
         }

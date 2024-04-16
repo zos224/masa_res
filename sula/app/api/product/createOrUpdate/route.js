@@ -6,7 +6,6 @@ export const POST = async (req) => {
         description: '',
         price: '',
         image: '',
-        amount: '',
         status: false
     }
     const formData = await req.formData();
@@ -16,7 +15,6 @@ export const POST = async (req) => {
     product.description = formData.get('description');
     product.price = parseFloat(formData.get('price'));
     product.image = formData.get('image');
-    product.amount = parseInt(formData.get('amount'));
     product.status = formData.get('status') === '1';
     const productOptions = formData.get('productOptions');
     const productCustomizations = formData.get('productCustomizations');

@@ -1,23 +1,6 @@
-"use client"
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import Image from "next/image"
 const NavbarVertical = ({openNav, onClose}) => {
-    const [events, setEvents] = useState([])
-    useEffect(() => {
-        const fetchEvent = async () => {
-            const res = await fetch('/api/event/all')
-            if (res.ok) {
-                const data = await res.json()
-                setEvents(data)
-            }
-            else {
-                alert("Something went wrong while fetching data!")
-            }
-        }
-
-        fetchEvent()
-    }, [])
     return (
         openNav && (
             <div className="w-full z-9999 absolute top-0 left-0 min-h-screen bg-dark-custom">
@@ -43,9 +26,6 @@ const NavbarVertical = ({openNav, onClose}) => {
                             <Link className="border-b" href="/reservation">Reservation</Link>
                         </li>
                         <li>
-                            <Link className="border-b" href="/takeout-delivery">Takeout & Delivery</Link>
-                        </li>
-                        <li>
                             <Link className="border-b" href="/order-online">Order Online</Link>
                         </li>
                         <li>
@@ -58,13 +38,11 @@ const NavbarVertical = ({openNav, onClose}) => {
                             <Link className="border-b" href="/contact">Contact & Hours</Link>
                         </li>
                         <li>
-                            <Link className="border-b" href="/gift">Gift Cards</Link>
+                            <Link target="_blank" className="border-b" href="https://www.toasttab.com/masala-of-india-northgate/giftcards">Gift Cards</Link>
                         </li>
-                        {events.map((event) => (
-                            <li>
-                                <Link className="border-b" href={`/event/${event.name}`} >{event.name}</Link>
-                            </li>
-                        ))}
+                        <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                            <Link className="border-b" href="/special-offers">Special Offers</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

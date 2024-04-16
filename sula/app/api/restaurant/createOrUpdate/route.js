@@ -24,7 +24,6 @@ export const POST = async (req) => {
     restaurant.status = parseInt(formData.get('status')) === 1 ? true : false;
     restaurant.diningArea = formData.get('diningArea');
     restaurant.capacity = formData.get('capacity');
-    restaurant.seatingOption = parseInt(formData.get('seatingOption')) === 1 ? true : false;
     restaurant.image = formData.get('image');
     try {
         let newRestaurant;

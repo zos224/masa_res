@@ -10,13 +10,14 @@ const ReservationPage = () => {
         lastName: "",
         email: "",
         phone: "",
-        numberOfGuests: 2,
+        numberOfGuests: "1",
         dateTime: "",
         idRestaurant: 0,
         seatingOption: "",
         specialRequest: "",
         type: "table"
     })
+    const [viewPolicy, setViewPolicy] = useState(false)
     const [error, setError] = useState(false)
     useEffect(() => {
         const fetchRestaurant = async () => {
@@ -96,23 +97,25 @@ const ReservationPage = () => {
                         <p className="pb-3">{restaurant.address}</p>
                     </div>
                     <div className="flex gap-10 px-4 py-3 shadow-md">
-                        <div className="w-1/4">
+                        <div className="w-full">
                             <div className="text-black">
                                 <label>Guest</label>
                             </div>
                             <select onChange={(e) => setReservation({...reservation, numberOfGuests: e.target.value})} className="px-2 py-3 border rounded-md w-full text-black">
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                                <option value={5}>5</option>
-                                <option value={6}>6</option>
-                                <option value={7}>7</option>
-                                <option value={8}>8</option>
-                                <option value={9}>9</option>
-                                <option value={10}>10</option>
+                                <option value={"1"}>1</option>
+                                <option value={"2"}>2</option>
+                                <option value={"3"}>3</option>
+                                <option value={"4"}>4</option>
+                                <option value={"5"}>5</option>
+                                <option value={"6"}>6</option>
+                                <option value={"7"}>7</option>
+                                <option value={"8"}>8</option>
+                                <option value={"9"}>9</option>
+                                <option value={"10"}>10</option>
+                                <option value={"10+"}>10+</option>
                             </select>
                         </div>
-                        <div className="w-2/4">
+                        <div className="w-full">
                             <div className="text-black">
                                 <label>Date</label>
                             </div>
@@ -122,18 +125,6 @@ const ReservationPage = () => {
                                 ))}
                             </select>
                         </div>
-                        {restaurant.seatingOption && (
-                            <div>
-                                <div>
-                                    <label>Seating Option</label>
-                                </div>
-                                <select className="px-2 py-3 border rounded-md">
-                                    <option value={"no"}>No preference</option>
-                                    <option value={"inside"}>Inside</option>
-                                    <option value={"outside"}>Outside</option>
-                                </select>
-                            </div>
-                        )}
                     </div>
                     <div className="p-3 pb-8 text-center border-b">
                         <p className="text-black font-semibold">Select a time</p>
@@ -148,9 +139,8 @@ const ReservationPage = () => {
                             Restaurant Terms & Conditions
                         </p>
                         <p className="text-sm">
-                            - Patio reservations cannot be moved indoor <br></br>
                             - We aim to have you seated within 10 minutes of your entire party's arrival. <br></br>
-                            - Reservations will be held for 10 minutes. <br></br>
+                            - Reservations will be held for 15 minutes. <br></br>
                             - Reservations will be seated for up to a maximum of 2 hours.
                         </p>
                     </div>
@@ -210,6 +200,62 @@ const ReservationPage = () => {
                             </div>
                             {error && (<div className="text-red mt-2 font-medium">Please fill the form!</div>)}
                         </div>
+                        <div className="text-black p-4">
+                            By clicking "Reserve" you agree to the <b onClick={() => setViewPolicy(true)} className="text-primary-color cursor-pointer">Masala's policy</b>.
+                        </div>
+                        {viewPolicy && (
+                        <div className="w-full z-99 absolute top-0 left-0 h-full bg-dark-custom">
+                            <div className="absolute text-black max-w-230 h-[calc(80%)] overflow-auto top-30 bg-white px-20 py-5 rounded-md md:left-1/2 md:-translate-x-1/2">
+                                <div className="font-bold text-xl text-center uppercase">Reservation Policy</div>
+                                <div className="mt-5"> 
+                                    <p className="text-lg font-semibold mt-2">Reservation Requests</p>
+                                    Reservations can be made via phone, online booking system, or in-person at least 24 hours in advance.
+                                    For large parties (10 or more guests), we recommend making reservations at least 48 hours in advance to ensure accommodation.
+
+                                    <p className="text-lg font-semibold mt-2">Confirmation</p>
+
+                                    A confirmation of the reservation will be provided via email, SMS, or phone call.
+                                    Please confirm your reservation at least 2 hours before the scheduled time. Failure to confirm may result in cancellation to accommodate other guests.
+
+                                    <p className="text-lg font-semibold mt-2">Cancellation Policy</p>
+
+                                    We understand plans can change. Please notify us at least 2 hours prior to your reservation if you need to cancel or modify your booking.
+                                    Cancellations made less than 2 hours before the reservation time may incur a cancellation fee.
+
+                                    <p className="text-lg font-semibold mt-2">Late Arrivals</p>
+
+                                    We will hold your table for 15 minutes past the reservation time. If you anticipate being late, please inform us as soon as possible.
+                                    Late arrivals may result in a reduced dining time to accommodate subsequent reservations.
+
+                                    <p className="text-lg font-semibold mt-2">Walk-Ins</p>
+
+                                    While we welcome walk-in guests, we prioritize reservations. Availability for walk-ins will be subject to table availability at the time of arrival.
+
+                                    <p className="text-lg font-semibold mt-2"> Special Requests</p>
+
+                                    Please inform us of any special requests such as dietary restrictions, seating preferences, or special occasions at the time of booking. We will do our best to accommodate your needs.
+
+                                    <p className="text-lg font-semibold mt-2">Group Reservations and Events</p>
+
+                                    For group reservations and private events, please contact our events team at least one week in advance to discuss options and availability.
+
+                                    <p className="text-lg font-semibold mt-2">Reservation Duration</p>
+
+                                    We kindly request that guests limit their dining time to 2 hours to accommodate other patrons, especially during peak hours.
+
+                                    <p className="text-lg font-semibold mt-2">Service Charge and Gratuity</p>
+
+                                    A service charge may be added for large parties or special events. Gratuity is not included in the bill and is at the discretion of the guest.
+
+                                    <p className="text-lg font-semibold mt-2"> Changes to Policy</p>
+
+                                    We reserve the right to update or modify our reservation policy at any time. Any changes will be communicated through our website or directly to guests with existing reservations.</div>
+                                    <div className="text-center mt-10">
+                                        <button onClick={() => setViewPolicy(false)} className="bg-primary-color text-lg text-white px-7 py-3 rounded-md">Done</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        )}
                         <div className="mt-10">
                             <button onClick={handleSubmit} className="bg-primary-color text-white font-semibold w-full py-3 rounded-md">Reserve</button>
                         </div>

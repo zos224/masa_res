@@ -29,24 +29,20 @@ const ReservationPage = async () => {
                     <span className="text-primary-color uppercase font-semibold">INDOOR DINING: </span>
                     <span className="text-black font-semibold">{restaurant.operationTimeIndoor}</span>
                 </div>
+                <div className="text-black mt-10 md:w-2/3 w-full mx-auto">
+                    <p className="text-lg font-semibold mb-4"> Authentic Indian Cuisines - Unforgettable Dining Experience </p>
+
+                Embark on a culinary journey at Masala Of India Cuisine, savoring vibrant flavors and aromas of Indian cuisine. Our carefully curated menu features traditional and contemporary dishes prepared with fresh ingredients and authentic spices. Reserve your table today to experience the heart of India through our delectable offerings.
+                </div>
                 <div className="text-center mt-10 border-b md:w-1/3 mx-auto pb-7">
                     <Link href={"/reservation/table"}><button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">RESERVE YOUR TABLE</button></Link>
-                    <div className="text-black text-2xl mt-3">1 - 10 Guests</div>
-                </div>
-                <div className="text-center mt-10 border-b md:w-1/3 mx-auto pb-7">
-                    <Link href={"/reservation/group"}><button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">GROUP RESERVATION REQUEST</button></Link>
-                    <div className="text-black text-2xl mt-3">11 - 20 Guests</div>
-                </div>
-                <div className="text-center mt-10 md:w-1/3 mx-auto">
-                    <Link href={"/reservation/buyout"}><button className="px-10 py-3 rounded-md font-medium border-primary-color border-2 text-primary-color hover:bg-primary-color hover:text-white">BUY OUT ENQUIRY</button></Link>
                 </div>
                 <div className="text-center mt-10">
-                    <span className="text-black text-3xl tracking-wider font-semibold">Reservation Policy</span>
+                    <span className="text-black text-3xl tracking-wider font-semibold">Reservation Terms & Conditions</span>
                     <p className="text-black text-base font-semibold mt-5">
-                        Please note we do not seat incomplete parties. <br></br>  <br></br>
-                        We aim to have you seated within 10 minutes of your entire party's arrival. <br></br>  <br></br>
-                        Reservations will be held for 10 minutes. <br></br>  <br></br>
-                        Reservations will be seated for up to a maximum of 2 hours
+                        We aim to have you seated within 10 minutes of your entire party's arrival. <br></br> <br></br>
+                        Reservations will be held for 15 minutes. <br></br> <br></br>
+                        Reservations will be seated for up to a maximum of 2 hours.
                     </p>
                 </div>
             </div>
