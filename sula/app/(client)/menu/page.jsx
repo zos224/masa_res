@@ -20,7 +20,6 @@ async function getMenu() {
 const MenuPage =  async () => {
   const data = await getMenu()
   return (
-    data && (
     <div>
         <div className="relative">
             <Image className="max-h-100 object-cover" src={"/images/bg/bg_menu.webp"} width={1920} height={1280}></Image>
@@ -62,7 +61,6 @@ const MenuPage =  async () => {
         </div>
        
     </div>
-	)
   );
 };
 

@@ -16,7 +16,6 @@ const ContactPage = async () => {
     const restaurant = await getRestaurant()
 
     return (
-        restaurant && (
 	<div className="min-h-screen">
             <div className="relative">
                 <Image className="max-h-100 object-cover" src={"/images/bg/bg5.jpg"} width={1920} height={1280}></Image>
@@ -39,7 +38,6 @@ const ContactPage = async () => {
                 </div>
             </div>
         </div>
-	)
     )
 }
 export default ContactPage;
