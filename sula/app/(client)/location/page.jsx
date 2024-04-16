@@ -16,7 +16,8 @@ const LocationPage = async () => {
     const restaurant = await getRestaurant()
 
     return (
-        <div>
+        {restaurant && (
+	<div>
             <div className="relative">
                 <Image className="max-h-100 object-cover" src={"/images/gallary/our_food.webp"} width={1920} height={1280}></Image>
                 <span className="absolute text-4xl text-center font-gambarino bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 left-1/2 -translate-x-1/2">
@@ -69,6 +70,7 @@ comfortable chairs for an ultimate Indian dining experience</p>
                 </div>
             </div>
         </div>
+	)}
     )
 }
 export default LocationPage;

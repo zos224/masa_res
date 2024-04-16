@@ -19,7 +19,7 @@ const OrderPage =  async () => {
                 PHOTO GALLERY
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mx-10 my-10">
-                {images.map((image, index) => (
+                {images && images.map((image, index) => (
                     <div key={index} className="overflow-hidden">
                         <Image className="h-132.5 object-cover hover:scale-125 duration-300" src={image.secure_url} width={1000} height={500}></Image>
                     </div>))
