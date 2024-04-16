@@ -20,8 +20,8 @@ const CreateUpdateproduct = () => {
     const route = useRouter();
     const params = useParams();
     const [loading, setLoading] = useState(false)
-    const [productOptions, setProductOptions] = useState([])
-    const [productCustomization, setProductCustomization] = useState([])
+    const [productOptions, setProductOptions] = useState(null)
+    const [productCustomization, setProductCustomization] = useState(null)
     const productOptionRef = useRef(null)
     const productCustomizationRef = useRef(null)
     const POContainerRef = useRef(null)
@@ -49,7 +49,6 @@ const CreateUpdateproduct = () => {
             const response = await fetch('/api/product/' + params.id[1])
             if (response.ok) {
                 const existProduct = await response.json();
-                console.log(existProduct.status)
                 setProduct(existProduct)
             }
             else {
@@ -85,7 +84,7 @@ const CreateUpdateproduct = () => {
     }, [params.id[1], params.id[0]])
 
     useEffect(() => {
-        if (productCustomization.length > 0 && productOptions.length > 0) { 
+        if (productCustomization && productOptions) { 
             setLoading(false)
         }
     }, [productCustomization, productOptions])
