@@ -101,7 +101,7 @@ const ModalOrder = ({ idProduct, openModal, onClose }) => {
     const onChooseCustomization = (customization) => {
         const newCustomizationSelected = orderProduct.customizations.map(item => {
             if (item.id === customization.idProductCustomization) {
-                if (item.customizationSelected.includes(customization)) {
+                if (item.customizationSelected.map(item => item.id).includes(customization.id)) {
                     const customizationSelected = item.customizationSelected.filter(item => item.id !== customization.id)
                     return customizationSelected
                 }
@@ -110,19 +110,30 @@ const ModalOrder = ({ idProduct, openModal, onClose }) => {
             return item.customizationSelected
         })
         const newOrderProductCustomization = []
+        let newTotal = currentProduct.price * orderProduct.quantity
         for (let i = 0; i < newCustomizationSelected.length; i++) {
             const customizations = orderProduct.customizations[i]
             customizations.customizationSelected = newCustomizationSelected[i]
+            if (newCustomizationSelected[i].length > 0) {
+                newTotal = (parseFloat(newTotal) + parseFloat(newCustomizationSelected[i][0].price) * orderProduct.quantity).toFixed(2)
+            }
             newOrderProductCustomization.push(customizations)
         }
-        setOrderProduct({...orderProduct, customizations: newOrderProductCustomization})
+        setOrderProduct({...orderProduct, total: newTotal, customizations: newOrderProductCustomization})
     }
 
     useEffect(() => {
         if (orderProduct.quantity != 0 && currentProduct != null) {
-            setOrderProduct({...orderProduct, total: orderProduct.quantity * currentProduct.price})
+            let newTotal = currentProduct.price * orderProduct.quantity
+            for (let i = 0; i < orderProduct.customizations.length; i++) {
+                const customizationSelected = orderProduct.customizations[i].customizationSelected
+                if (customizationSelected.length > 0) {
+                    newTotal = (parseFloat(newTotal) + parseFloat(customizationSelected[0].price) * orderProduct.quantity).toFixed(2)
+                }
+            }
+            setOrderProduct({...orderProduct, total: newTotal})
         }
-    }, [orderProduct.quantity])
+    }, [orderProduct.quantity, orderProduct.customizations])
 
     const addProductToCard = () => {
         if (orderProduct.quantity != 0) {
@@ -228,14 +239,15 @@ const ModalOrder = ({ idProduct, openModal, onClose }) => {
                                         <div className=''>
                                             {currentProduct.product_productCustomizations.map((customization, index) => (
                                                 <div key={index} className=''>
-                                                    <h2 className='w-full bg-slate-200 px-10 py-1 text-black font-semibold'>{customization.productCustomization.name}<i className='mx-4 font-normal text-black text-sm'>Select at least 1</i></h2>
+                                                    <h2 className='w-full bg-slate-200 px-10 py-1 text-black font-semibold'>{customization.productCustomization.name}<i className='mx-4 font-normal text-black text-sm'>Select any 1</i></h2>
                                                     {alertCustomization && (
-                                                        <p className='bg-red text-white px-10'>Please select at least 1 customization!</p>
+                                                        <p className='bg-red text-white px-10'>Please select any 1 customization!</p>
                                                     )}
                                                     {customization.productCustomization.productCustomizationChoices.map((choice, index) => (
                                                         <div className='mx-10 my-3 text-black font-medium flex items-center gap-3 cursor-pointer' key={index}>
-                                                            <input onChange={() => onChooseCustomization(choice)} checked={orderProduct.customizations.some(option => option.customizationSelected.map(c => c.id).includes(choice.id) ? true : false)} className='peer relative appearance-none w-5 h-5 border-2 border-primary-color  checked:bg-primary-color' type='checkbox' id={choice.name} value={choice.id} />
-                                                            <label className='' htmlFor={choice.name}>{choice.name}</label>
+                                                            <input disabled={orderProduct.customizations.some(cus => cus.customizationSelected.length > 0 && cus.customizationSelected[0].idProductCustomization == choice.idProductCustomization && cus.customizationSelected[0].id != choice.id)} onChange={() => onChooseCustomization(choice)} checked={orderProduct.customizations.some(option => option.customizationSelected.map(c => c.id).includes(choice.id) ? true : false)} className='peer relative appearance-none w-5 h-5 border-2 border-primary-color disabled:border-bodydark1 checked:bg-primary-color' type='checkbox' id={choice.name} value={choice.id} />
+                                                            <label className=''>{choice.name}</label>
+                                                            <span className='ms-4 font-semibold'>{choice.price}$</span>
                                                         </div>
                                                     ))}
                                                 </div>

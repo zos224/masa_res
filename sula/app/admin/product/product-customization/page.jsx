@@ -21,7 +21,8 @@ const MenuPage = () => {
     const [currentPCC, setCurrentPCC] = useState({
         id: 0,
         name: '',
-        idParent: 0
+        idParent: 0,
+        price: 0
     })
 
     useEffect(() => {
@@ -168,7 +169,7 @@ const MenuPage = () => {
                 <div className="mt-10 w-full relative overflow-x-auto shadow-md sm:rounded-lg ">
                 <div className="flex justify-between mx-4">
                         <h3 className="font-bold text-md">Customization Choices</h3>
-                        <button className="dark:bg-bodydark dark:text-black-2 text-black bg-white rounded-md px-3 py-2 shadow-md" onClick={() => {setCurrentPCC({id: null, name: '', idParent: productCustomizations[0].id}); setAction("create"); setOpenModalPCC(true)}}>Add Customization Choice</button>
+                        <button className="dark:bg-bodydark dark:text-black-2 text-black bg-white rounded-md px-3 py-2 shadow-md" onClick={() => {setCurrentPCC({id: null, name: '', idParent: productCustomizations[0].id, price: 0}); setAction("create"); setOpenModalPCC(true)}}>Add Customization Choice</button>
                     </div>
                     <table className="w-full text-sm text-center text-gray-500 dark:text-white">
                         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-500 dark:text-white">
@@ -179,6 +180,9 @@ const MenuPage = () => {
                                 </th>
                                 <th scope="col" className="px-6 py-3 font-medium">
                                     Product Customization
+                                </th>
+                                <th scope="col" className="px-6 py-3 font-medium">
+                                    Price
                                 </th>
                                 <th scope="col" colSpan={2} className="px-6 py-3 font-medium">
                                     Actions
@@ -198,7 +202,10 @@ const MenuPage = () => {
                                         {pcc.productCustomization}
                                     </td>
                                     <td className="px-6 py-4">
-                                        <button className="hover:text-boxdark-2 hover:font-bold" onClick={() => {setCurrentPCC({id: pcc.id, name: pcc.name, idParent: pcc.idProductCustomization}); setAction("update"); setOpenModalPCC(true)}}>Update</button>
+                                        {pcc.price}
+                                    </td>
+                                    <td className="px-6 py-4">
+                                        <button className="hover:text-boxdark-2 hover:font-bold" onClick={() => {setCurrentPCC({id: pcc.id, name: pcc.name, idParent: pcc.idProductCustomization, price: pcc.price}); setAction("update"); setOpenModalPCC(true)}}>Update</button>
                                     </td>
                                     <td className="px-6 py-4">
                                         <button onClick={() => {setOpenModalDeletePCC(!openModalDeletePCC); setDeleteLink("/api/productcustomizationchoice/" + pcc.id)}} className="hover:text-boxdark-2 hover:font-bold">Delete</button>

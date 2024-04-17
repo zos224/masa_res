@@ -168,7 +168,7 @@ const CreateUpdateEvent = () => {
                                                             {item.orderItemCustomization.map((customization, index) => (
                                                                 <div key={index} class="flex gap-3 w-full mb-3">
                                                                     <div>{customization.productCustomizationChoice.productCustomization.name}</div>
-                                                                    <div> - {customization.productCustomizationChoice.name}</div>
+                                                                    <div> - {customization.productCustomizationChoice.name}({customization.productCustomizationChoice.price}$)</div>
                                                                 </div>
                                                             ))}
                                                         </div>

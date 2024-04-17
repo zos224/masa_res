@@ -64,8 +64,6 @@ model Product {
   product_productOptions Product_ProductOption[]
   product_productCustomizations Product_ProductCustomization[]
   orderItems OrderItem[]
-  additionalMenuItemOptions AdditionalMenuItemOption[]
-  cateringOptionIncludeProducts CateringOptionIncludeProduct[]
   subTypeProducts SubTypeProduct[]
 }
 
@@ -121,6 +119,7 @@ model ProductCustomizationChoice {
   name String
   idProductCustomization Int
   productCustomization ProductCustomization @relation(fields: [idProductCustomization], references: [id], onDelete: Cascade)
+  price Float @default(0)
   orderItemCustomizations OrderItemCustomization[]
   @@unique([name, idProductCustomization])
 }
@@ -202,146 +201,16 @@ model Reservation {
   specialRequest String?
 }
 
-model RequestQuote {
+model Catering {
   id Int @id @default(autoincrement())
   name String
   email String
   phone String
-  numberOfGuests Int
-  date DateTime
-  deliveryTime String
-  eventType String
-  eventAddress String
-  spiceLevel String
-  details String?
-  paymentMethod String
-  gst Float
-  requestQuoteParty RequestQuoteParty?
-  customOrder CustomOrder?
-  fingerfoodOrder FingerfoodOrder?
-}
-
-model RequestQuoteParty {
-  id Int @id @default(autoincrement())
-  idRequestQoute Int @unique
-  requestQuote RequestQuote @relation(fields: [idRequestQoute], references: [id], onDelete: Cascade)
-  dinnerWare String
-  spoons String
-  setup String
-  idCateringOption Int
-  cateringOption CateringOption @relation(fields: [idCateringOption], references: [id], onDelete: Cascade)
-  requestQuotePartyProducts RequestQuotePartyProduct[]
-  requestQuotePartyAddProducts RequestQuotePartyAddProduct[]
-}
-
-model RequestQuotePartyProduct {
-  id Int @id @default(autoincrement())
-  idCateringOptionIncludeProduct Int
-  cateringOptionIncludeProduct CateringOptionIncludeProduct @relation(fields: [idCateringOptionIncludeProduct], references: [id], onDelete: Cascade)
-  idRequestQuoteParty Int
-  requestQuoteParty RequestQuoteParty @relation(fields: [idRequestQuoteParty], references: [id], onDelete: Cascade)
-}
-
-model RequestQuotePartyAddProduct {
-  id Int @id @default(autoincrement())
-  idAdditinalOption Int
-  additionalMenuItemOption AdditionalMenuItemOption @relation(fields: [idAdditinalOption], references: [id], onDelete: Cascade)
-  idRequestQuoteParty Int
-  requestQuoteParty RequestQuoteParty @relation(fields: [idRequestQuoteParty], references: [id], onDelete: Cascade)
-}
-
-model AdditionalMenuItem {
-  id Int @id @default(autoincrement())
-  name String
-  additionalMenuItemOptions AdditionalMenuItemOption[]
-}
-
-
-model AdditionalMenuItemOption {
-  id Int @id @default(autoincrement())
-  idAddMenuItem Int
-  additionalMenuItem AdditionalMenuItem @relation(fields: [idAddMenuItem], references: [id], onDelete: Cascade)
-  idProduct Int
-  product Product @relation(fields: [idProduct], references: [id], onDelete: Cascade)
-  price Float
-  note String?
-  requestQuotePartyAddProducts RequestQuotePartyAddProduct[]
-}
-
-model CateringService {
-  id Int @id @default(autoincrement())
-  name String
-  cateringServiceOptions CateringServiceOption[]
-}
-
-model CateringOption {
-  id Int @id @default(autoincrement())
-  name String
-  servedWith String?
-  assortedChutneys String?
-  price Float
-  cateringOptionIncludes CateringOptionInclude[]
-  requestQuotePartys RequestQuoteParty[]
-  cateringServiceOptions CateringServiceOption[]
-}
-
-model CateringServiceOption {
-  id Int @id @default(autoincrement())
-  idCateringOption Int
-  cateringOption CateringOption @relation(fields: [idCateringOption], references: [id], onDelete: Cascade)
-  idCateringService Int
-  cateringService CateringService @relation(fields: [idCateringService], references: [id], onDelete: Cascade)
-}
-
-model CateringOptionInclude {
-  id Int @id @default(autoincrement())
-  idCateringOption Int
-  cateringOption CateringOption @relation(fields: [idCateringOption], references: [id], onDelete: Cascade)
-  name String
-  keyword String
-  quantity Int
-  cateringOptionIncludeProducts CateringOptionIncludeProduct[]
-}
-
-model CateringOptionIncludeProduct {
-  id Int @id @default(autoincrement())
-  idCateringOptionInclude Int
-  cateringOptionInclude CateringOptionInclude @relation(fields: [idCateringOptionInclude], references: [id], onDelete: Cascade)
-  idProduct Int
-  product Product @relation(fields: [idProduct], references: [id], onDelete: Cascade)
-  note String?
-  price Float
-  requestQuotePartyProducts RequestQuotePartyProduct[]
-  fingerfoodOrderProducts FingerfoodOrderProduct[]
-}
-
-model CustomOrder {
-  id Int @id @default(autoincrement())
-  idRequestQoute Int @unique
-  requestQuote RequestQuote @relation(fields: [idRequestQoute], references: [id], onDelete: Cascade)
-  setupType String
-  rentalRequired String
-  spoons String
-  plateAndCutlery String
-  menuDetails String
-}
-
-model FingerfoodOrder {
-  id Int @id @default(autoincrement())
-  idRequestQoute Int @unique
-  requestQuote RequestQuote @relation(fields: [idRequestQoute], references: [id], onDelete: Cascade)
-  setupType String
-  fingerfoodOrderProducts FingerfoodOrderProduct[]
-}
-
-
-model FingerfoodOrderProduct {
-  id Int @id @default(autoincrement())
-  idFingerfoodOrder Int
-  fingerfoodOrder FingerfoodOrder @relation(fields: [idFingerfoodOrder], references: [id], onDelete: Cascade)
-  idCateringOptionIncludeProduct Int
-  cateringOptionIncludeProduct CateringOptionIncludeProduct @relation(fields: [idCateringOptionIncludeProduct], references: [id], onDelete: Cascade)
-  quantity Int
+  numberOfPeople Int
+  dateTime DateTime
+  occasion String
+  budget Float
+  additionalComments String?
 }
 
 model Event {
@@ -360,9 +229,10 @@ model Feedback {
   name String
   phone String 
   email String
+  date DateTime
   orderType String
-  idOrder String @unique
-  order Order @relation(fields: [idOrder], references: [id], onDelete: Cascade) 
+  idOrder String? @unique
+  order Order? @relation(fields: [idOrder], references: [id], onDelete: Cascade) 
   orderIssues String
   image String
   status Boolean

@@ -117,11 +117,11 @@ const CheckOutPage = () => {
                 dateTime: orderDetails.fullDate + " " + orderDetails.time,
                 paymentMethod: order.paymentMethod,
                 paymentStatus: order.paymentStatus,
-                subTotal: card.reduce((acc, item) => acc + item.total, 0),
-                gst: card.reduce((acc, item) => acc + item.total, 0) * 0.05,
+                subTotal: card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0),
+                gst: card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 0.05,
                 tip: order.tip,
                 discount: order.discount,
-                total: (card.reduce((acc, item) => acc + item.total, 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2),
+                total: (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2),
                 status: order.status
             }
             sessionStorage.setItem("currentOrder", JSON.stringify(dataOrder))
@@ -149,11 +149,11 @@ const CheckOutPage = () => {
             formData.append("dateTime", orderDetails.fullDate + " " + orderDetails.time);
             formData.append("paymentMethod", order.paymentMethod);
             formData.append("paymentStatus", order.paymentStatus);
-            formData.append("subTotal", card.reduce((acc, item) => acc + item.total, 0));
-            formData.append("gst", card.reduce((acc, item) => acc + item.total, 0) * 0.05);
+            formData.append("subTotal", card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0));
+            formData.append("gst", card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 0.05);
             formData.append("tip", order.tip);
             formData.append("discount", order.discount);
-            formData.append("total", (card.reduce((acc, item) => acc + item.total, 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2));
+            formData.append("total", (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2));
             formData.append("status", order.status);
             formData.append("products", JSON.stringify(card));
             const res = await fetch('/api/order/create', {
@@ -352,11 +352,11 @@ const CheckOutPage = () => {
                         <div className="text-black-2">
                             <div className="flex justify-between mt-5">
                                 <span>Subtotal</span>
-                                <span className="font-bold">{card.reduce((acc, item) => acc + item.total, 0).toFixed(2)}$</span>
+                                <span className="font-bold">{card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0).toFixed(2)}$</span>
                             </div>
                             <div className="flex justify-between mt-2">
                                 <span>5% GST</span>
-                                <span className="font-bold">{(card.reduce((acc, item) => acc + item.total, 0) * 0.05).toFixed(2)}$</span>
+                                <span className="font-bold">{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 0.05).toFixed(2)}$</span>
                             </div>
                             <div className="flex justify-between mt-2 border-b  pb-3">
                                 <span>Discounts</span>
@@ -388,21 +388,21 @@ const CheckOutPage = () => {
                                         <p>0%</p>
                                         <p className="font-semibold">0$</p>
                                     </div>
-                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.05).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.05).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
+                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.05).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.05).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
                                         <p>5%</p>
-                                        <p className="font-semibold">{(card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.05).toFixed(2)}$</p>
+                                        <p className="font-semibold">{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.05).toFixed(2)}$</p>
                                     </div>
-                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.1).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.1).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
+                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.1).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.1).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
                                         <p>10%</p>
-                                        <p className="font-semibold">{(card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.1).toFixed(2)}$</p>
+                                        <p className="font-semibold">{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.1).toFixed(2)}$</p>
                                     </div>
-                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.15).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.15).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
+                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.15).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.15).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
                                         <p>15%</p>
-                                        <p className="font-semibold">{(card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.15).toFixed(2)}$</p>
+                                        <p className="font-semibold">{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.15).toFixed(2)}$</p>
                                     </div>
-                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.2).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.2).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
+                                    <div onClick={() => {setOrder({...order, tip: (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.2).toFixed(2)}); setShowInputTip(false)}} className={`w-full px-3 ${order.tip == (card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.2).toFixed(2) && !showInputTip ? "bg-primary-color text-white" : ""}`}>
                                         <p>20%</p>
-                                        <p className="font-semibold">{(card.reduce((acc, item) => acc + item.total, 0) * 1.05 * 0.2).toFixed(2)}$</p>
+                                        <p className="font-semibold">{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 * 0.2).toFixed(2)}$</p>
                                     </div>
                                     <div className={`w-full flex px-3 items-center ${showInputTip ? "bg-primary-color text-white rounded-r-md" : ""}`}>
                                         <p className="" onClick={() => {setShowInputTip(true)}}>Other</p>
@@ -419,7 +419,7 @@ const CheckOutPage = () => {
                             </div>
                             <div className="flex justify-between mt-5">
                                 <span>Total</span>
-                                <span>{(card.reduce((acc, item) => acc + item.total, 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2)}$</span>
+                                <span>{(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 1.05 + parseFloat(order.tip) - order.discount).toFixed(2)}$</span>
                             </div>
                             <div className="mt-10">
                                 <button onClick={handleOrder} className="bg-primary-color w-full py-2 text-white font-semibold rounded-full">Place Order ({orderDetails.time})</button>

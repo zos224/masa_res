@@ -13,14 +13,16 @@ const ModalChild = ({isOpen, onClose, action, childData, listParent, name, paren
     const [child, setChild] = useState({
         id: childData.id,
         name: childData.name,
-        idParent: childData.idParent
+        idParent: childData.idParent,
+        price: 0
     })
 
     useEffect(() => {   
         setChild({
             id: childData.id,
             name: childData.name,
-            idParent: childData.idParent
+            idParent: childData.idParent,
+            price: childData.price
         })
     }, [childData])
 
@@ -31,7 +33,9 @@ const ModalChild = ({isOpen, onClose, action, childData, listParent, name, paren
         formData.append("id", child.id)
         formData.append("name", child.name)
         formData.append("idParent", child.idParent)
-        
+        if (name.includes("customization")) {
+            formData.append("price", child.price)
+        }
         const response = await fetch('/api/' + name.replaceAll(' ', '') + '/createOrUpdate', {
             method: "POST",
             body: formData
@@ -68,7 +72,7 @@ const ModalChild = ({isOpen, onClose, action, childData, listParent, name, paren
                                     <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
                                         Name of {name}
                                     </label>
-                                    <input value={child.name} type="text" placeholder={`Input name of ` + name } onChange={(e) => {setChild({...child, name: e.target.value})}}  class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
+                                    <input value={child.name} type="text" placeholder={`Input name of ` + name } onChange={(e) => {setChild({...child, name: e.target.value})}}  className="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
                                     </div>
                                 </div>
                                 <div class="w-full px-4 mx-auto">
@@ -83,6 +87,14 @@ const ModalChild = ({isOpen, onClose, action, childData, listParent, name, paren
                                         </select>
                                     </div>
                                 </div>
+                                {name.includes("customization") && 
+                                    <div className="w-full px-4 mx-auto">
+                                        <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
+                                            Price
+                                        </label>
+                                        <input value={child.price} onChange={(e) => {setChild({...child, price: e.target.value})}} className="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="number" inputMode="decimal"></input>
+                                    </div>
+                                }
                                 {!submitting ? (
                                 <div className="text-center">
                                     <input type="submit" role="button" className="mt-5 cursor-pointer bg-black text-white dark:bg-whiten dark:text-black px-3 py-2 rounded-xl" value={action == 'create' ? 'Add' : 'Update'}/>

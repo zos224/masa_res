@@ -239,14 +239,14 @@ const NavOrder = () => {
                                                 <div className='my-5 pt-5 border-t border-bodydark text-black text-lg font-semibold '>
                                                     <div className='flex justify-between'>
                                                         <p>Subtotal</p>
-                                                        <p>{card.map(item => item.total).reduce((a, c) => a + c, 0).toFixed(2)}$</p>
+                                                        <p>{card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0).toFixed(2)}$</p>
                                                     </div>
                                                     <div className='flex justify-between mt-1'>
                                                         <p>5% GST </p>
-                                                        <p>{(card.map(item => item.total).reduce((a, c) => a + c, 0) * 0.05).toFixed(2)}$</p>
+                                                        <p>{(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.05).toFixed(2)}$</p>
                                                     </div>
                                                     <div className='w-full flex text-center'>
-                                                        <Link href={"/order-masala/checkout"} className='w-full mt-4 bg-primary-color text-white py-2 rounded-full'>({card.length}) Check Out - {(card.map(item => item.total).reduce((a, c) => a + c, 0) + card.map(item => item.total).reduce((a, c) => a + c, 0) * 0.05).toFixed(2)}$</Link>
+                                                        <Link href={"/order-masala/checkout"} className='w-full mt-4 bg-primary-color text-white py-2 rounded-full'>({card.length}) Check Out - {(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) + card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.05).toFixed(2)}$</Link>
                                                     </div>
                                                 </div>
                                             </div>

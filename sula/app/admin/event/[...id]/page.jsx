@@ -92,7 +92,7 @@ const CreateUpdateEvent = () => {
             })
             if (response.ok) {
                 setOldImageUrl(event.image)
-                }
+            }
         }
         if (oldImageUrl) {
             updateImage()

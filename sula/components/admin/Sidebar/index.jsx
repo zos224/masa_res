@@ -322,6 +322,17 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                   Reservation
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/admin/catering"
+                  className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes("catering") && "bg-graydark dark:bg-meta-4"
+                  }`}
+                >
+                  <Image className="w-5 h-5" src={"/images/icon/event.svg"} width={50} height={50}></Image>
+                  Catering
+                </Link>
+              </li>
               {/* <!-- Menu Item Reservation --> */}
               <li>
                 <Link
@@ -332,6 +343,17 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 >
                   <Image className="w-5 h-5" src={"/images/icon/event.svg"} width={50} height={50}></Image>
                   Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/admin/feedback"
+                  className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes("feedback") && "bg-graydark dark:bg-meta-4"
+                  }`}
+                >
+                  <Image className="w-5 h-5" src={"/images/icon/event.svg"} width={50} height={50}></Image>
+                  Feedback
                 </Link>
               </li>
               {/* <!-- Menu Item Settings --> */}

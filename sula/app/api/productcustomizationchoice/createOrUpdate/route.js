@@ -3,13 +3,15 @@ import prisma from "@/app/db/prismaClient";
 export const POST = async (req) => {
     let pcc = {
         name: '',
-        idProductCustomization: 0
+        idProductCustomization: 0,
+        price: 0
     }
     const formData = await req.formData();
     const idValue = formData.get('id');
     const id = idValue ? parseInt(idValue, 10) : null;
     pcc.name = formData.get('name');
     pcc.idProductCustomization = parseInt(formData.get('idParent'));
+    pcc.price = parseFloat(formData.get("price"));
     try {
         let newPCC;
         if (id && !isNaN(id)) {
