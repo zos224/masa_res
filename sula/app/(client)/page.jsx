@@ -59,8 +59,8 @@ const HomePage = () => {
         </div>
       </div>
       <div className="mt-15 flex justify-around">
-        <button className="border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Table Reservation</button>
-        <button className="border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Order Online</button> 
+        <Link href={"/reservation"} className="border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Table Reservation</Link>
+        <Link href={"/order-online"} className="border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Order Online</Link> 
       </div>
       <div className="mt-15 text-center font-semibold text-2xl w-full bg-dark-custom py-4 text-white">
         LOCATIONS
@@ -69,8 +69,8 @@ const HomePage = () => {
         {listRestaurant.map((restaurant) => (
           <div key={restaurant.id} className="mt-10 text-center lg:w-1/3 mx-auto">
               <h2 className="font-bold text-xl text-center text-black">{restaurant.name}</h2>
-              <Image className="w-full aspect-video object-cover mt-4" src={restaurant.image} width={500} height={300}></Image>
-              <button className="mt-4 border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Details</button>
+              <Image className="w-full aspect-video object-cover mt-4 pb-6" src={restaurant.image} width={500} height={300}></Image>
+              <Link href={"/location"} className="mt-4 border-primary-color border-2 text-primary-color uppercase text-base font-medium px-6 py-3 hover:bg-primary-color hover:text-white duration-300">Details</Link>
           </div>
         ))}
       </div>
