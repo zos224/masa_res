@@ -6,7 +6,7 @@ module.exports = {
           hostname: 'res.cloudinary.com',
         },
       ],
-      unoptimized: false,
+      unoptimized: true
     },
     staticPageGenerationTimeout: 100000,
 }
