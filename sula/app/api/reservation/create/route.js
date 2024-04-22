@@ -34,7 +34,8 @@ export const POST = async (req) => {
         name: "",
         email: "",
         phone: "",
-        specialRequest: ""
+        specialRequest: "",
+        location: ""
     }
     reservation.idRestaurant = parseInt(formData.get('idRestaurant'));
     reservation.dateTime = convertToISO8601(formData.get('dateTime'));
@@ -43,6 +44,7 @@ export const POST = async (req) => {
     reservation.email = formData.get('email');
     reservation.phone = formData.get('phone');
     reservation.specialRequest = formData.get('specialRequest');
+    reservation.location = formData.get('location');
     try {
         const newReservation = await prisma.Reservation.create({ data: reservation });
         return new Response("Done", { status: 200 })

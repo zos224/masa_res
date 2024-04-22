@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 const ReservationPage = () => {
-    const [restaurant, setRestaurant] = useState({})
+    const [restaurant, setRestaurant] = useState(null)
     const [step1, setStep1] = useState(true)
     const [success, setSuccess] = useState(false)
     const [reservation, setReservation] = useState({
@@ -15,7 +15,8 @@ const ReservationPage = () => {
         idRestaurant: 0,
         seatingOption: "",
         specialRequest: "",
-        type: "table"
+        type: "table",
+        location: ""
     })
     const [viewPolicy, setViewPolicy] = useState(false)
     const [error, setError] = useState(false)
@@ -79,6 +80,7 @@ const ReservationPage = () => {
         formData.append("seatingOption", reservation.seatingOption);
         formData.append("specialRequest", reservation.specialRequest);
         formData.append("type", reservation.type);
+        formData.append("location", reservation.location);
         const res = await fetch('/api/reservation/create', {
             method: 'POST',
             body: formData
@@ -89,19 +91,21 @@ const ReservationPage = () => {
     }
     return (
         restaurant && (
-        <div className="bg-white pt-30 md:w-2/5 mx-auto pb-5">
+        <div className="pt-30 md:w-2/5 mx-auto pb-5">
             {step1 ? (
-                <div className="border rounded-md py-3">
-                    <div className="text-center border-b">
-                        <p className="text-black font-bold text-lg">{restaurant.name}</p>
-                        <p className="pb-3">{restaurant.address}</p>
+                <div className="border border-white rounded-md py-3">
+                    <div className="text-center border-b border-white uppercase">
+                        <p className="text-white font-bold text-xl">{restaurant.name}</p>
+                        <p className="pb-3 text-white">{restaurant.address.split('|').map((a, index) => (
+                        <div key={index}>Address {index+1}: {a}</div>
+                      ))}</p>
                     </div>
-                    <div className="flex gap-10 px-4 py-3 shadow-md">
+                    <div className="flex gap-10 px-4 py-3 shadow-md border-b border-white">
                         <div className="w-full">
-                            <div className="text-black">
-                                <label>Guest</label>
+                            <div className="text-white">
+                                <label>GUEST</label>
                             </div>
-                            <select onChange={(e) => setReservation({...reservation, numberOfGuests: e.target.value})} className="px-2 py-3 border rounded-md w-full text-black">
+                            <select onChange={(e) => setReservation({...reservation, numberOfGuests: e.target.value})} className="px-2 py-3 border  rounded-md w-full text-black">
                                 <option value={"1"}>1</option>
                                 <option value={"2"}>2</option>
                                 <option value={"3"}>3</option>
@@ -116,8 +120,8 @@ const ReservationPage = () => {
                             </select>
                         </div>
                         <div className="w-full">
-                            <div className="text-black">
-                                <label>Date</label>
+                            <div className="text-white">
+                                <label>DATE</label>
                             </div>
                             <select onChange={(e) => setSelectedDate(e.target.value)} className="px-2 py-3 border rounded-md w-full text-black">
                                 {dates.map((date, index) => (
@@ -125,27 +129,37 @@ const ReservationPage = () => {
                                 ))}
                             </select>
                         </div>
+                        <div className="w-full">
+                            <div className="text-white">
+                                <label>ADDRESS</label>
+                            </div>
+                            <select onChange={(e) => setReservation({...reservation, location: e.target.value})} className="px-2 py-3 border rounded-md w-full text-black">
+                                {restaurant.address.split('|').map((a, index) => (
+                                    <option key={index}>{a}</option>
+                                ))}
+                            </select>
+                        </div>
                     </div>
-                    <div className="p-3 pb-8 text-center border-b">
-                        <p className="text-black font-semibold">Select a time</p>
+                    <div className="p-3 pb-8 text-center border-b border-white">
+                        <p className="text-white font-semibold uppercase">Select a time</p>
                         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-7 mt-6">
                             {times.map((time, index) => (
-                                <button onClick={() => {setSelectedTime(index)}} key={index} className={`border-2 text-black px-4 py-3 rounded-md ${selectedTime == index ? "border-primary-color" : ""}`}>{time}</button>
+                                <button onClick={() => {setSelectedTime(index)}} key={index} className={`border-2 text-white px-4 py-3 rounded-2xl ${selectedTime == index ? "border-primary-color" : ""}`}>{time}</button>
                             ))}
                         </div>
                     </div>
-                    <div className="text-black p-4 border-b">
-                        <p className="font-bold ">
-                            Restaurant Terms & Conditions
+                    <div className="text-white py-2 px-4 border-b">
+                        <p className="font-bold text-xl uppercase">
+                            Terms & Conditions
                         </p>
                         <p className="text-sm">
-                            - We aim to have you seated within 10 minutes of your entire party's arrival. <br></br>
-                            - Reservations will be held for 15 minutes. <br></br>
-                            - Reservations will be seated for up to a maximum of 2 hours.
+                            We aim to have you seated within 10 minutes of your entire party's arrival. <br></br>
+                            Reservations will be held for 15 minutes. <br></br>
+                            Reservations will be seated for up to a maximum of 2 hours.
                         </p>
                     </div>
                     <div className="py-5 px-3">
-                        <button onClick={() => {setStep1(false)}} className="bg-primary-color text-white font-semibold w-full py-3 rounded-md">Continue</button>
+                        <button onClick={() => {setStep1(false)}} className="border-white w-full text-2xl font-bold border-2 text-white uppercase px-6 py-1 bg-primary-hover duration-300">Continue</button>
                     </div>
                 </div>
                 ) : (
@@ -153,55 +167,57 @@ const ReservationPage = () => {
                         <div className="h-screen">
                             <div className="text-center">
                                 <Image className="mx-auto cursor-pointer" src={"/images/icon/success.gif"} width={50} height={50}></Image>
-                                <p className="text-black text-lg font-semibold mt-5">Reservation Successful</p>
+                                <p className="text-white text-lg font-semibold mt-5">Reservation Successful</p>
                             </div>
                             <div className="text-center mt-5">
-                                <p className="text-black">Thank you for your reservation</p>
-                                <p className="text-black">We look forward to seeing you</p>
+                                <p className="text-white">Thank you for your reservation</p>
+                                <p className="text-white">We look forward to seeing you</p>
                             </div>
                         </div>
                     ) : (
-                    <div className="border rounded-md py-3 px-5">
-                        <div className="flex items-center ">
-                            <Image onClick={() => setStep1(true)} className="w-7" src={"/images/icon/back.svg"} width={20} height={20}></Image>
-                            <div className="w-11/12 text-center">
-                                <p className="text-black font-bold text-lg">{restaurant.name}</p>
-                                <p className="pb-3">{restaurant.address}</p>
+                    <div className="border border-white rounded-md py-3 ">
+                        <div className="flex items-center border-b border-white px-5">
+                            <Image onClick={() => setStep1(true)} className="w-7 cursor-pointer" src={"/images/icon/back.svg"} width={20} height={20}></Image>
+                            <div className="w-11/12 text-center uppercase">
+                                <p className="text-white font-bold text-xl">{restaurant.name}</p>
+                                <p className="pb-3 text-white">{restaurant.address.split('|').map((a, index) => (
+                                    <div key={index}>Address {index+1}: {a}</div>
+                                ))}</p>
                             </div>
                         </div>
-                        <div className="pb-10 border-b">
-                            <p className="text-black text-sm font-semibold">Reservation Details</p>
-                            <p className="text-black text-sm mt-3">
+                        <div className="pb-10 border-b border-white px-5 mt-5">
+                            <p className="text-white font-semibold">Reservation Details</p>
+                            <p className="text-white mt-3">
                                 {dates[selectedDate].toDateString()}, at {times[selectedTime]} <br></br>
                                 {reservation.numberOfGuests} guests
                             </p>
-                            <p className="text-black text-sm font-semibold mt-7">Personal Details</p>
+                            <p className="text-white font-semibold mt-7">Personal Details</p>
                             <div className="flex gap-10 mt-3">
                                 <div className="w-full">
-                                    <label className="text-black text-sm">First Name</label>
-                                    <input onChange={(e) => setReservation({...reservation, firstName: e.target.value})} className="w-full border rounded-md py-2 px-3 mt-1" type="text"></input>
+                                    <label className="text-white">First Name</label>
+                                    <input onChange={(e) => setReservation({...reservation, firstName: e.target.value})} className="w-full text-black border rounded-md py-2 px-3 mt-1" type="text"></input>
                                 </div>
                                 <div className="w-full">
-                                    <label className="text-black text-sm">Last Name</label>
-                                    <input onChange={(e) => setReservation({...reservation, lastName: e.target.value})} className="w-full border rounded-md py-2 px-3 mt-1" type="text"></input>
+                                    <label className="text-white">Last Name</label>
+                                    <input onChange={(e) => setReservation({...reservation, lastName: e.target.value})} className="w-full text-black border rounded-md py-2 px-3 mt-1" type="text"></input>
                                 </div>
                             </div>
                             <div className="mt-3"> 
-                                <label className="text-black text-sm">Email</label>
-                                <input onChange={(e) => setReservation({...reservation, email: e.target.value})} className="w-full border rounded-md py-2 px-3 mt-1" type="email"></input>
+                                <label className="text-white">Email</label>
+                                <input onChange={(e) => setReservation({...reservation, email: e.target.value})} className="w-full border text-black rounded-md py-2 px-3 mt-1" type="email"></input>
                             </div>
                             <div className="w-fit mt-3">
-                                <label className="text-black text-sm mt-3">Phone</label>
-                                <input onChange={(e) => setReservation({...reservation, phone: e.target.value})} className="w-full border rounded-md py-2 px-3 mt-1" type="text"></input>
+                                <label className="text-white mt-3">Phone</label>
+                                <input onChange={(e) => setReservation({...reservation, phone: e.target.value})} className="w-full border text-black rounded-md py-2 px-3 mt-1" type="text"></input>
                             </div>
                             <div className="mt-3">
-                                <label className="text-black text-sm mt-3">Special Requests</label>
+                                <label className="text-white mt-3">Special Requests</label>
                                 <textarea onChange={(e) => setReservation({...reservation, specialRequest: e.target.value})} className="w-full text-black border rounded-md py-2 px-3 mt-1" rows="4"></textarea>
                             </div>
                             {error && (<div className="text-red mt-2 font-medium">Please fill the form!</div>)}
                         </div>
-                        <div className="text-black p-4">
-                            By clicking "Reserve" you agree to the <b onClick={() => setViewPolicy(true)} className="text-primary-color cursor-pointer">Masala's policy</b>.
+                        <div className="text-white m-5">
+                            By clicking "Reserve" you agree to the <b onClick={() => setViewPolicy(true)} className="text-white cursor-pointer">Masala's policy</b>.
                         </div>
                         {viewPolicy && (
                         <div className="w-full z-99 absolute top-0 left-0 h-full bg-dark-custom">
@@ -256,8 +272,8 @@ const ReservationPage = () => {
                                 </div> 
                             </div>
                         )}
-                        <div className="mt-10">
-                            <button onClick={handleSubmit} className="bg-primary-color text-white font-semibold w-full py-3 rounded-md">Reserve</button>
+                        <div className="mt-10 mx-5">
+                            <button onClick={handleSubmit} className="border-white w-full text-2xl font-bold border-2 text-white uppercase px-6 py-1 bg-primary-hover duration-300">Reserve</button>
                         </div>
                     </div>
                 ))}

@@ -11,6 +11,9 @@ export const metadata = {
       <div>
         <NavbarHorizon></NavbarHorizon>
         <div className="bg-image">
+          <div className="h-24">
+
+          </div>
           {children}
         </div>
         <Footer></Footer>

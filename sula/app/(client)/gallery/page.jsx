@@ -14,8 +14,8 @@ async function getGallery() {
 const OrderPage =  async () => {
     const images = await getGallery()
     return (
-        <div className="min-h-screen pt-40">
-            <div className="text-center text-4xl text-black font-semibold tracking-widest">
+        <div className="min-h-screen pt-10 bg-image-contact">
+            <div className="text-center md:text-8xl text-4xl text-white font-gambarino tracking-widest">
                 PHOTO GALLERY
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mx-10 my-10">

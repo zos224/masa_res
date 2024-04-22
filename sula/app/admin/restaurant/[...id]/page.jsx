@@ -1,6 +1,6 @@
 "use client"
 import { useParams, useRouter } from "next/navigation"
-import {useEffect, useState } from "react"
+import {useEffect, useState, useRef } from "react"
 import { CldUploadWidget } from 'next-cloudinary';
 import Image from "next/image"
 const CreateUpdateRestaurant = () => {
@@ -25,11 +25,12 @@ const CreateUpdateRestaurant = () => {
             const response = await fetch('/api/restaurant/' + params.id[1])
             if (response.ok) {
                 const existRes = await response.json();
+                const address = existRes.address.split('|')
                 setRestaurant({
                     id: existRes.id,
                     name: existRes.name,
                     phone: existRes.phoneNumber,
-                    address: existRes.address,
+                    address: address,
                     operationTimeIndoor: existRes.operationTimeIndoor,
                     operationTimeTakeAway: existRes.operationTimeTakeAway,
                     status: existRes.status,
@@ -55,11 +56,15 @@ const CreateUpdateRestaurant = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting(true)
+        let address = []
+        document.querySelectorAll('.address').forEach((a) => {
+            address.push(a.value)
+        })
         const formData = new FormData();
         formData.append("id", restaurant.id)
         formData.append("name", restaurant.name)
         formData.append("phoneNumber", restaurant.phone)
-        formData.append("address", restaurant.address)
+        formData.append("address", address.join('|'))
         formData.append("operationTimeIndoor", restaurant.operationTimeIndoor)
         formData.append("operationTimeTakeAway", restaurant.operationTimeTakeAway)
         formData.append("status", restaurant.status)
@@ -108,7 +113,26 @@ const CreateUpdateRestaurant = () => {
             setOldImageUrl(restaurant.image)
         }
     }, [restaurant.image])
-
+    const addressRef = useRef(null)
+    const addressContainerRef = useRef(null)
+    const newElement = (ref, containerRef) => {
+        const element = ref.current;
+        const container = containerRef.current;
+        if (element) {
+            const copy = element.cloneNode(true)
+            copy.querySelector("input").value = ''  
+            copy.classList.add("mt-3")
+            const image = copy.querySelector("img")
+            image.src = "/images/icon/remove.svg" 
+            image.width = '26' 
+            image.height = '26'
+            image.classList.add("me-1")
+            container.appendChild(copy)
+            image.onclick = () => {
+                copy.remove()
+            }
+        }
+    }
     return (
         <section class="py-1">
             <div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
@@ -140,12 +164,31 @@ const CreateUpdateRestaurant = () => {
                                 </div>
                             </div>
                             <div class="w-full lg:w-6/12 px-4 mx-auto">
-                                <div class="relative w-full mb-3">
-                                <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
-                                    Address
-                                </label>
-                                <input value={restaurant.address} type="text" placeholder="Input address of restaurant" onChange={(e) => setRestaurant({...restaurant, address: e.target.value})} class="border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
-                                </div>
+                                <div ref={addressContainerRef} class="relative w-full mb-3">
+                                    <label class="block uppercase text-gray-200 text-xs font-bold mb-2">
+                                        Address
+                                    </label>
+                                    {restaurant.address.length == 0 ? (
+                                        <div ref={addressRef} className="flex">
+                                            <input type="text" placeholder="Input address of restaurant" onChange={(e) => setRestaurant({...restaurant, address: e.target.value})} class="address border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
+                                            <Image className="cursor-pointer ms-7" onClick={() => {newElement(addressRef, addressContainerRef)}} src={"/images/icon/add.svg"} width={35} height={35}></Image>
+                                        </div>
+                                    ) : (
+                                        restaurant.address.map((address, index) => (
+                                            index == 0 ? (
+                                                <div ref={addressRef} className="flex">
+                                                    <input value={address} type="text" placeholder="Input address of restaurant" onChange={(e) => setRestaurant({...restaurant, address: e.target.value})} class="address border-0 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
+                                                    <Image className="cursor-pointer ms-7" onClick={() => {newElement(addressRef, addressContainerRef)}} src={"/images/icon/add.svg"} width={35} height={35}></Image>
+                                                </div> 
+                                                ) : (
+                                                <div ref={addressRef} className="flex">
+                                                    <input value={address} type="text" placeholder="Input address of restaurant" onChange={(e) => setRestaurant({...restaurant, address: e.target.value})} class="address border-0 mt-3 px-3 py-3 placeholder-bodydark2 text-black dark:bg-bodydark bg-white rounded text-sm shadow-4 focus:outline-none focus:ring w-full ease-linear transition-all duration-150" />
+                                                    <Image className="cursor-pointer ms-7" onClick={(e) => {e.currentTarget.parentNode.remove()}} src={"/images/icon/remove.svg"} width={28} height={28}></Image>
+                                                </div>
+                                            )
+                                        )
+                                    ))}
+                                </div>             
                             </div>
                             <div class="w-full lg:w-6/12 px-4 mx-auto">
                                 <div class="relative w-full mb-3">

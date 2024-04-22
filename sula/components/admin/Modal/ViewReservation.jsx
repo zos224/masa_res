@@ -36,6 +36,10 @@ const ViewReservation = ({isOpen, onClose, data, type}) => {
                                 <span className="font-semibold">{moment(data.dateTime).format('YYYY-MM-DD hh:mm A')}</span>
                             </div>
                             <div className="mt-2">
+                                <span>Location: </span>
+                                <span className="font-semibold">{data.location}</span>
+                            </div>
+                            <div className="mt-2">
                                 <span>Special Request: </span>
                                 <p className="">{data.specialRequest}</p>
                             </div>

@@ -199,6 +199,7 @@ model Reservation {
   idRestaurant Int
   restaurant Restaurant @relation(fields: [idRestaurant], references: [id], onDelete: Cascade)
   specialRequest String?
+  location String
 }
 
 model Catering {

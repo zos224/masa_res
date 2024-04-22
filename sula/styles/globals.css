@@ -247,20 +247,34 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .bg-image {
     background-image: url("/images/bg/bg.png");
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.bg-image4 {
-    background-image: url("/images/bg/bg4.jpg");
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
+.bg-image-home {
+    background-image: url("/images/bg/banner_home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-image-contact {
+    background-image: url("/images/bg/bg_contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-image-home-get-in-touch {
+    background-image: url("/images/bg/bg_home_get_in_touch.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .button-slide-ltr {
-    background-image: linear-gradient(to left, #c69a50 50%, transparent 0%);
+    background-image: linear-gradient(to left, #ffffff 50%, transparent 0%);
     background-position: left;
     display: inline-block;
     transition: background-position 0.7s;
@@ -272,7 +286,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .button-slide-rtl {
-    background-image: linear-gradient(to right, #c69a50 50%, transparent 0%);
+    background-image: linear-gradient(to right, #ffffff 50%, transparent 0%);
     background-position: right;
     display: inline-block;
     transition: background-position 0.7s;

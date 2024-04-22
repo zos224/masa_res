@@ -13,32 +13,32 @@ const NavbarHorizon = () => {
                     <Link href="/"><Image className="w-18 h-18" src="/images/logo/logo.png" alt="logo" width={200} height={100} /></Link>
                     
                 </div>
-                <ul className="hidden lg:flex flex-row flex-wrap justify-end gap-x-8 w-full list-none uppercase font-semibold font-gambarino text-lg text-primary-color ">
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                <ul className="hidden lg:flex flex-row flex-wrap justify-end gap-x-8 w-full list-none uppercase font-semibold font-jost text-lg text-white ">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/location">Location</Link>
                     </li>
-                    <li  className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li  className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/menu">Menu</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/reservation">Reservation</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/order-online">Order Online</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/catering">Catering</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/gallery">Gallery</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/contact">Contact & Hours</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link target="_blank" href="https://www.toasttab.com/masala-of-india-northgate/giftcards">Gift Cards</Link>
                     </li>
-                    <li className="before:bg-primary-color relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
+                    <li className="before:bg-white relative before:transition-all before:duration-500 before:opacity-0 before:content-[''] before:absolute before:-bottom-0 before:left-0 before:w-0 before:h-1 before:rounded-full hover:before:w-full hover:before:opacity-100">
                         <Link href="/special-offers">Special Offers</Link>
                     </li>
                 </ul>

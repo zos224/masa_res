@@ -12,7 +12,7 @@ module.exports = {
       fontFamily: { 
         jost: ['Jost', 'sans-serif'],
         gambarino: ['Gambarino', 'cursive'],
-        italianno: ['Italianno-ROB', 'cursive'],
+        mrdehaviland: ['Mr De Haviland', 'cursive'],
       },
       screens: {
         "2xsm": "375px",
@@ -21,8 +21,8 @@ module.exports = {
       ...defaultTheme.screens,
       },
       colors: {
-        'primary-color': '#c69a50',
-        'primary-hover': '#bd8e3e',
+        'primary-color': '#1d0018',
+        'primary-hover': '#5d4a5c',
         white: "#FFFFFF",
         black: "#1C2434",
         red: "#FB5454",
@@ -70,6 +70,9 @@ module.exports = {
         "title-sm": ["20px", "26px"],
         "title-sm2": ["22px", "28px"],
         "title-xsm": ["18px", "24px"],
+      },
+      padding: {
+        300: "1500px"
       },
       spacing: {
         4.5: "1.125rem",
@@ -258,6 +261,7 @@ module.exports = {
         12: "0px 0.5px 3px 0px rgba(0, 0, 0, 0.18)",
         13: "0px 1px 3px 0px rgba(0, 0, 0, 0.08)",
         14: "0px 2px 3px 0px rgba(0, 0, 0, 0.10)",
+        custom: "0px 0px 15px 0px rgba(255, 255, 255, 1)",
       },
       dropShadow: {
         1: "0px 1px 0px #E2E8F0",
@@ -338,7 +342,7 @@ module.exports = {
         line3: "line 7s infinite linear",
         "left-to-right": "left-to-right 0.3s ease-in-out",
         "right-to-left": "right-to-left 0.3s ease-in-out",
-      }
+      },
     },
   },
   plugins: [],

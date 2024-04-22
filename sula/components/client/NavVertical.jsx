@@ -15,7 +15,7 @@ const NavbarVertical = ({openNav, onClose}) => {
                     </div>
                 </div>
                 <div className="pt-10">
-                    <ul className="flex flex-col text-center justify-end gap-y-5 w-full list-none uppercase font-semibold font-gambarino text-xl text-primary-color ">
+                    <ul className="flex flex-col text-center justify-end gap-y-5 w-full list-none uppercase font-semibold font-jost text-xl text-white ">
                         <li>
                             <Link className="border-b" href="/location">Locations</Link>
                         </li>

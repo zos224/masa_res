@@ -10,7 +10,6 @@ export const POST = async (req) => {
         status: false,
         diningArea: 0,
         capacity: '',
-        seatingOption: false,
         image: ''
     }
     const formData = await req.formData();

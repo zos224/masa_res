@@ -20,12 +20,15 @@ const OrderMaSalaPage = () => {
     const [openModalOrder, setOpenModalOrder] = useState(false);
     const [currentProduct, setCurrentProduct] = useState(0);
     const [error, setError] = useState(false);
+    const {orderDetails, updateOrderDetails} = useContext(OrderContext)
+    const [addressPickup, setAddressPickup] = useState("");
     useEffect(() => {
         const getRestaurant = async () => {
           let response = await fetch('/api/restaurant/all'); 
           if (response.ok) {
             let data = await response.json();
             setListRestaurant(data);
+            setAddressPickup(data[0].address.split("|")[0]);
           }
           else {
             throw new Error("Error fetching data");
@@ -168,13 +171,12 @@ const OrderMaSalaPage = () => {
     }, [currentProduct])
     // map
     const positionRes = {"lat":47.7084394664091,"lng":-122.3227907590838}
-
-
-    const {orderDetails, updateOrderDetails} = useContext(OrderContext)
+    const positionRes2 = {"lat": 47.6906201, "lng": -122.2909153}
+    const midPoint = {"lat": 47.69952978320455, "lng": -122.3068530295419};
 
     useEffect(() => {
-        updateOrderDetails({...orderDetails, type: pickup ? "Pickup" : "Delivery", date: datesAndDays[selectedDate].day + " " + datesAndDays[selectedDate].date, time: times[selectedTime], fullDate: datesAndDays[selectedDate].fullDate})
-    }, [pickup, selectedDate, selectedTime])
+        updateOrderDetails({...orderDetails, type: pickup ? "Pickup" : "Delivery", date: datesAndDays[selectedDate].day + " " + datesAndDays[selectedDate].date, time: times[selectedTime], fullDate: datesAndDays[selectedDate].fullDate, address: addressPickup})
+    }, [pickup, selectedDate, selectedTime, addressPickup])
 
     const checkNext = () => {
         if (pickup) {
@@ -192,8 +194,11 @@ const OrderMaSalaPage = () => {
         !orderDisplay ? (
             <div className="w-full overflow-auto h-screen relative">
                 <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-                    <Map defaultCenter={positionRes} zoom={18} mapId={process.env.NEXT_PUBLIC_MAP_ID}>
+                    <Map defaultCenter={midPoint} zoom={14} mapId={process.env.NEXT_PUBLIC_MAP_ID}>
                         <AdvancedMarker position={positionRes} >
+                            <Pin scale={1.4} background="green" borderColor="green" glyphColor="white"></Pin>
+                        </AdvancedMarker>
+                        <AdvancedMarker position={positionRes2} >
                             <Pin scale={1.4} background="green" borderColor="green" glyphColor="white"></Pin>
                         </AdvancedMarker>
                     </Map>
@@ -212,7 +217,9 @@ const OrderMaSalaPage = () => {
                         {listRestaurant.map((restaurant, index) => (
                             <div key={index} className={`mt-10 mb-10 p-5 rounded-lg bg-slate-100 hover:shadow-lg ${showOrderDetails ? "border-4 border-primary-color" : ""}`}>
                                 <h2 className="text-black text-lg font-semibold">{restaurant.name}</h2>
-                                <p className="text-black text-sm">{restaurant.address}</p>
+                                <p className="text-black text-sm">{restaurant.address.split("|").map((a, index) => (
+                                    <div key={index}>{a}</div>
+                                ))}</p>
                                 {!showOrderDetails ? (
                                     <div>
                                         <Image className="mt-5 w-full aspect-4/3 object-cover" alt={restaurant.name} src={restaurant.image} width={400} height={300}></Image>
@@ -228,10 +235,20 @@ const OrderMaSalaPage = () => {
                                 ) : (
                                     <div>
                                         <button onClick={() => {setShowOrderDetails(false)}} className='flex gap-2 items-center font-bold text-black mt-5'>
-                                            <Image src={"/images/icon/back.svg"} width={25} height={30}></Image>
+                                            <Image src={"/images/icon/back_dark.svg"} width={25} height={30}></Image>
                                             Back
                                         </button>
-                                        <p className="text-sm mt-5 text-black">Please select a day + time for {pickup ? "Pickup" : "Delivery"}</p>
+                                        <p className="text-sm mt-5 text-black">{pickup ? "Please select a location + day + time for Pickup" : "Please select a day + time for Delivery"}</p>
+                                        {pickup && (
+                                            <div className="mt-2">
+                                                <label className="text-black">Address</label>
+                                                <select onChange={(e) => {setAddressPickup(e.target.value)}} className="w-full border rounded-md p-2 text-black-2">
+                                                    {restaurant.address.split("|").map((a, index) => (
+                                                        <option value={a} key={index}>{a}</option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        )}
                                         <div className="grid grid-cols-7 gap-1 mt-5 bg-zinc-300 rounded-md text-base mb-3">
                                             {datesAndDays.map((date, index) => (
                                                 <div onClick={() => {setSelectedDate(index)}} key={index} className={`cursor-pointer rounded-md p-2 text-center ${selectedDate == index ? "bg-primary-color text-white" : "text-black"}`}>

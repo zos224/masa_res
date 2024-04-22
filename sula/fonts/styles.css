@@ -7,14 +7,11 @@
     url(Jost-Regular.ttf) format('ttf'), url(Jost-SemiBold.ttf) format('ttf'), url(Jost-SemiBoldItalic.ttf) format('ttf'), url(Jost-Thin.ttf) format('ttf'), url(Jost-ThinItalic.ttf) format('ttf'),
     url(Jost-VariableFont_wght.ttf) format('ttf'), url(Jost-Italic-VariableFont_wght.ttf) format('ttf');
 }
-@font-face{
-    font-family: "Italianno-ROB";
-    src: url(84ba91021ae6b6a7a9cc5c1735661f46.ttf) format("ttf"), url(84ba91021ae6b6a7a9cc5c1735661f46.woff2) format("woff2"), url(84ba91021ae6b6a7a9cc5c1735661f46.woff) format("woff");
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
-}
 @font-face {
     font-family: 'Gambarino';
     src: url(Gambarino-Regular.eot) format('eot'), url(Gambarino-Regular.woff) format('woff'), url(Gambarino-Regular.ttf) format('ttf'), url(Gambarino-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Mr De Haviland';
+    src: url(MrDeHaviland-Regular.ttf) format('truetype');
 }

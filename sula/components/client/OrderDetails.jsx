@@ -6,11 +6,24 @@ import { APIProvider } from "@vis.gl/react-google-maps";
 import SearchLocation from "./SearchLocation";
 
 const OrderDetails = ({open, onClose}) => {
+    const [restaurant, setRestaurant] = useState({})
+    const [address, setAddress] = useState("");
+    useEffect(() => {
+        const fetchData = async () => {
+            const res = await fetch('/api/restaurant/all')
+            if (res.ok) {
+                const data = await res.json()
+                setRestaurant(data[0])
+                setAddress(data[0].address.split("|")[0])
+            }
+        }
+        fetchData()
+    }, [])
     const [selectedDate, setSelectedDate] = useState(0);
     const [pickup, setPickup] = useState(true);
     const [delivery, setDelivery] = useState(false);
     const {orderDetails, updateOrderDetails} = useContext(OrderContext);
-    const [address, setAddress] = useState("");
+
     useEffect(() => {
         setAddress(orderDetails.address)
     }, [orderDetails])
@@ -116,7 +129,17 @@ const OrderDetails = ({open, onClose}) => {
                                     </APIProvider>
                                 </div>
                             )}
-                            <p className="text-sm mt-5 text-black">Please select a day + time for {orderDetails.type ? "Pickup" : "Delivery"}</p>
+                            {pickup && (
+                                <div className="mt-2">
+                                    <label className="text-black">Address</label>
+                                    <select value={address} onChange={(e) => {setAddress(e.target.value)}} defaultValue={restaurant.address.split("|")[0]} className="w-full border rounded-md p-2 text-black-2">
+                                        {restaurant.address.split("|").map((a, index) => (
+                                            <option value={a} key={index}>{a}</option>
+                                        ))}
+                                    </select>
+                                </div>
+                            )}
+                            <p className="text-sm mt-5 text-black">{pickup ? "Please select a location + day + time for Pickup" : "Please select a day + time for Delivery"}</p>
                             <div className="grid grid-cols-7 gap-1 mt-5 bg-zinc-300 rounded-md text-base mb-3">
                                 {datesAndDays.map((date, index) => (
                                     <div onClick={() => {setSelectedDate(index)}} key={index} className={`cursor-pointer rounded-md p-2 text-center ${selectedDate == index ? "bg-primary-color text-white" : "text-black"}`}>

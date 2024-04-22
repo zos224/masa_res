@@ -23,32 +23,35 @@ const MenuPage = () => {
   return (
     data != null && <div>
         <div className="relative">
-            <Image className="max-h-100 object-cover" src={"/images/bg/bg_menu.webp"} width={1920} height={1280}></Image>
-            <span className="absolute text-4xl text-center font-gambarino bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 sm:left-1/2 sm:-translate-x-1/2">
-              MENU'S MASALA OF INDIA
-            </span>
+            <Image className="md:max-h-125 object-cover" src={"/images/bg/bg_menu.png"} width={1920} height={1280}></Image>
+            <p className="absolute lg:text-8xl md:text-6xl text-4xl text-center font-gambarino lg:px-20 py-2 px-5 font-semibold text-white md:top-1/3 top-1/4 w-full">
+              MENU
+              <p className="font-mrdehaviland font-normal">
+                explore our culinary delights
+              </p>
+            </p>
         </div>
         <div className="pt-10 bg-image4"> 
           <div className="lg:w-3/5 m-auto w-full px-10 flex flex-wrap justify-between">
             <div className="flex relative w-fit px-3 py-2 m-auto">
-              <Link href={"/order-online"} className="w-1/2 border cursor-pointer text-primary-color font-semibold border-primary-color px-10 py-2 hover:text-white button-slide-ltr ">Order Online</Link>
-              <div className="rounded-full p-2 bg-primary-color absolute left-1/2 -translate-x-1/2">
+              <Link href={"/order-online"} className="w-1/2 border cursor-pointer text-white font-semibold border-white px-10 py-2 hover:text-black uppercase button-slide-ltr ">Order Online</Link>
+              <div className="rounded-full p-2 bg-white absolute left-1/2 -translate-x-1/2">
                 <Image className="" src={"/images/icon/choice.svg"} width={25} height={25}></Image>
               </div>
-              <Link href={"/reservation"} className="w-1/2 border cursor-pointer font-semibold text-primary-color border-primary-color px-10 py-2 button-slide-rtl hover:text-white">Reservations</Link>
+              <Link href={"/reservation"} className="w-1/2 border cursor-pointer font-semibold text-white border-white px-10 py-2 button-slide-rtl hover:text-black uppercase">Reservations</Link>
             </div>
             <div className="flex relative w-fit px-3 py-2 m-auto">
-              <Link href={"https://www.toasttab.com/masala-of-india-northgate/giftcards"} target="_blank" className="w-1/2 border cursor-pointer text-primary-color font-semibold border-primary-color px-10 py-2 hover:text-white button-slide-ltr ">E-Gift</Link>
-              <div className="rounded-full p-2 bg-primary-color absolute left-1/2 -translate-x-1/2">
+              <Link href={"https://www.toasttab.com/masala-of-india-northgate/giftcards"} target="_blank" className="w-1/2 border cursor-pointer text-white font-semibold border-white px-10 py-2 hover:text-black uppercase button-slide-ltr ">E-Gift</Link>
+              <div className="rounded-full p-2 bg-white absolute left-1/2 -translate-x-1/2">
                 <Image className="" src={"/images/icon/choice.svg"} width={25} height={25}></Image>
               </div>
-              <Link href={"/catering"} className="w-1/2 border cursor-pointer font-semibold text-primary-color border-primary-color px-10 py-2 button-slide-rtl hover:text-white">Catering</Link>
+              <Link href={"/catering"} className="w-1/2 border cursor-pointer font-semibold text-white border-white px-10 py-2 button-slide-rtl hover:text-black uppercase">Catering</Link>
             </div>
           </div>
           <div>
             {data.types.map((type, index) => (
               <div key={index} className="lg:w-4/5 m-auto w-full px-10 py-10">
-                <h1 className="text-5xl text-center font-gambarino font-bold text-primary-color uppercase">{type.name}</h1>
+                <h1 className="text-5xl text-center font-gambarino font-bold text-white uppercase">{type.name}</h1>
                 <div className="">
                   {type.subTypes.map((subType, index) => (
                     <div  key={index} className="mt-10">

@@ -174,7 +174,9 @@ const CheckOutPage = () => {
                         <Image className="object-cover rounded-l-md" src={restaurant.image} width={70} height={70}></Image>
                         <div className="text-black my-auto">
                             <h1 className="font-bold text-lg underline">{restaurant.name}</h1>
-                            <p>{restaurant.address}</p>
+                            <p>{restaurant.address.split("|").map((a, i) => (
+                                <span key={i}>{a}<br></br></span>
+                            ))}</p>
                         </div>
                     </div>
                     <div className="bg-white mt-10 rounded-md p-6">
@@ -257,7 +259,7 @@ const CheckOutPage = () => {
                             </div>
                             <div className="flex gap-6 border-b py-5 border-bodydark2 items-center">
                                 <Image src={"/images/icon/location.svg"} width={30} height={30}></Image>
-                                <span className="font-bold text-lg">{orderDetails.type == "Pickup" ? restaurant.address : orderDetails.address}</span>
+                                <span className="font-bold text-lg">{orderDetails.address}</span>
                             </div>
                             <div className="flex gap-6 py-5 items-center">
                                 <Image src={"/images/icon/time.svg"} width={30} height={30}></Image>
