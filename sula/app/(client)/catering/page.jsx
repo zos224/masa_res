@@ -5,7 +5,7 @@ const ReservationPage = () => {
     return (
         <div>
             <div className="relative">
-                <Image className="max-h-100 object-cover -m-px" src={"/images/bg/banner_catering.png"} width={1920} height={1280}></Image>
+                <Image className="max-h-100 object-cover -my-px" src={"/images/bg/banner_catering.png"} width={1920} height={1280}></Image>
                 <span className="absolute md:text-7xl text-5xl uppercase text-center font-gambarino lg:px-20 py-2 px-5 font-bold text-white top-1/3 w-full">
                     Catering
                 </span>
