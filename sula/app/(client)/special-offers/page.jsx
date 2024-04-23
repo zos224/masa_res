@@ -44,7 +44,7 @@ const SpecialOffersPage = () => {
                 {events.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-10 px-2">
                         {events.map((event, index) => (
-                            <div data-aos="fade-left" key={index} className="bg-white text-white shadow-md rounded-md">
+                            <div data-aos="fade-left" key={index} className="bg-white text-black shadow-md rounded-md">
                                 <Image className="rounded-md mx-auto w-full" src={event.image} width={500} height={300}></Image>
                                 <div className="p-5 pt-2">
                                     <div className="text-xl font-semibold mt-5">{event.name}</div>

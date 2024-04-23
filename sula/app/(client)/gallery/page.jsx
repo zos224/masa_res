@@ -1,26 +1,36 @@
+"use client"
 import Image from "next/image";
-export const metadata = {
-    title: "Gallery | Masala Of India - Indian Cuisine in Seattle, WA",
-    description:
-      "Masala Of India offers a wide variety of Indian cuisine in Seattle, WA. Visit our website to view our menu and order online today!",
-  };
-async function getGallery() {
-    const res = await fetch(process.env.APP_URL + '/api/cloudinary/gallery')
-    if (res.ok) {
-        const data = await res.json()
-        return data
-    }
-}
-const OrderPage =  async () => {
-    const images = await getGallery()
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+const OrderPage = () => {
+    const [images, setImages] = useState(null)
+    useEffect(() => {
+        const fetchGallery = async () => {
+            const res = await fetch('/api/cloudinary/gallery')
+            if (res.ok) {
+                const data = await res.json()
+                setImages(data)
+            }
+        }
+        fetchGallery()
+        AOS.init({
+            duration: 1100,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            delay: 100,
+            offset: 200
+          });
+    }, [])
     return (
-        <div className="min-h-screen pt-10 bg-image-contact">
+        <div className="min-h-screen pt-10 bg-image">
             <div className="text-center md:text-8xl text-4xl text-white font-gambarino tracking-widest">
                 PHOTO GALLERY
             </div>
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mx-10 my-10">
-                {images.map((image, index) => (
-                    <div key={index} className="overflow-hidden">
+            <div className="grid lg:grid-cols-3 xsm:grid-cols-2 grid-cols-1 gap-5 mx-10 py-10 min-h-screen">
+                {images && images.map((image, index) => (
+                    <div data-aos="zoom-in" key={index} className="overflow-hidden">
                         <Image className="h-132.5 object-cover hover:scale-125 duration-300" src={image.secure_url} width={1000} height={500}></Image>
                     </div>))
                 }

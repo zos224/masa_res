@@ -126,7 +126,7 @@ const HomePage = () => {
                   <Image className="aspect-square object-cover hover:scale-110 duration-500 transition-transform" src={"/images/instagram/insta4.jpg"} width={1000} height={500}></Image>
                 </div>
               </div>
-              <div className="my-10 text-center">
+              <div className="py-10 text-center">
                 <Link target="_blank" className="bg-black-2 text-white shadow-custom uppercase  px-7 py-4" href={"https://www.instagram.com/masala_of_india"}>Follow us</Link>
               </div>
         </div>

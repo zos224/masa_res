@@ -4,7 +4,7 @@ import { CldUploadWidget } from 'next-cloudinary';
 import Image from "next/image";
 
 const Gallery = () => {
-    const [images, setImages] = useState([])
+    const [images, setImages] = useState(null)
     const [currentPublicId, setCurrentPublicId] = useState("")
     const [confirmDelete, setConfirmDelete] = useState(false)
     useEffect(() => {
@@ -45,10 +45,13 @@ const Gallery = () => {
         if (currentPublicId != "") {
             setConfirmDelete(true)
         }
+        else {
+            setConfirmDelete(false)
+        }
     }, [currentPublicId])
 
     return (
-        <section class="py-1">
+        images != null && <section class="py-1">
             <div class="w-full lg:w-8/12 px-4 mx-auto mt-2">
                 <div className="text-black dark:text-white flex justify-between items-center">
                     <div className="text-2xl">
@@ -69,7 +72,7 @@ const Gallery = () => {
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
                             {images.map((image, index) => (
                                 <div key={index} class="relative group">
-                                    <Image src={image.secure_url} width={500} height={300} class="rounded-md" />
+                                    <Image src={image.secure_url} width={500} height={300} class="rounded-md max-h-50 object-cover" />
                                     <div class="absolute inset-0 bg-black bg-opacity-50 hidden group-hover:flex justify-center items-center">
                                         <button onClick={() => {setCurrentPublicId(image.public_id)}} class="text-white bg-primary-600 px-3 py-1 rounded-md">Delete</button>
                                     </div>
