@@ -23,8 +23,8 @@ const MenuPage = () => {
   return (
     data != null && <div>
         <div className="relative">
-            <Image className="md:max-h-125 object-cover" src={"/images/bg/bg_menu.png"} width={1920} height={1280}></Image>
-            <p className="absolute lg:text-8xl md:text-6xl text-4xl text-center font-gambarino lg:px-20 py-2 px-5 font-semibold text-white md:top-1/3 top-1/4 w-full">
+            <Image className="object-cover -m-px" src={"/images/bg/bg_menu.png"} width={1920} height={1280}></Image>
+            <p className="absolute lg:text-8xl md:text-6xl text-4xl text-center font-gambarino font-semibold text-white md:top-1/3 top-1/4 w-full">
               MENU
               <p className="font-mrdehaviland font-normal">
                 explore our culinary delights
@@ -32,17 +32,17 @@ const MenuPage = () => {
             </p>
         </div>
         <div className="pt-10 bg-image"> 
-          <div className="lg:w-3/5 m-auto w-full px-10 flex flex-wrap justify-between">
+          <div className="lg:w-3/5 m-auto w-full flex flex-wrap justify-between">
             <div className="flex relative w-fit px-3 py-2 m-auto">
-              <Link href={"/order-online"} className="w-1/2 border cursor-pointer text-white font-semibold border-white px-10 py-2 hover:text-black uppercase button-slide-ltr ">Order Online</Link>
+              <Link href={"/order-online"} className="w-1/2 border cursor-pointer text-white font-semibold border-white pe-7 ps-2 py-2 hover:text-black uppercase button-slide-ltr ">Order Online</Link>
               <div className="rounded-full p-2 bg-white absolute left-1/2 -translate-x-1/2">
                 <Image className="" src={"/images/icon/choice.svg"} width={25} height={25}></Image>
               </div>
-              <Link href={"/reservation"} className="w-1/2 border cursor-pointer font-semibold text-white border-white px-10 py-2 button-slide-rtl hover:text-black uppercase">Reservations</Link>
+              <Link href={"/reservation"} className="w-1/2 border cursor-pointer font-semibold text-white border-white ps-7 pe-2 py-2 button-slide-rtl hover:text-black uppercase">Reservations</Link>
             </div>
-            <div className="flex relative w-fit px-3 py-2 m-auto">
+            <div className="flex relative w-fit px-3 items-center py-2 m-auto">
               <Link href={"https://www.toasttab.com/masala-of-india-northgate/giftcards"} target="_blank" className="w-1/2 border cursor-pointer text-white font-semibold border-white px-10 py-2 hover:text-black uppercase button-slide-ltr ">E-Gift</Link>
-              <div className="rounded-full p-2 bg-white absolute left-1/2 -translate-x-1/2">
+              <div className="rounded-full  p-2 bg-white absolute left-1/2 -translate-x-1/2">
                 <Image className="" src={"/images/icon/choice.svg"} width={25} height={25}></Image>
               </div>
               <Link href={"/catering"} className="w-1/2 border cursor-pointer font-semibold text-white border-white px-10 py-2 button-slide-rtl hover:text-black uppercase">Catering</Link>

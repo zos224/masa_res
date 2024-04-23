@@ -38,7 +38,7 @@ const OrderSuccess = () => {
     }, [socket])
 
     return (
-        <div className="mt-40 ml-40">
+        <div className="pt-40 text-white min-h-screen text-center w-full bg-image">
             <h1>Order Success</h1>
             <p>Your order has been placed successfully</p>
         </div>

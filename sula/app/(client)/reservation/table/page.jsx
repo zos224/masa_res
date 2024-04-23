@@ -93,7 +93,7 @@ const ReservationPage = () => {
         restaurant && (
         <div className="bg-image">
             <div className="relative">
-                <Image className="max-h-100 object-cover" src={"/images/bg/banner_reservation.png"} width={1920} height={1280}></Image>
+                <Image className="max-h-100 object-cover -m-px" src={"/images/bg/banner_reservation.png"} width={1920} height={1280}></Image>
                 {/* <span className="absolute text-4xl text-center font-gambarino bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 sm:left-1/2 sm:-translate-x-1/2">
                     Reservation
                 </span> */}
@@ -171,7 +171,7 @@ const ReservationPage = () => {
                 </div>
                 ) : (
                     success ? (
-                        <div className="h-screen">
+                        <div className="h-screen bg-image">
                             <div className="text-center">
                                 <Image className="mx-auto cursor-pointer" src={"/images/icon/success.gif"} width={50} height={50}></Image>
                                 <p className="text-white text-lg font-semibold mt-5">Reservation Successful</p>
