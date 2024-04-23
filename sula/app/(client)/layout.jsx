@@ -10,7 +10,7 @@ export const metadata = {
     return (
       <div>
         <NavbarHorizon></NavbarHorizon>
-        <div >
+        <div className="">
           <div className="h-24 bg-black">
 
           </div>

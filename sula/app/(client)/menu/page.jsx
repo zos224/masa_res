@@ -23,7 +23,7 @@ const MenuPage = () => {
   return (
     data != null && <div>
         <div className="relative">
-            <Image className="object-cover -my-px" src={"/images/bg/bg_menu.png"} width={1920} height={1280}></Image>
+            <Image className="object-cover w-full" src={"/images/bg/bg_menu.png"} width={1920} height={1280}></Image>
             <p className="absolute lg:text-8xl md:text-6xl text-4xl text-center font-gambarino font-semibold text-white md:top-1/3 top-1/4 w-full">
               MENU
               <p className="font-mrdehaviland font-normal">

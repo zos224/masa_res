@@ -79,7 +79,7 @@ const HomePage = () => {
       </div>
       <div data-aos="fade-right" className="">
         <Card title={"Our Place"} subtitle={"INVITING, COMFORTING & UNFORGETTABLE"} buttonText={"View gallery"} description={"Enter our elegantly lit dining room, adorned with plush seating and captivating scenery, promising an unforgettable dining experience for our valued guests."}
-            image={"/images/gallary/our_space.webp"} imagebg={"/images/bg/our_place.png"} link={"/gallery"} reverse={false}></Card>
+            image={"/images/bg/our_space_bg.png"} imagebg={"/images/bg/our_place.png"} link={"/gallery"} reverse={false}></Card>
       </div>
       <div data-aos="fade-up" className="">
         <Card title={"Our Culinary Delights"} subtitle={"AUTHENTIC INDIAN CUISINE"} buttonText={"View menu"} description={"Discover culinary excellence at Masala Of India, led by Mr. Sanjay Sharma, a pioneer with over 30 years of experience. Our dishes redefine tradition with innovation, offering the healthiest and most flavorful Indian cuisine. Experience our renowned flavors, crafted with passion and care for your well-being."}
@@ -87,11 +87,11 @@ const HomePage = () => {
       </div>
       <div data-aos="fade-left" className="">
         <Card title={"Our Beverages"} subtitle={"CRAFTED COCKTAILS & MORE"} buttonText={"View drink"} description={"Sip and unwind with our premium cocktails, featuring local and international beers, wines, spirits, and homemade non-alcoholic options. Join us at our lounge bar for an unforgettable experience."}
-            image={"/images/gallary/our_baverage.webp"} imagebg={"/images/bg/our_beverage.png"} link={"/menu"} reverse={false}></Card>
+            image={"/images/bg/our_beverage_bg.webp"} imagebg={"/images/bg/our_beverage.png"} link={"/menu"} reverse={false}></Card>
       </div>
       <div data-aos="fade-down" className="">
         <Card title={"Our Offerings"} subtitle={"DINE-IN, TAKEOUT & CATERING"} buttonText={"View services"} description={"Experience Seattle's premier catering services at Masala Of India. With two decades of expertise, customize your crowd-friendly dishes and indulge in authentic Indian flavors across Washington. Contact us today!"}
-            image={"/images/gallary/our_service.webp"} imagebg={"/images/bg/our_offering.png"} link={"/catering"} reverse={true}></Card>
+            image={"/images/bg/our_offering_bg.png"} imagebg={"/images/bg/our_offering.png"} link={"/catering"} reverse={true}></Card>
       </div>
       <div className="" data-aos="flip-left">
         <Image className="w-full object-cover" src={"/images/bg/buffet.png"} width={2000} height={1200}></Image>
