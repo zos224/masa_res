@@ -82,8 +82,8 @@ const HomePage = () => {
             image={"/images/gallary/our_space.webp"} imagebg={"/images/bg/our_place.png"} link={"/gallery"} reverse={false}></Card>
       </div>
       <div data-aos="fade-up" className="">
-        <Card title={"Our Culinary Delights"} subtitle={"AUTHENTIC INDIAN CUISINE"} buttonText={"View menu"} description={"Discover the vibrant flavors of our traditional Indian dishes, crafted with fresh herbs and house-made garam masalas, infused with the aromatic richness of ginger and garlic. Indulge in staple Indian curries from diverse regions, alongside Mughal-inspired rice preparations and freshly baked tandoori breads from our Jaipuri tandoor oven."}
-            image={"/images/gallary/our_food.webp"} imagebg={"/images/bg/our_culinary.png"} link={"/menu"} reverse={true}></Card>
+        <Card title={"Our Culinary Delights"} subtitle={"AUTHENTIC INDIAN CUISINE"} buttonText={"View menu"} description={"Discover culinary excellence at Masala Of India, led by Mr. Sanjay Sharma, a pioneer with over 30 years of experience. Our dishes redefine tradition with innovation, offering the healthiest and most flavorful Indian cuisine. Experience our renowned flavors, crafted with passion and care for your well-being."}
+            image={"/images/bg/our_culi_chef.webp"} imagebg={"/images/bg/our_culinary.png"} link={"/menu"} reverse={true}></Card>
       </div>
       <div data-aos="fade-left" className="">
         <Card title={"Our Beverages"} subtitle={"CRAFTED COCKTAILS & MORE"} buttonText={"View drink"} description={"Sip and unwind with our premium cocktails, featuring local and international beers, wines, spirits, and homemade non-alcoholic options. Join us at our lounge bar for an unforgettable experience."}
