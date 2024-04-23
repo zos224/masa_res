@@ -246,7 +246,7 @@ const NavOrder = () => {
                                                         <p>{(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.05).toFixed(2)}$</p>
                                                     </div>
                                                     <div className='w-full flex text-center'>
-                                                        <Link href={"/order-masala/checkout"} className='w-full mt-4 bg-primary-color text-white py-2 rounded-full'>({card.length}) Check Out - {(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) + card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.05).toFixed(2)}$</Link>
+                                                        <Link onClick={closeModal} href={"/order-masala/checkout"} className='w-full mt-4 bg-primary-color text-white py-2 rounded-full'>({card.length}) Check Out - {(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) + card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.05).toFixed(2)}$</Link>
                                                     </div>
                                                 </div>
                                             </div>
