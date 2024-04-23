@@ -21,12 +21,12 @@ const LocationPage = () => {
     return (
         restaurant && <div>
             <div className="relative">
-                <Image className="max-h-125 object-cover" src={"/images/gallary/pic9.webp"} width={1920} height={1280}></Image>
+                <Image className="max-h-125 object-cover" src={"/images/bg/banner_location.png"} width={1920} height={1280}></Image>
                 <span className="absolute text-8xl uppercase text-center font-gambarino py-2 px-5 text-white top-1/2 w-full">
                     {restaurant.name}
                 </span>
             </div>
-            <div className="py-15 text-center text-white">
+            <div className="py-15 text-center bg-image text-white">
                 <div className="text-2xl mt-10 uppercase font-semibold">
                     Welcome to {restaurant.name} Cuisine <br></br> The best Indian restaurant in Seattle, WA. 
                 </div>

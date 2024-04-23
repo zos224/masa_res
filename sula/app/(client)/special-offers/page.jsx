@@ -40,7 +40,7 @@ const SpecialOffersPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-10 text-center min-h-screen">
+            <div className="py-10 bg-image text-center min-h-screen">
                 {events.length > 0 ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-10 px-2">
                         {events.map((event, index) => (

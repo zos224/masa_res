@@ -23,7 +23,7 @@ const ReservationPage = async () => {
                     Reservation
                 </span> */}
             </div>
-            <div className="py-10 bg-image4 text-center">
+            <div className="py-10 bg-image text-center">
                 <div className="text-white uppercase text-4xl font-semibold tracking-widest">{restaurant.name}</div>
                 <div className="text-2xl uppercase mt-3">
                     <span className="text-white font-semibold">INDOOR DINING: </span>

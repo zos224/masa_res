@@ -31,7 +31,7 @@ const MenuPage = () => {
               </p>
             </p>
         </div>
-        <div className="pt-10 bg-image4"> 
+        <div className="pt-10 bg-image"> 
           <div className="lg:w-3/5 m-auto w-full px-10 flex flex-wrap justify-between">
             <div className="flex relative w-fit px-3 py-2 m-auto">
               <Link href={"/order-online"} className="w-1/2 border cursor-pointer text-white font-semibold border-white px-10 py-2 hover:text-black uppercase button-slide-ltr ">Order Online</Link>

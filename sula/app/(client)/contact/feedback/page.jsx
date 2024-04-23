@@ -102,7 +102,7 @@ const ContactPage = () => {
                 Feedback / Issues / Complaints
                 </span>
             </div>
-            <div className="py-10">
+            <div className="py-10 bg-image">
                 <div className="md:w-1/3 w-full mx-auto text-white px-4 py-2 border rounded-md">
                     <div className="text-lg text-center">Feedback / Issues / Complaints</div>
                     <div className="mt-4">

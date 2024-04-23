@@ -60,7 +60,7 @@ const ContactPage = () => {
                     Catering
                 </span>
             </div>
-            <div className="py-10">
+            <div className="py-10 bg-image">
                 <div className="lg:w-1/3 md:w-2/3 w-full mx-auto text-white px-4 py-2 border rounded-md">
                     <div className="text-lg text-center">Catering</div>
                     <div className="mt-4">

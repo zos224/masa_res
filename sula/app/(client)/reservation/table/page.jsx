@@ -91,7 +91,14 @@ const ReservationPage = () => {
     }
     return (
         restaurant && (
-        <div className="pt-30 md:w-2/5 mx-auto pb-5">
+        <div className="bg-image">
+            <div className="relative">
+                <Image className="max-h-100 object-cover" src={"/images/bg/banner_reservation.png"} width={1920} height={1280}></Image>
+                {/* <span className="absolute text-4xl text-center font-gambarino bg-dark-custom lg:px-20 py-2 px-5 font-bold text-white top-1/2 sm:left-1/2 sm:-translate-x-1/2">
+                    Reservation
+                </span> */}
+            </div>
+            <div className="pt-30 md:w-2/5 mx-auto pb-5">
             {step1 ? (
                 <div className="border border-white rounded-md py-3">
                     <div className="text-center border-b border-white uppercase">
@@ -278,6 +285,7 @@ const ReservationPage = () => {
                     </div>
                 ))}
             </div>
+        </div>
         )
     )
 }

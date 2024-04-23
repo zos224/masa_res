@@ -10,7 +10,7 @@ const ReservationPage = () => {
                     Catering
                 </span>
             </div>
-            <div className="py-10 bg-image4 text-center">
+            <div className="py-10 bg-image text-center">
                 <div className="text-white mt-10 md:w-2/3 w-full mx-auto">
                     <p className="text-7xl font-mrdehaviland mb-4">Elevate Your Event with Masala Of India's Catering Services</p>
                     <p className="mb-3">Make your event a tastier affair with Masala Of India's off-campus catering expertise, serving the best in Seattle. Our talented and well-trained staff are dedicated to serving you and ensuring your guests are served happiness. Whether it's an intimate gathering, corporate conference, wedding, or competition, Masala of India is your go-to caterer. With 20 years of excellence in catering, we understand your taste preferences and offer customizable spice levels for crowd-friendly dishes.</p>

@@ -15,7 +15,7 @@ const OrderPage =  () => {
               Order Online
             </span>
         </div>
-        <div className="pt-10 bg-image4"> 
+        <div className="pt-10 bg-image"> 
             <div className="text-center">
                 <Link href={"/contact"} className="border-white border-2 text-white uppercase text-base font-medium px-6 py-3 bg-primary-hover duration-300">OPENING HOURS</Link>
             </div>
