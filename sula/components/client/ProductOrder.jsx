@@ -8,7 +8,7 @@ const ProductOrder = ({ product }) => {
             <div className='p-3'>
                 <div className='flex justify-between'>
                     <h2 className="font-bold text-xl text-black px-3">{product.name}</h2>
-                    <h2 className="font-bold text-xl text-black px-3">{product.price != 0 ? product.price + "$" : ""}</h2>
+                    <h2 className="font-bold text-xl text-black px-3">{product.price != 0 ? "$" + product.price : ""}</h2>
                 </div>
                 <p className='text-center text-black text-base mt-10'>{product.description}</p>
             </div>

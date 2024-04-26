@@ -81,7 +81,7 @@ const EventPage = () => {
                                     {order.paymentMethod}
                                 </td>
                                 <td className="px-6 py-4">
-                                    {order.total}$
+                                    ${order.total}
                                 </td>
                                 <td className="px-6 py-4">
                                     {order.status ? "Completed" : "Processing"}

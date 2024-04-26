@@ -26,7 +26,7 @@ const OrderPage =  () => {
                     <p className="mt-3 text-white font-normal text-xl">
                         Take Out: No Minimum
                         <br/>
-                        Free Delivery for Orders Above: $45
+                        Free Delivery for Orders Above: 45$
                     </p>
                 </div>
             </div>

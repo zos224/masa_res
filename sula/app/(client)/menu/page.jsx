@@ -51,7 +51,7 @@ const MenuPage = () => {
           <div>
             {data.types.map((type, index) => (
               <div key={index} className="lg:w-4/5 m-auto w-full px-10 py-10">
-                <h1 className="text-5xl text-center font-gambarino font-bold text-white uppercase">{type.name}</h1>
+                <h1 className="lg:text-9xl text-6xl text-center font-mrdehaviland text-white lowercase">{type.name}</h1>
                 <div className="">
                   {type.subTypes.map((subType, index) => (
                     <div  key={index} className="mt-10">

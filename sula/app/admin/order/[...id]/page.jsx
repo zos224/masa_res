@@ -122,23 +122,23 @@ const CreateUpdateEvent = () => {
                             <div class="w-full px-4 mx-auto flex">
                                 <div class="flex gap-3 w-full mb-3">
                                     <div>Subtotal: </div>
-                                    <div>{order.subTotal}$</div>
+                                    <div>${order.subTotal}</div>
                                 </div>
                                 <div class="flex gap-3 w-full mb-3">
                                     <div>GST: </div>
-                                    <div>{order.gst}$</div>
+                                    <div>${order.gst}</div>
                                 </div>
                                 <div class="flex gap-3 w-full mb-3">
                                     <div>Tip: </div>
-                                    <div>{order.tip}$</div>
+                                    <div>${order.tip}</div>
                                 </div>
                                 <div class="flex gap-3 w-full mb-3">
                                     <div>Discounts: </div>
-                                    <div>{order.discount}$</div>
+                                    <div>${order.discount}</div>
                                 </div>
                                 <div class="flex gap-3 w-full mb-3">
                                     <div>Total: </div>
-                                    <div>{order.total}$</div>
+                                    <div>${order.total}</div>
                                 </div>
                             </div>
                             <div>
@@ -168,7 +168,7 @@ const CreateUpdateEvent = () => {
                                                             {item.orderItemCustomization.map((customization, index) => (
                                                                 <div key={index} class="flex gap-3 w-full mb-3">
                                                                     <div>{customization.productCustomizationChoice.productCustomization.name}</div>
-                                                                    <div> - {customization.productCustomizationChoice.name}({customization.productCustomizationChoice.price}$)</div>
+                                                                    <div> - ${customization.productCustomizationChoice.name}({customization.productCustomizationChoice.price})</div>
                                                                 </div>
                                                             ))}
                                                         </div>

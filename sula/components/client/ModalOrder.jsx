@@ -247,7 +247,7 @@ const ModalOrder = ({ idProduct, openModal, onClose }) => {
                                                         <div className='mx-10 my-3 text-black font-medium flex items-center gap-3 cursor-pointer' key={index}>
                                                             <input disabled={orderProduct.customizations.some(cus => cus.customizationSelected.length > 0 && cus.customizationSelected[0].idProductCustomization == choice.idProductCustomization && cus.customizationSelected[0].id != choice.id)} onChange={() => onChooseCustomization(choice)} checked={orderProduct.customizations.some(option => option.customizationSelected.map(c => c.id).includes(choice.id) ? true : false)} className='peer relative appearance-none w-5 h-5 border-2 border-primary-color disabled:border-bodydark1 checked:bg-primary-color' type='checkbox' id={choice.name} value={choice.id} />
                                                             <label className=''>{choice.name}</label>
-                                                            <span className='ms-4 font-semibold'>{choice.price}$</span>
+                                                            <span className='ms-4 font-semibold'>${choice.price}</span>
                                                         </div>
                                                     ))}
                                                 </div>

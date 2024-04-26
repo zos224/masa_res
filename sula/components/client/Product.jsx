@@ -8,7 +8,7 @@ const Product = ({ product }) => {
             <div className='mt-2'>
                 <div className='flex items-center'>
                     <div className='flex-grow h-0.5 bg-white '></div>
-                    <h2 className="font-bold text-xl text-white px-3">{product.name} {product.price != 0 ? product.price + "$" : ""}</h2>
+                    <h2 className="font-bold text-xl text-white px-3">{product.name} {product.price != 0 ? "$" + product.price : ""}</h2>
                     <div className='flex-grow h-0.5 bg-white'></div>
                 </div>
                 <p className='text-center text-white text-lg'>{product.description}</p>

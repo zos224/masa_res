@@ -33,7 +33,7 @@ const ViewCatering = ({isOpen, onClose, data}) => {
                             </div>
                             <div className="mt-2">
                                 <span>Budget: </span>
-                                <span className="font-semibold">{data.budget}$</span>
+                                <span className="font-semibold">${data.budget}</span>
                             </div>
                             <div className="mt-2">
                                 <span>Date: </span>
