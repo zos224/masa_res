@@ -70,6 +70,7 @@ module.exports = {
         "title-sm": ["20px", "26px"],
         "title-sm2": ["22px", "28px"],
         "title-xsm": ["18px", "24px"],
+        "10xl": ["10rem", "1"],
       },
       padding: {
         300: "1500px"

@@ -18,11 +18,18 @@ const LocationPage = () => {
     const positionRes = {"lat":47.7084394664091,"lng":-122.3227907590838}
     const positionRes2 = {"lat": 47.6906201, "lng": -122.2909153}
     const midPoint = {"lat": 47.69952978320455, "lng": -122.3068530295419};
+    const phoneNumber = (number) => {
+        var areaCode = number.substring(0, 3);
+        var middle = number.substring(3, 6);
+        var last = number.substring(6, 10);
+    
+        return areaCode + '-' + middle + '-' + last;
+    }
     return (
         restaurant && <div>
             <div className="relative">
                 <Image className="max-h-125 object-cover" src={"/images/bg/banner_location.png"} width={1920} height={1280}></Image>
-                <span className="absolute text-8xl uppercase text-center font-gambarino py-2 px-5 text-white top-1/2 w-full">
+                <span className="absolute lg:text-9xl text-4xl uppercase text-center font-gambarino py-2 px-5 text-white top-1/3 w-full">
                     {restaurant.name}
                 </span>
             </div>
@@ -57,6 +64,11 @@ const LocationPage = () => {
                 </div>
                 <div className="mt-10"> 
                     <p className="text-3xl font-bold tracking-widest uppercase">Get Direction</p>
+                    <div className="font-jost md:text-xl text-lg text-white gap-3 mt-5 flex flex-wrap uppercase justify-evenly">{restaurant.address.split('|').map((a, index) => (
+                        <div className="uppercase" key={index}>{a}
+                            <div className="mt-2">{phoneNumber(restaurant.phoneNumber)}</div>
+                        </div>
+                    ))}</div>
                     <div className="mt-10 md:w-4/5 mx-auto h-150"> 
                         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
                             <Map defaultCenter={midPoint} zoom={14} mapId={process.env.NEXT_PUBLIC_MAP_ID}>
@@ -70,6 +82,7 @@ const LocationPage = () => {
                         </APIProvider>
                     </div>
                 </div>
+                
             </div>
         </div>
     )

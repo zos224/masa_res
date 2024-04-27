@@ -40,7 +40,7 @@ const HomePage = () => {
     <div className="overflow-hidden">
         <div className="bg-image-home xl:px-50 lg:px-30 w-full mx-auto font-jost lg:text-lg text-base text-center text-white pb-20">
           <div className="pt-50">
-            <div className="lg:text-9xl text-6xl font-mrdehaviland">welcome to masala of india cusine <br></br> where’s flavors unite</div>
+            <div className="lg:text-10xl text-6xl font-mrdehaviland">Welcome to<br></br><span className="glow-text">Masala Of India Cuisine</span></div>
           </div>
           <div className="mt-50">
             Using carefully chosen secret ingredients passed down through generations, Mr. Sanjay Sharma, owner of Masala Of India, has set a new standard for Indian cuisine. His expertise in crafting the healthiest and most palatable dishes, along with his respect for centuries-old culinary traditions, earned him a spot as a featured food vendor at the recent Northgate Festival. Our commitment to providing tempting yet wholesome dishes has resulted in the creation of the healthiest Indian cuisine nationwide.
