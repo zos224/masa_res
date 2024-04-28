@@ -25,8 +25,8 @@ const OrderPage = () => {
     }, [])
     return (
         <div className="min-h-screen pt-10 bg-image">
-            <div className="text-center md:text-8xl text-4xl text-white font-gambarino tracking-widest">
-                PHOTO GALLERY
+            <div className="text-center md:text-10xl text-7xl text-white font-mrdehaviland tracking-widest">
+                Photo Gallery
             </div>
             <div className="grid lg:grid-cols-3 xsm:grid-cols-2 grid-cols-1 gap-5 mx-10 py-10 min-h-screen">
                 {images && images.map((image, index) => (

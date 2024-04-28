@@ -31,7 +31,7 @@ const ContactPage = async () => {
             </div>
             <div className="text-center bg-image-contact min-h-203">
                 <div className="w-full text-center pt-50">
-                    <div className="text-white uppercase text-4xl font-semibold tracking-widest">{restaurant.name}</div>
+                    <div className="text-white font-mrdehaviland md:text-8xl text-6xl tracking-widest">{restaurant.name}</div>
                     <div className="flex flex-wrap uppercase text-xl justify-evenly mt-4 text-white">
                         <div className="mt-3">
                             <span>Operation Time Indoor: {restaurant.operationTimeIndoor}</span>

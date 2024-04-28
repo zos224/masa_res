@@ -357,7 +357,7 @@ const CheckOutPage = () => {
                                 <span className="font-bold">${card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0).toFixed(2)}</span>
                             </div>
                             <div className="flex justify-between mt-2">
-                                <span>10,1% GST</span>
+                                <span>Tax 10,1%</span>
                                 <span className="font-bold">${(card.reduce((acc, item) => parseFloat(acc) + parseFloat(item.total), 0) * 0.101).toFixed(2)}</span>
                             </div>
                             <div className="flex justify-between mt-2 border-b  pb-3">

@@ -242,7 +242,7 @@ const NavOrder = () => {
                                                         <p>${card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0).toFixed(2)}</p>
                                                     </div>
                                                     <div className='flex justify-between mt-1'>
-                                                        <p>10,1% GST </p>
+                                                        <p>Tax 10,1%</p>
                                                         <p>${(card.map(item => item.total).reduce((a, c) => parseFloat(a) + parseFloat(c), 0) * 0.101).toFixed(2)}</p>
                                                     </div>
                                                     <div className='w-full flex text-center'>
